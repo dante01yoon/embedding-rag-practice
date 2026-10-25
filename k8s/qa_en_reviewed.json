@@ -1,0 +1,202 @@
+[
+ {
+  "question": "How do I turn on project quotas for local storage monitoring in the kubelet, and which feature gate do I need to set?",
+  "path": "k8s/en/storage/ephemeral-storage.md",
+  "source": "of storage \nmetrics calculated by quotas.\n\nIf you want to use project quotas, you should:\n\n* Enable the `LocalStorageCapacityIsolationFSQuotaMonitoring=true`\n  [feature gate](/docs/reference/command-l"
+ },
+ {
+  "question": "How do I create a PersistentVolumeClaim in namespace ns1 that restores from a VolumeSnapshot named new-snapshot-demo in the default namespace, and what happens if the snapshot lives in a different namespace than the claim?",
+  "path": "k8s/en/storage/volume-populators-and-data-sources.md",
+  "source": "- group: snapshot.storage.k8s.io\n       kind: VolumeSnapshot\n       name: new-snapshot-demo\n   ```\n\n   ```yaml\n   apiVersion: v1\n   kind: PersistentVolumeClaim\n   metadata:\n     name: foo-pvc\n     nam"
+ },
+ {
+  "question": "How do I calculate the maximum number of queued requests a single flow can have in a shuffle sharding setup, given the hand size and queue length limit?",
+  "path": "k8s/en/cluster-administration/flow-control.md",
+  "source": "maximum number of queued requests possible from a\n  single flow is `handSize * queueLengthLimit`.\n\nFollowing is a table showing an interesting collection of shuffle\nsharding configurations, showing fo"
+ },
+ {
+  "question": "How do I configure the NodeResourcesFit scheduler plugin so it only scores nodes on intel.com/foo and intel.com/bar and packs those requests onto fewer nodes?",
+  "path": "k8s/en/scheduling-eviction/resource-bin-packing.md",
+  "source": "100\n            score: 10\n        type: RequestedToCapacityRatio\n    name: NodeResourcesFit\n```\n\nIn this example, only the extended resources `intel.com/foo` and `intel.com/bar` are listed in\n`resourc"
+ },
+ {
+  "question": "How do I delete a ReplicaSet with curl through the REST API without also deleting its Pods, and which propagationPolicy value do I need to send in the request body?",
+  "path": "k8s/en/workloads/controllers/replicaset.md",
+  "source": "automatically deletes all of\nthe dependent Pods by default.\n\nWhen using the REST API or the `client-go` library, you must set `propagationPolicy` to\n`Background` or `Foreground` in the `-d` option. Fo"
+ },
+ {
+  "question": "How can I tell from a Deployment's status that its rollout has finished, and what condition values does the controller set when that happens?",
+  "path": "k8s/en/workloads/controllers/deployment.md",
+  "source": "associated with the Deployment are available.\n* No old replicas for the Deployment are running.\n\nWhen the rollout becomes “complete”, the Deployment controller sets a condition with the following\nattr"
+ },
+ {
+  "question": "How do I make sure files on the host are readable by a Windows container user when projected volumes are used, given that ownership isn't enforced for RunAsUsername?",
+  "path": "k8s/en/storage/projected-volumes.md",
+  "source": "ephemeral\ncontainers must use the same `runAsUser` to be able to read the token.\n\n### Windows\n\nIn Windows pods that have a projected volume and `RunAsUsername` set in the\nPod `SecurityContext`, the ow"
+ },
+ {
+  "question": "How do Secret volumes and emptyDir volumes with medium Memory get stored on Linux nodes, and which filesystem type backs them?",
+  "path": "k8s/en/security/linux-security.md",
+  "source": "This page describes security considerations and best practices specific to the Linux operating system.\n\n## Protection for Secret data on nodes\n\nOn Linux nodes, memory-backed volumes (such as [`secret`"
+ },
+ {
+  "question": "What component do network plugins typically run as a DaemonSet to make sure a node has working cluster networking?",
+  "path": "k8s/en/workloads/controllers/daemonset.md",
+  "source": "provides node-level functionality that allows other Pods to run correctly on that particular node.\n\nFor example, [network plugins](/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/"
+ },
+ {
+  "question": "How do I block all incoming traffic to every pod in a namespace by default, while leaving outgoing traffic from those pods unaffected?",
+  "path": "k8s/en/services-networking/network-policies.md",
+  "source": "in that namespace. The following examples let you change the default behavior\nin that namespace.\n\n### Default deny all ingress traffic\n\nYou can create a \"default\" ingress isolation policy for a namesp"
+ },
+ {
+  "question": "How does running an exec probe on high-density clusters with short periodSeconds or initialDelaySeconds affect node CPU usage, and what should I use instead?",
+  "path": "k8s/en/workloads/pods/probes.md",
+  "source": "after it opens, this counts\n  as healthy.\n  For more details, see [TCP probes](#tcp-probes).\n\nUnlike the other mechanisms, `exec` probe's implementation involves the\ncreation/forking of multiple proce"
+ },
+ {
+  "question": "Which Kubernetes version made the full-pcpus-only CPU Manager policy option generally available?",
+  "path": "k8s/en/resource-management/resource-managers.md",
+  "source": "aiming for an even balance between the selected domains\n  (available since Kubernetes v1.23)\n\n`full-pcpus-only` (GA, visible by default)\n: Always allocate full physical cores (available since Kubernet"
+ },
+ {
+  "question": "How can I tell from a Job's status whether it's currently suspended, and how long it has been suspended?",
+  "path": "k8s/en/workloads/controllers/job.md",
+  "source": "status: \"True\"\n    type: Suspended\n  startTime: \"2021-02-05T13:13:48Z\"\n```\n\nThe Job condition of type \"Suspended\" with status \"True\" means the Job is\nsuspended; the `lastTransitionTime` field can be u"
+ },
+ {
+  "question": "How do I find which CPUs are in the shared pool on a node, given that the List endpoint only reports exclusive CPUs per container?",
+  "path": "k8s/en/extend-kubernetes/compute-storage-net/device-plugins.md",
+  "source": "string name = 1;\n}\n```\n\ncpu_ids in the `ContainerResources` in the `List` endpoint correspond to exclusive CPUs allocated\nto a particular container. If the goal is to evaluate CPUs that belong to the "
+ },
+ {
+  "question": "How does the scheduler decide which PodGroups to preempt, and how do their disruption modes affect that choice when Gang Scheduling is enabled?",
+  "path": "k8s/en/scheduling-eviction/workload-aware-preemption.md",
+  "source": "knows how to treat and preempt other PodGroups as victims according to their disruption modes.\n\nThis feature is coupled with [Gang Scheduling](/docs/concepts/scheduling-eviction/gang-scheduling/)\nand "
+ },
+ {
+  "question": "How do I tell which NUMA cell a device is affine to from the pod resources API, and does that ID match what the device plugin reports when it registers with the kubelet?",
+  "path": "k8s/en/extend-kubernetes/compute-storage-net/device-plugins.md",
+  "source": "devices = 1;\n    repeated int64 cpu_ids = 2;\n    repeated ContainerMemory memory = 3;\n}\n```\n\n`ContainerDevices` do expose the topology information declaring to which NUMA cells the device is\naffine. T"
+ },
+ {
+  "question": "How do I configure a scheduler extender so that the scheduler skips checking a custom resource like example.com/foo in PodFitsResources?",
+  "path": "k8s/en/configuration/manage-resources-containers.md",
+  "source": "scheduler does not check\n     the \"example.com/foo\" resource in its `PodFitsResources` predicate.\n\n```json\n{\n  \"kind\": \"Policy\",\n  \"apiVersion\": \"v1\",\n  \"extenders\": [\n    {\n      \"urlPrefix\":\"<extend"
+ },
+ {
+  "question": "How can I stop the scheduler from preempting lower-priority Pods for an in-place resize on just one node, without changing the priority classes used across the cluster?",
+  "path": "k8s/en/scheduling-eviction/pod-priority-preemption.md",
+  "source": "for in-place Pod resize differs from standard Pod placement\npreemption in several key ways:\n\n* **Node restriction**: Preemption is strictly restricted to the Pod's currently\n  assigned node. The sched"
+ },
+ {
+  "question": "How do I set the priority and preemption policy for a PodGroup, and which field points to the PriorityClass it uses?",
+  "path": "k8s/en/workloads/podgroup-api/_index.md",
+  "source": "training-policy\n      podGroupTemplateName: worker\n```\n\n### Priority and Disruption mode\n\nEach PodGroup can also define its own `spec.priority`, `spec.preemptionPolicy` and\n`spec.disruptionMode`. Prio"
+ },
+ {
+  "question": "Is the minGroupCount in a CompositePodGroupTemplate editable after it's set, or does it stay fixed once the template is created?",
+  "path": "k8s/en/workloads/workload-api/policies.md",
+  "source": "group to be admitted.\n    minGroupCount: 2\n```\n\n### Setting composite policies via templates\n\nWhen using the [Workload API](/docs/concepts/workloads/workload-api/), scheduling policies for\n`CompositeP"
+ },
+ {
+  "question": "How does kubectl find its configuration file by default, and how can I point it to a different kubeconfig file?",
+  "path": "k8s/en/overview/kubectl.md",
+  "source": "The `kubectl` tool communicates with your cluster through the [Kubernetes API](/docs/concepts/overview/kubernetes-api/).\nFor configuration, `kubectl` looks for a file named `config` in the `$HOME/.kub"
+ },
+ {
+  "question": "How do I set up DNS for each tenant when I'm running a virtual control plane per tenant, or is there a multi-tenant DNS option I can use instead?",
+  "path": "k8s/en/security/multi-tenancy.md",
+  "source": "of\nconfiguring this within the CoreDNS documentation.\n\nWhen a [Virtual Control Plane per tenant](#virtual-control-plane-per-tenant) model is used, a DNS\nservice must be configured per tenant or a mult"
+ },
+ {
+  "question": "How does kubectl decide which value to keep when two files in KUBECONFIG both define the same key, like current-context or a user entry?",
+  "path": "k8s/en/configuration/organize-cluster-access-kubeconfig.md",
+  "source": "Merge the files listed in the `KUBECONFIG` environment variable\n   according to these rules:\n\n   * Ignore empty filenames.\n   * Produce errors for files with content that cannot be deserialized.\n   * "
+ },
+ {
+  "question": "How do I switch a Kubernetes component's logs from the old unstructured klog format to structured logging, and what does the default text output look like when I do?",
+  "path": "k8s/en/cluster-administration/system-logs.md",
+  "source": "message determines whether it uses the traditional unstructured\nklog output or structured logging.\n\nThe default formatting of structured log messages is as text, with a format that is backward\ncompati"
+ },
+ {
+  "question": "How can I validate Kubernetes service account tokens in my own service, and which methods does Kubernetes provide for doing that?",
+  "path": "k8s/en/security/service-accounts.md",
+  "source": "tokens that are mounted as Secrets in Pods, the API server\nchecks the token against the Secret.\n\nFor more information about the authentication process, refer to\n[Authentication](/docs/reference/access"
+ },
+ {
+  "question": "I edited my CronJob's template, so do the Jobs that are already running pick up the new settings too, or only the ones created after the change?",
+  "path": "k8s/en/workloads/controllers/cron-jobs.md",
+  "source": "validation error. You should specify time zones\nusing the [time zone field](#time-zones), instead.\n\n### Modifying a CronJob\n\nBy design, a CronJob contains a template for _new_ Jobs.\nIf you modify an e"
+ },
+ {
+  "question": "How does Kubernetes decide a Pod's readiness gate condition when the condition is missing from the Pod's status.conditions field?",
+  "path": "k8s/en/workloads/pods/pod-condition.md",
+  "source": "these custom conditions,\nand the kubelet uses that as an extra input to decide if the Pod is ready.\n\nReadiness gates are determined by the current state of `status.condition` fields for the Pod.\nIf Ku"
+ },
+ {
+  "question": "How can I keep an HMAC signing key from being exposed if my web server has a file-reading bug, by putting the secret in a Kubernetes Secret that only one container in the Pod can see?",
+  "path": "k8s/en/configuration/secret.md",
+  "source": "see them when listing directory contents.\n\n### Use case: Secret visible to one container in a Pod\n\nConsider a program that needs to handle HTTP requests, do some complex business\nlogic, and then sign "
+ },
+ {
+  "question": "Do the hosts under my Ingress `tls` section have to explicitly match the `host` values in the `rules` section, and does every ingress controller support the same TLS features?",
+  "path": "k8s/en/services-networking/ingress.md",
+  "source": "Therefore,\n`hosts` in the `tls` section need to explicitly match the `host` in the `rules`\nsection.\n\nThere is a gap between TLS features supported by various ingress controllers.\nYou should refer to t"
+ },
+ {
+  "question": "How do I mount an NFS volume read-only into a pod, and which server and path does the example point to?",
+  "path": "k8s/en/storage/volumes.md",
+  "source": "and\nthat data can be shared between Pods. NFS can be mounted by multiple\nwriters simultaneously.\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: test-pd\nspec:\n  containers:\n  - image: registry.k8s"
+ },
+ {
+  "question": "Is there a standard Kubernetes API field that determines whether a Pod counts as sandboxed, or do I have to infer it from the runtime being used, like gVisor or Kata Containers?",
+  "path": "k8s/en/security/pod-security-standards.md",
+  "source": "the\nbuilt-in [Pod Security Admission Controller](/docs/concepts/security/pod-security-admission/).\n\n### What about sandboxed Pods?\n\nThere is currently no API standard that controls whether a Pod is co"
+ },
+ {
+  "question": "How long does a completed ResourcePoolStatusRequest stick around before it gets cleaned up automatically, and what should I do if I need fresh availability numbers?",
+  "path": "k8s/en/resource-management/dynamic-resource-allocation/dra-observability.md",
+  "source": "the request when done:\n\n   ```shell\n   kubectl delete resourcepoolstatusrequest/check-gpus\n   ```\n\nResourcePoolStatusRequest objects are processed once by a controller in\nkube-controller-manager. The "
+ },
+ {
+  "question": "How do I make sure one init container finishes successfully before the next one in my Pod starts running?",
+  "path": "k8s/en/workloads/pods/init-containers.md",
+  "source": "that run to completion during Pod initialization.\n\n## Understanding init containers\n\nA Pod can have multiple containers\nrunning apps within it, but it can also have one or more init containers, which "
+ },
+ {
+  "question": "Can I pause a Deployment to batch several fixes to its pod template before resuming the rollout?",
+  "path": "k8s/en/workloads/controllers/deployment.md",
+  "source": "use case is not covered below.\n\n## Use Case\n\nThe following are typical use cases for Deployments:\n\n* [Create a Deployment to rollout a ReplicaSet](#creating-a-deployment). The ReplicaSet creates Pods "
+ },
+ {
+  "question": "What fields in a Pod's spec must I leave unset if I set `.spec.os.name` to `windows`?",
+  "path": "k8s/en/windows/intro.md",
+  "source": "or volumes\n  * `emptyDir` volumes\n  * Named pipe host mounts\n  * Resource limits\n  * OS field:\n\n    The `.spec.os.name` field should be set to `windows` to indicate that the current Pod uses Windows c"
+ },
+ {
+  "question": "What happens to web-2 in a StatefulSet if web-0 fails after web-1 is Running and Ready but before web-2 has been launched?",
+  "path": "k8s/en/workloads/controllers/statefulset.md",
+  "source": "to\n[force deleting StatefulSet Pods](/docs/tasks/run-application/force-delete-stateful-set-pod/).\n\nWhen the nginx example above is created, three Pods will be deployed in the order\nweb-0, web-1, web-2"
+ },
+ {
+  "question": "How does the scheduler arrive at a final NodeScore of 7 from the weighted plugin scores of 5, 7, and 10?",
+  "path": "k8s/en/scheduling-eviction/resource-bin-packing.md",
+  "source": "-((8-8)*100/8))\n               = 100\n               = rawScoringFunction(100)\n               = 10\n\nNodeScore   =  ((5 * 5) + (7 * 1) + (10 * 3)) / (5 + 1 + 3)\n            =  7\n\n```\n\n##\n\n- Read more ab"
+ },
+ {
+  "question": "Which Kubernetes release first added pod-priority awareness to graceful node shutdown, and when did it become enabled by default?",
+  "path": "k8s/en/cluster-administration/node-shutdown.md",
+  "source": "configuration containing the pod priority class values and\ntheir respective shutdown periods.\n\nThe ability to take Pod priority into account during graceful node shutdown was introduced\nas an Alpha fe"
+ },
+ {
+  "question": "Why doesn't a Pod that gets evicted for exceeding its container limits receive the DisruptionTarget condition?",
+  "path": "k8s/en/workloads/pods/disruptions.md",
+  "source": "[system critical pods](/docs/tasks/administer-cluster/guaranteed-scheduling-critical-addon-pods/).\n\nIn all other disruption scenarios, like eviction due to exceeding\n[Pod container limits](/docs/conce"
+ },
+ {
+  "question": "How can I check which hostname a kube-apiserver is using, given that its lease name is derived from a SHA256 hash of that hostname?",
+  "path": "k8s/en/architecture/leases.md",
+  "source": "4m43s\n\n```\n\nThe SHA256 hash used in the lease name is based on the OS hostname as seen by that API server. Each kube-apiserver should be\nconfigured to use a hostname that is unique within the cluster."
+ }
+]

@@ -1,0 +1,2 @@
+kogl_guide.pdf: 공공저작물 저작권 관리 및 이용지침 해설서(2026), 한국문화정보원, 공공누리 제1유형 — https://www.kogl.or.kr/edu/eduDataView.do?dataIdx=178
+irs_p501.pdf: IRS Publication 501 (2025), U.S. federal government work (17 U.S.C. §105) — https://www.irs.gov/pub/irs-pdf/p501.pdf

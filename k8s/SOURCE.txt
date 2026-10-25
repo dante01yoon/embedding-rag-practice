@@ -1,0 +1,1 @@
+Kubernetes 공식 문서 (https://github.com/kubernetes/website, commit bc7f3479, 2026-10-22) content/{ko,en}/docs/concepts — CC BY 4.0

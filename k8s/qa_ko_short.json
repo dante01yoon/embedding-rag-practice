@@ -1,0 +1,196 @@
+[
+ {
+  "question": "topologyKeys 백엔드 없으면 실패?",
+  "path": "k8s/ko/services-networking/service-topology.md",
+  "source": "레이블의\n발신 노드 값과 일치하는 노드로 보내진다. 만약 노드에 서비스와 일치하는\n백엔드가 없는 경우, 두 번째 레이블을 그리고 더 이상의\n레이블이 남지 않을 때까지 고려한다.\n\n만약 일치하는 것을 못찾는 경우에는, 서비스에 대한 백엔드가 없었던 것처럼\n트래픽이 거부될 것이다. 즉, 엔드포인트는 사용 가능한 백엔드가 있는 첫 번째\n토폴로지 키를 기반으로 선"
+ },
+ {
+  "question": "emptyDir 저장소 위치",
+  "path": "k8s/ko/storage/ephemeral-volumes.md",
+  "source": "없이 \n파드가 중지 및 재시작될 수 있다.\n\n임시 볼륨은 파드 명세에 _인라인_ 으로 명시되며, \n이로 인해 애플리케이션 배포 및 관리가 간편해진다.\n\n### 임시 볼륨의 종류\n\n쿠버네티스는 각 목적에 맞는 \n몇 가지의 임시 볼륨을 지원한다.\n- [emptyDir](/ko/docs/concepts/storage/volumes/#emptydir): \n  파드"
+ },
+ {
+  "question": "kubelet 축출 임계값 형식",
+  "path": "k8s/ko/scheduling-eviction/node-pressure-eviction.md",
+  "source": "이후로 사용되지 않음 |\n| `--minimum-container-ttl-duration` | - | 오래된 로그들이 컨테이너의 컨텍스트 외부에 저장된 이후로 사용되지 않음 |\n\n### 축출 임계값\n\nkubelet이 축출 결정을 내릴 때 사용하는 축출 임계값을 \n사용자가 임의로 설정할 수 있다.\n\n축출 임계값은 `[eviction-signal][operat"
+ },
+ {
+  "question": "HPA replicas apply 충돌",
+  "path": "k8s/ko/workloads/autoscaling/horizontal-pod-autoscale.md",
+  "source": "때까지 HPA는 대상 조정을\n중지한다(그리고 `ScalingActive` 조건 자체를 `false`로 설정).\n\n### 디플로이먼트와 스테이트풀셋을 수평 오토스케일링으로 전환하기\n\nHPA가 활성화되어 있으면, 디플로이먼트, 스테이트풀셋 모두 또는 둘 중 하나의\n매니페스트에서\n`spec.replicas`의 값을 삭제하는 것이 바람직하다.\n이렇게 적용하지 않으"
+ },
+ {
+  "question": "도커 마운트 전파 권한 배포판",
+  "path": "k8s/ko/storage/volumes.md",
+  "source": "모드의 일반적인 유스 케이스로는 FlexVolume 또는 CSI 드라이버를 사용하는 파드 또는\n  `hostPath` 볼륨을 사용하는 호스트에 무언가를 마운트해야 하는 파드이다.\n\n  이 모드는 [리눅스 커널 문서](https://www.kernel.org/doc/Documentation/filesystems/sharedsubtree.txt)에\n  설명된 "
+ },
+ {
+  "question": "쿠버네티스 trafficDistribution 설정",
+  "path": "k8s/ko/services-networking/service.md",
+  "source": "id=\"proxy-mode-iptables\" />\n<a id=\"proxy-mode-ipvs\" />\n<a id=\"ips-and-vips\" />\n\n## 가상 IP 주소 지정 메커니즘\n\n[가상 IP 및 서비스 프록시](/docs/reference/networking/virtual-ips/)에서는 쿠버네티스가\n가상 IP 주소를 사용하여 서비스를 노출하기 위해 제공"
+ },
+ {
+  "question": "쿠버네티스 제로트러스트 설계 방법",
+  "path": "k8s/ko/security/cloud-native-security.md",
+  "source": "맞는 정보보안 모범 사례를 따라\n  애플리케이션을 디자인한다.\n- 솔루션 디자인의 일부분으로서 최종 사용자 보안을 고려한다.\n\n이를 달성하기 위해서 아래와 같이 할 수 있다.\n\n1. 내부 위협까지 포함하여 공격 표면을 최소화할 수 있는\n   [제로 트러스트](https://glossary.cncf.io/zero-trust-architecture/)와 같은 "
+ },
+ {
+  "question": "쿠버네티스 WaitForFirstConsumer 바인딩 시점",
+  "path": "k8s/ko/storage/volumes.md",
+  "source": "스케줄한다.\n\n퍼시스턴트볼륨의 `volumeMode` 을 \"Block\" (기본값인 \"Filesystem\"을\n대신해서)으로 설정하면 로컬 볼륨을 원시 블록 장치로 노출할 수 있다.\n\n로컬 볼륨을 사용할 때는 `volumeBindingMode` 가 `WaitForFirstConsumer` 로 설정된\n스토리지클래스(StorageClass)를 생성하는 것을 권장한"
+ },
+ {
+  "question": "EndpointSlice managed-by 레이블",
+  "path": "k8s/ko/services-networking/endpoint-slices.md",
+  "source": "생성하고 관리한다. 다른 엔티티나 컨트롤러가 추가\n엔드포인트슬라이스 집합을 관리하게 할 수 있는 서비스 메시 구현과 같이\n엔드포인트슬라이스에 대한 다양한 유스케이스가 있다.\n\n여러 엔티티가 서로 간섭하지 않고 엔드포인트슬라이스를\n관리할 수 있도록 쿠버네티스는 엔드포인트슬라이스를 관리하는\n엔티티를 나타내는 `endpointslice.kubernetes.io/"
+ },
+ {
+  "question": "쿠버네티스 Deployment StatefulSet 차이",
+  "path": "k8s/ko/workloads/controllers/statefulset.md",
+  "source": "고유한 네트워크 식별자.\n* 안정적인, 지속성을 갖는 스토리지.\n* 순차적인, 정상 배포(graceful deployment)와 스케일링.\n* 순차적인, 자동 롤링 업데이트.\n\n여기서 안정적이라는 것은 파드가 (재)스케줄링되는 과정 전반에서 지속됨을 의미한다.\n만약 애플리케이션이 안정적인 식별자 또는 순차적인 배포,\n삭제 또는 스케일링이 필요하지 않으면, "
+ },
+ {
+  "question": "ResourceQuota LoadBalancer 제한",
+  "path": "k8s/ko/policy/resource-quotas.md",
+  "source": "서비스 거부를 유발할 수 있다.\n\n또한 제한된 리소스 셋에 대해서 일반 오브젝트 수(generic object count) 쿼터를 적용하는 것도 가능하다.\n다음 유형이 지원된다.\n\n| 리소스 이름 | 설명 |\n| ------------------------------- | -----------------------------------------------"
+ },
+ {
+  "question": "autoscaling v1 v2 필드 저장 위치",
+  "path": "k8s/ko/workloads/autoscaling/horizontal-pod-autoscale.md",
+  "source": "커스텀 메트릭에 대한 스케일링을 지원한다.\n`autoscaling/v2`에서 추가된 새로운 필드는 `autoscaling/v1`를 이용할 때에는\n어노테이션으로 보존된다.\n\nHorizontalPodAutoscaler API 오브젝트 생성시 지정된 이름이 유효한\n[DNS 서브도메인 이름](/docs/concepts/overview/working-with-obj"
+ },
+ {
+  "question": "runtimeClassName 파드 스펙 런타임클래스 필요",
+  "path": "k8s/ko/containers/runtime-class.md",
+  "source": "이름은 유효한\n[DNS 레이블 이름](/ko/docs/concepts/overview/working-with-objects/names/#dns-레이블-이름)어이야 한다.\n\n런타임클래스 쓰기 작업(create/update/patch/delete)은\n클러스터 관리자로 제한할 것을 권장한다. 이것은 일반적으로 기본 설정이다.\n더 자세한 정보는 [권한 개요](/k"
+ },
+ {
+  "question": "리소스 weight 기본값 음수",
+  "path": "k8s/ko/scheduling-eviction/resource-bin-packing.md",
+  "source": "파라미터는 선택 사항이며 지정되지 않은 경우 1로 설정 된다. 또한,\n`weight` 는 음수로 설정할 수 없다.\n\n### 용량 할당을 위해 노드에 점수 매기기\n\n이 섹션은 이 기능 내부의 세부적인 사항을 이해하려는 사람들을\n위한 것이다.\n아래는 주어진 값의 집합에 대해 노드 점수가 계산되는 방법의 예시이다.\n\n요청된 리소스는 다음과 같다.\n\n```\nint"
+ },
+ {
+  "question": "containerd 런타임 핸들러 설정 위치",
+  "path": "k8s/ko/containers/runtime-class.md",
+  "source": "없다면, 기본 런타임 핸들러가 사용되며,\n런타임클래스 기능이 비활성화되었을 때와 동일하게 동작한다.\n\n### CRI 구성 {#cri-configuration}\n\nCRI 런타임 설치에 대한 자세한 내용은 [CRI 설치](/ko/docs/setup/production-environment/container-runtimes/)를 확인한다.\n\n####\n\n런타임 핸"
+ },
+ {
+  "question": "쿠버네티스 메모리 제한 설정 후에도 앱 동작 이상",
+  "path": "k8s/ko/configuration/manage-resources-containers.md",
+  "source": "있는지 애플리케이션 코드를 확인해 볼 수 있다. \n애플리케이션이 예상한 대로 동작하는 것을 확인했다면, \n해당 컨테이너의 메모리 제한(및 요청)을 더 높게 설정해 본다.\n\n##\n\n* [컨테이너와 파드에 메모리 리소스를 할당](/ko/docs/tasks/configure-pod-container/assign-memory-resource/)하는 핸즈온 경험을 "
+ },
+ {
+  "question": "쿠버네티스 downward API resourceFieldRef 종류",
+  "path": "k8s/ko/workloads/pods/downward-api.md",
+  "source": "컨테이너의 CPU 요청\n\n`resource: limits.memory`\n: 컨테이너의 메모리 제한\n\n`resource: requests.memory`\n: 컨테이너의 메모리 요청\n\n`resource: limits.hugepages-*`\n: 컨테이너의 hugepage 제한 (`DownwardAPIHugePages` [기능 게이트](/ko/docs/referen"
+ },
+ {
+  "question": "podAntiAffinity matchExpressions tenant 이유",
+  "path": "k8s/ko/scheduling-eviction/assign-pod-node.md",
+  "source": "스케줄되어 있는 토폴로지 도메인에 (노드, 영역 등) 배치되도록 할 수 있다.\n즉, 서로 다른 테넌트의 파드들이 같은 토폴로지 도메인에서 동시에 실행되는 것을 막을 수 있다.\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  labels:\n    # 모든 관련 파드에 \"tenant\" 레이블이 설정되어 있다고 가정한다.\n   "
+ },
+ {
+  "question": "디플로이먼트 셀렉터 레이블 제거 파드 템플릿",
+  "path": "k8s/ko/workloads/controllers/deployment.md",
+  "source": "다시 생성하는 동안 해당 파드를 계속 실행해야 한다면 `--cascade=orphan`을 사용한다\n(아래에서 그 영향을 설명한다).\n다음 영향을 숙지하고 각별히 주의한다.\n\n* **추가:** 범위가 더 좁은 셀렉터로 새 디플로이먼트를 생성할 때는 새 디플로이먼트에 적합한 파드 템플릿도 **반드시** 있어야 한다.\n  기존 매니페스트가 있고 이 매니페스트를 "
+ },
+ {
+  "question": "쿠버네티스 파드 사이드카 컨테이너 공유 리소스",
+  "path": "k8s/ko/workloads/pods/_index.md",
+  "source": "하위 격리가 적용된다.\n\n파드는 공유 네임스페이스와 공유 파일 시스템 볼륨이 있는 컨테이너 집합과 비슷하다.\n\n쿠버네티스 클러스터의 파드는 크게 두 가지 방식으로 사용된다.\n\n* **단일 컨테이너를 실행하는 파드**: \"파드당 컨테이너 1개(one-container-per-Pod)\" 모델은\n  쿠버네티스에서 가장 흔한 사용 사례이다. 이 경우 파드는 단일 "
+ },
+ {
+  "question": "kube-scheduler 커스터마이징 방법",
+  "path": "k8s/ko/extend-kubernetes/_index.md",
+  "source": "실행할 수 있다.\n\n이것은 중요한 부분이며, 거의 모든 쿠버네티스 사용자는 스케줄러를 수정할\n필요가 없다는 것을 알게 된다.\n\n어떤 [스케줄링 플러그인](/ko/docs/reference/scheduling/config/#scheduling-plugins)을 활성화시킬지 제어하거나,\n플러그인들을 다른 이름의 [스케줄러 프로파일](/ko/docs/refere"
+ },
+ {
+  "question": "쿠버네티스 서비스 환경변수 생성 순서",
+  "path": "k8s/ko/configuration/overview.md",
+  "source": "직접 생성하기 위해 항상 선호되는 방법이다.\n  [잡](/ko/docs/concepts/workloads/controllers/job/) 또한 적절할 수 있다.\n\n## 서비스\n\n- 서비스에 대응하는 백엔드 워크로드(디플로이먼트 또는 레플리카셋) 또는 서비스 접근이 필요한 어떠한 워크로드를 생성하기 전에\n  [서비스](/ko/docs/concepts/serv"
+ },
+ {
+  "question": "kubelet 가속기 메트릭 끄기 기능 게이트",
+  "path": "k8s/ko/cluster-administration/system-metrics.md",
+  "source": "메트릭을 수집하는 책임은 이제 kubelet이 아닌 공급 업체에 있다.\n공급 업체는 메트릭을 수집하여 메트릭 서비스(예: 프로메테우스)에 노출할\n컨테이너를 제공해야 한다.\n\n[`DisableAcceleratorUsageMetrics` 기능 게이트](/ko/docs/reference/command-line-tools-reference/feature-gates"
+ },
+ {
+  "question": "system:unauthenticated 바인딩 점검",
+  "path": "k8s/ko/security/rbac-good-practices.md",
+  "source": "검토를 통해 보안 하드닝을 할 수 있다.\n보편적으로는 `system:` 계정에 부여되는 권한을 수정하는 것은 지양한다.\n클러스터 권한을 하드닝할 수 있는 방법은 다음과 같다.\n\n- `system:unauthenticated` 그룹의 바인딩은 누구에게나\n 네트워크 레벨에서 API 서버와 통신할 수 있는 권한을 부여하므로, 바인딩을 검토해 보고 가능하면 제거한"
+ },
+ {
+  "question": "GCE 영구 디스크 레플리카셋 조건",
+  "path": "k8s/ko/storage/volumes.md",
+  "source": "허용되지 않는다.\n\nPD가 읽기 전용이거나 레플리카의 수가 0 또는 1이 아니라면 레플리카셋(ReplicaSet)으로 제어되는\n파드가 있는 GCE 영구 디스크를 사용할 수 없다.\n\n#### GCE 영구 디스크 생성하기 {#gce-create-persistent-disk}\n\nGCE 영구 디스크를 파드와 함께 사용하려면, 디스크를 먼저 생성해야 한다.\n\n```"
+ },
+ {
+  "question": "쿠버네티스 잡 완료 파드 실행중",
+  "path": "k8s/ko/workloads/controllers/job.md",
+  "source": "있는 규칙과 \n   일치한다. 파드 실패 정책 규칙이 실패 평가에 어떤 영향을 미칠 수 있는지에 대한 \n   자세한 내용은 [파드 실패 정책](#파드-실패-정책)을 참조한다.\n\n잡은 다음과 같은 이유로 성공한다.\n- 성공한 파드 수가 지정된 `.spec.completions`에 도달했다.\n- `.spec.successPolicy`에 지정된 기준이 충족되었다"
+ },
+ {
+  "question": "파드 셀렉터 레이블 삭제 시 서비스 레플리카셋",
+  "path": "k8s/ko/configuration/overview.md",
+  "source": "같은 도구들이 상호 운용이 가능한 방식으로 동작할 수 있도록 메타데이터를 향상시킨다.\n\n- 디버깅을 위해 레이블을 조작할 수 있다. (레플리카셋과 같은) 쿠버네티스 컨트롤러와 서비스는\n  셀렉터 레이블을 사용해 파드를 선택하기 때문에, \n  관련된 레이블을 파드에서 삭제하는 것은 컨트롤러로부터 관리되거나 서비스로부터 트래픽을 전달받는 것을 중단시킨다. \n "
+ },
+ {
+  "question": "쿠버네티스 clusterIP clusterIPs 개수",
+  "path": "k8s/ko/services-networking/dual-stack.md",
+  "source": "필드가\n   주 필드이며 할당된 IP 주소를 모두 포함한다. `.spec.clusterIP`는\n   `.spec.clusterIPs`로부터 값이 계산되는 보조 필드이다.\n\n   * `.spec.clusterIP` 필드에는 컨트롤 플레인이 첫 번째 서비스 클러스터 IP\n     범위와 동일한 주소 패밀리의 IP 주소를 기록한다.\n   * 단일 스택 클러스터에"
+ },
+ {
+  "question": "ReadWriteOnce 같은 노드 여러 파드 동시 접근",
+  "path": "k8s/ko/storage/persistent-volumes.md",
+  "source": "한다.\n파드에서 `volumeMode: Block`으로 볼륨을 사용하는 방법에 대한 예는\n[원시 블록 볼륨 지원](#원시-블록-볼륨-지원)를 참조하십시오.\n\n### 접근 모드\n\n리소스 제공자가 지원하는 방식으로 호스트에 퍼시스턴트볼륨을 마운트할 수 있다. 아래 표에서 볼 수 있듯이 제공자들은 서로 다른 기능을 가지며 각 PV의 접근 모드는 해당 볼륨에서 지"
+ },
+ {
+  "question": "컨테이너 vs VM 격리 취약점",
+  "path": "k8s/ko/security/multi-tenancy.md",
+  "source": "하나 또는 그 이상의 컨테이너로 구성되어 있다.\n컨테이너는 OS 레벨의 가상화를 활용하기 때문에 하드웨어 기반의 가상화를 활용하는 \n가상 머신에 비해 격리의 경계가 약하다.\n\n공유 환경에서 애플리케이션 및 시스템 계층 상 패치되지 않은 취약점은 \n컨테이너 탈출(container breakout) 또는 원격 코드 실행과 같이 호스트 리소스에 대한 \n접근을 허"
+ },
+ {
+  "question": "쿠버네티스 자발적 중단 디플로이먼트 삭제 파드 템플릿",
+  "path": "k8s/ko/workloads/pods/disruptions.md",
+  "source": "노드가 사라짐\n- 노드의 [리소스 부족](/ko/docs/concepts/scheduling-eviction/node-pressure-eviction/)으로 파드가 축출됨\n\n리소스 부족을 제외한 나머지 조건은 대부분의 사용자가 익숙할 것이다.\n왜냐하면\n그 조건은 쿠버네티스에 국한되지 않기 때문이다.\n\n우리는 다른 상황을 *자발적인 중단* 으로 부른다.\n여기"
+ },
+ {
+  "question": "pod group minCount 4 partial binding",
+  "path": "k8s/ko/workloads/pods/scheduling-group.md",
+  "source": "진입한다. 스케줄러는 그룹 내 최소한 `minCount`개의 `파드`를\n  동시에 배치하려고 시도하며, 최소 개수가 충족되지 않으면 어느 파드도 노드에 바인딩되지 않는다.\n\n[`CompositePodGroup`](/docs/reference/command-line-tools-reference/feature-gates/#CompositePodGroup)\n기능"
+ },
+ {
+  "question": "kubectl 네임스페이스 기본값 확인 방법",
+  "path": "k8s/ko/overview/working-with-objects/namespaces.md",
+  "source": "Active   1d\n```\n\n### 요청에 네임스페이스 설정하기\n\n현재 요청에 대한 네임스페이스를 설정하기 위해서 `--namespace` 플래그를 사용한다.\n\n예를 들면,\n\n```shell\nkubectl run nginx --image=nginx --namespace=<insert-namespace-name-here>\nkubectl get pods --"
+ },
+ {
+  "question": "쿠버네티스 Job 실패 파드 잔여물 처리",
+  "path": "k8s/ko/workloads/controllers/job.md",
+  "source": "정보는 [파드 라이프사이클](/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy)의 `restartPolicy` 를 본다.\n\n파드가 노드에서 내보내지는 경우(노드 업그레이드, 재부팅, 삭제 등) 또는 파드의 컨테이너가 실패\n되고 `.spec.template.spec.restartPolicy = \"Nev"
+ },
+ {
+  "question": "로컬 PV 삭제 방법",
+  "path": "k8s/ko/storage/volumes.md",
+  "source": "바인딩 결정도\n노드 리소스 요구사항, 노드 셀렉터, 파드 어피니티 그리고 파드 안티 어피니티와\n같이 파드가 가질 수 있는 다른 노드 제약 조건으로 평가되도록 만든다.\n\n로컬 볼륨 라이프사이클의 향상된 관리를 위해 외부 정적\n프로비저너를 별도로 실행할 수 있다. 이 프로비저너는 아직 동적\n프로비저닝을 지원하지 않는 것을 참고한다. 외부 로컬 프로비저너를 실행"
+ },
+ {
+  "question": "쿠버네티스 크로스 네임스페이스 스냅샷 PVC",
+  "path": "k8s/ko/storage/persistent-volumes.md",
+  "source": "PVC와 VolumeSnapshot만 포함할 수 있다.\n\n`CrossNamespaceVolumeDataSource` 기능이 활성화되어 있을 때, 추가적인 차이점이 존재한다:\n\n* `dataSource` 필드는 로컬 오브젝트만을 허용하지만, `dataSourceRef` 필드는 모든 네임스페이스의 오브젝트를 허용한다.\n* 네임스페이스가 명시되어 있을 때, `d"
+ },
+ {
+  "question": "쿠버네티스 크론잡 잡 파드 재시도 관리 주체",
+  "path": "k8s/ko/workloads/controllers/cron-jobs.md",
+  "source": "놓쳤는지 체크하기 때문이다. (여기서는 3번 놓쳤다고 체크함)\n\n크론잡은 오직 그 일정에 맞는 잡 생성에 책임이 있고,\n잡은 그 잡이 대표하는 파드 관리에 책임이 있다.\n\n##\n\n* 크론잡이 의존하는 [파드](/docs/concepts/workloads/pods/)와\n  [잡](/docs/concepts/workloads/controllers/job/), "
+ },
+ {
+  "question": "kubelet 노드 압박 축출 신호",
+  "path": "k8s/ko/scheduling-eviction/node-pressure-eviction.md",
+  "source": "충족되어 \n노드 압박이 발생했다는 것을 알리기 위해, \n설정된 유예 시간과는 관계없이 노드 컨디션을 보고한다.\n\nkubelet은 다음과 같이 노드 컨디션과 축출 신호를 매핑한다.\n\n| 노드 컨디션    | 축출 신호                                                                       | 설명     "
+ },
+ {
+  "question": "쿠버네티스 디플로이먼트 롤백",
+  "path": "k8s/ko/workloads/controllers/deployment.md"
+ }
+]

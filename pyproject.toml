@@ -1,0 +1,36 @@
+[project]
+name = "embedding-rag-practice"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "sentence-transformers",
+    "matplotlib",
+    "numpy",
+    "openai",
+    "python-dotenv",
+    "bm25s",
+    "kiwipiepy",
+    "faiss-cpu",
+    "pandas",
+    "langchain-chroma",
+    "langchain-huggingface",
+    "langchain-text-splitters",
+    "transformers",
+    "gradio",
+    "psycopg[binary]",
+    "pgvector",
+    "pypdf",
+    "pdfplumber",
+    "langchain-openai",
+    "streamlit",
+    "langgraph>=1.2.16",
+    "fastapi>=0.159.1",
+    "uvicorn>=0.54.0",
+    "httpx>=0.28.1",
+    "redis>=8.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

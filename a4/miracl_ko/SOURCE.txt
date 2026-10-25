@@ -1,0 +1,3 @@
+MIRACL (Zhang et al., 2023) 한국어 dev 질문 100개와 판정 문단 + 무작위 위키백과 문단 30,000개 (총 32,651개).
+https://huggingface.co/datasets/miracl/miracl · 질문·판정: Apache License 2.0 · 문단: 위키백과 CC BY-SA.
+방해 문단이 위키 전체보다 훨씬 적어 점수가 실제 서비스보다 높게 나온다. 방법끼리 순위를 비교하는 용도.

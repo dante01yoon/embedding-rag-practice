@@ -1,0 +1,22 @@
+services:
+  db:  # 저장소: 청크와 벡터를 디스크에 (껐다 켜도 남는다)
+    image: pgvector/pgvector:pg17
+    environment: {POSTGRES_HOST_AUTH_METHOD: trust}
+    ports: ["127.0.0.1:5434:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: {test: ["CMD", "pg_isready", "-U", "postgres"], interval: 2s, retries: 30}
+  cache:  # 캐시: 같은 질문의 답을 잠깐 기억
+    image: redis:7-alpine
+    ports: ["127.0.0.1:6380:6379"]
+  api:  # API: 질문을 받아 검색하고 답한다
+    build: .
+    command: uvicorn d6.api:app --host 0.0.0.0 --port 8000
+    working_dir: /app
+    volumes: ["..:/app", "~/.cache/huggingface:/root/.cache/huggingface:ro"]
+    env_file: ../.env
+    environment: {DB: "postgresql://postgres@db:5432/postgres", CACHE: "redis://cache:6379"}
+    ports: ["127.0.0.1:8001:8000"]
+    depends_on: {db: {condition: service_healthy}, cache: {condition: service_started}}
+    healthcheck: {test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/docs')"], interval: 3s, retries: 60}
+volumes:
+  pgdata:

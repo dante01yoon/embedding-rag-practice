@@ -1,0 +1,18 @@
+name: rag-ci
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync
+      - run: uv run pytest -q d8  # 1) 코드 테스트
+      - run: uv run python d8/gate.py  # 2) 골든셋 평가 · 베이스라인보다 떨어지면 실패
+  deploy:
+    needs: check  # check가 통과해야만 실행된다
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "여기에 배포 명령"
