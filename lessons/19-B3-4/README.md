@@ -18,6 +18,14 @@
 
 ## 실행
 
+먼저 필요한 벡터 파일 (이미 만들었다면 건너뜁니다):
+
+```bash
+uv run python b3/index.py
+```
+
+수업 명령:
+
 ```bash
 uv run python b3/rag.py
 uv run python b3/rag.py "서비스와 인그레스는 무엇이 다른가요?"

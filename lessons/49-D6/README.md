@@ -25,6 +25,14 @@
 
 ## 실행
 
+먼저 필요한 벡터 파일 (이미 만들었다면 건너뜁니다):
+
+```bash
+uv run python b5/evaluate.py
+```
+
+수업 명령:
+
 ```bash
 docker compose -p ragd6 -f d6/compose.yaml up -d --wait
 uv run python d6/load.py

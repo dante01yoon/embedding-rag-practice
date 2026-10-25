@@ -21,6 +21,14 @@
 
 ## 실행
 
+먼저 필요한 벡터 파일 (이미 만들었다면 건너뜁니다):
+
+```bash
+uv run python d9/setup.py
+```
+
+수업 명령:
+
 ```bash
 uv run python d9/upstream.py
 uv run python d9/ingest.py
