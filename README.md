@@ -193,7 +193,7 @@ bash tools/make_vectors.sh
 | | **최종 미션** | |
 | 59 | [최종 미션 — 지원서에 넣을 RAG 평가 리포트](lessons/59-M1/) | [`mission/`](mission/) |
 | | **F · 통합 프로젝트 (업데이트 예정)** | |
-| 60 | [통합 프로젝트 미리보기 — 시스템 설계 (업데이트 예정)](lessons/60-F0/) | — |
+| 60 | [통합 프로젝트 미리보기 — 전·월세 상담 챗봇 설계 (업데이트 예정)](lessons/60-F0/) | — |
 ## 데이터와 라이선스
 - 코드: [MIT](LICENSE)
 - 데이터는 원래 라이선스를 따릅니다. 출처와 조건은 [`DATA_LICENSES.md`](DATA_LICENSES.md)에 정리했습니다. 쿠버네티스 문서(CC BY 4.0), 한국어 위키백과에서 정리한 도서 목록(CC BY-SA 4.0), MIRACL 한국어(Apache 2.0 + 위키백과 CC BY-SA), Chinook(MIT), 공공누리 제1유형 PDF, 미국 연방정부 저작물 PDF.
