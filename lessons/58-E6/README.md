@@ -59,5 +59,7 @@ print(f"따로 찾고 RRF | 다음 클릭 Hit@10 {hit * 100:4.1f}%")
 
 </details>
 
+📝 이 섹션 퀴즈: [퀴즈 · PART E · 실무 사례 해부](../../quizzes/11-part-e.md)
+
 ---
 [전체 프롬프트 모음](../../PROMPTS.md) · [저장소 처음으로](../../README.md)

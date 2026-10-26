@@ -69,5 +69,7 @@ def words(text, lang):  # 한국어는 형태소로 · 영어는 띄어쓰기로
 
 </details>
 
+📝 이 섹션 퀴즈: [퀴즈 · B5 · 평가](../../quizzes/06-b5.md)
+
 ---
 [전체 프롬프트 모음](../../PROMPTS.md) · [저장소 처음으로](../../README.md)

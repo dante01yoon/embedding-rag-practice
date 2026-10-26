@@ -45,5 +45,7 @@ if st.sidebar.button("대화 지우기"):
 
 </details>
 
+📝 이 섹션 퀴즈: [퀴즈 · B4 · 프레임워크와 화면](../../quizzes/05-b4.md)
+
 ---
 [전체 프롬프트 모음](../../PROMPTS.md) · [저장소 처음으로](../../README.md)

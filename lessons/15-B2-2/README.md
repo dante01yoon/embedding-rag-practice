@@ -66,5 +66,7 @@ uv run python b2/filter.py
 
 </details>
 
+📝 이 섹션 퀴즈: [퀴즈 · B2 · 벡터 저장소](../../quizzes/03-b2.md)
+
 ---
 [전체 프롬프트 모음](../../PROMPTS.md) · [저장소 처음으로](../../README.md)

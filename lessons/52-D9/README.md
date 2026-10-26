@@ -72,5 +72,7 @@ def embed(texts, tries=3):  # 실패하면 1초, 2초 기다렸다 다시 · 끝
 
 </details>
 
+📝 이 섹션 퀴즈: [퀴즈 · PART D · 운영](../../quizzes/10-part-d.md)
+
 ---
 [전체 프롬프트 모음](../../PROMPTS.md) · [저장소 처음으로](../../README.md)
