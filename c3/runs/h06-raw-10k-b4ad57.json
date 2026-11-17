@@ -1,0 +1,154 @@
+{
+ "run": "h06-raw-10k-b4ad57",
+ "q": "h06",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "Missing 시리즈(코다 가쿠토 작, 전격 문고, 2001년 7월 25일 1권 발행~2005년 6월 13권)의 무대는 보소반도에 있는 세이소 학원대학 부속고교입니다. 이 학교가 있는 소설 속 도시는 하자마 시이며, 문서에는 \"하자마 시 보소반도에 위치한 인구 약 5만명의 작은 도시\"라고 적혀 있습니다.\n\n답: 약 5만 명 (하자마 시)",
+ "turns": 7,
+ "tokens_in": 35353,
+ "tokens_out": 1404,
+ "cost": 0.0042373,
+ "sec": 12.6,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "전격 문고"
+   },
+   "status": "ok",
+   "sec": 0.47,
+   "chars": 316
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월"
+   },
+   "status": "ok",
+   "sec": 0.41,
+   "chars": 1598
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w076518"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1266
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w076518",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1269
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "하자마시"
+   },
+   "status": "ok",
+   "sec": 0.44,
+   "chars": 177
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w076518",
+    "offset": 2400
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1269
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "인구|명이 살|주민",
+    "within": "r3"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 175
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w076518",
+    "offset": 3600
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1269
+  }
+ ],
+ "opened": [
+  "w076518"
+ ],
+ "shown": [
+  "w076518",
+  "w226371",
+  "w291774",
+  "w311699",
+  "w439851",
+  "w464968",
+  "w469782",
+  "w490963",
+  "w515257",
+  "w549287",
+  "w595290",
+  "w615468"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 939,
+   "out": 314,
+   "cost": 0.0002509
+  },
+  {
+   "in": 2849,
+   "out": 156,
+   "cost": 0.0003629
+  },
+  {
+   "in": 4205,
+   "out": 135,
+   "cost": 0.000488
+  },
+  {
+   "in": 5598,
+   "out": 144,
+   "cost": 0.0006318
+  },
+  {
+   "in": 5828,
+   "out": 73,
+   "cost": 0.0006193
+  },
+  {
+   "in": 7217,
+   "out": 255,
+   "cost": 0.0008492
+  },
+  {
+   "in": 8717,
+   "out": 327,
+   "cost": 0.0010352
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

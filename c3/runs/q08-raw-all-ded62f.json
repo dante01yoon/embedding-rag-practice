@@ -1,0 +1,85 @@
+{
+ "run": "q08-raw-all-ded62f",
+ "q": "q08",
+ "mode": "raw",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "토론토 동부 끝 로렌스 애비뉴·이스트 애비뉴 교차점의 역은 루지힐역이고, 전신은 1856년 개통한 포트유니언역입니다. 루지힐역의 서쪽 다음 역은 길드우드역입니다. 길드우드역 문서에 따르면 2016년 1월 31일부터 새 역 건물 공사가 시작됐고, 공사는 2019년 7월 3일에 완공되었습니다.\n\n답: 2019년 7월 3일",
+ "turns": 3,
+ "tokens_in": 6571,
+ "tokens_out": 840,
+ "cost": 0.0010771,
+ "sec": 39.0,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "Guildwood"
+   },
+   "status": "ok",
+   "sec": 16.21,
+   "chars": 131
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "Port Union"
+   },
+   "status": "ok",
+   "sec": 17.42,
+   "chars": 176
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w100553"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w420747"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1260
+  }
+ ],
+ "opened": [
+  "w100553",
+  "w420747"
+ ],
+ "shown": [
+  "w100553",
+  "w420747"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 1000,
+   "out": 237,
+   "cost": 0.0002185
+  },
+  {
+   "in": 1434,
+   "out": 363,
+   "cost": 0.0003249
+  },
+  {
+   "in": 4137,
+   "out": 240,
+   "cost": 0.0005337
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/2",
+ "glimpsed": "2/2"
+}

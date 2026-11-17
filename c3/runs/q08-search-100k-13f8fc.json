@@ -1,0 +1,85 @@
+{
+ "run": "q08-search-100k-13f8fc",
+ "q": "q08",
+ "mode": "search",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 역은 루지힐역이고, 그 서쪽 바로 다음 역은 길드우드역입니다. 루지힐역 문서에 따르면 전신은 1856년 개통한 포트유니언역이며, 역은 로렌스 애비뉴와 이스트 애비뉴에 있습니다. 길드우드역 문서에는 \"2016년 1월 31일부터 역의 양쪽 승강장 동쪽 끝 부분에 새로운 터널과 엘리베이터를 설치하고 새로운 역 건물을 짓기 위한 공사에 돌입하였다. 공사는 2019년 7월 3일에 완공하였다.\"라고 나와 있습니다.\n\n답: 2019년 7월 3일",
+ "turns": 3,
+ "tokens_in": 17304,
+ "tokens_out": 758,
+ "cost": 0.0021094,
+ "sec": 4.5,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "Guildwood GO station rebuilding construction completed"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2822
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Port Union GO station Lawrence Avenue East Avenue 1856"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3271
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 역 건물 공사 2016년 완공"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3632
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w023999",
+  "w079342",
+  "w083912",
+  "w099783",
+  "w100553",
+  "w221449",
+  "w224157",
+  "w240557",
+  "w261802",
+  "w420747",
+  "w442158",
+  "w499180",
+  "w529195",
+  "w568249"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 712,
+   "out": 249,
+   "cost": 0.0001957
+  },
+  {
+   "in": 6512,
+   "out": 128,
+   "cost": 0.0007152
+  },
+  {
+   "in": 10080,
+   "out": 381,
+   "cost": 0.0011985
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/2",
+ "glimpsed": "2/2"
+}

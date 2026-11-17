@@ -1,0 +1,118 @@
+{
+ "run": "h03-raw-all-85cc86",
+ "q": "h03",
+ "mode": "raw",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "길미는 1983년 4월 10일 대구에서 태어난 래퍼로, 크레이지덕 군단이 군입대로 무산되자 고향 대구로 내려와 대구가톨릭대학교에 진학했습니다. 이 대학은 대구 외에 경상북도 경산시 하양읍에도 캠퍼스가 있습니다. 경산시 문서에 따르면 경산시의 전체 면적은 411.70km²입니다.\n\n답: 411.70km²",
+ "turns": 6,
+ "tokens_in": 18730,
+ "tokens_out": 784,
+ "cost": 0.0022649999999999997,
+ "sec": 41.5,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "크레이지덕"
+   },
+   "status": "ok",
+   "sec": 17.48,
+   "chars": 171
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w182845"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1258
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "대구가톨릭대학교.{0,40}(경산|경상북도)|(경산|경상북도).{0,40}대구가톨릭대학교"
+   },
+   "status": "ok",
+   "sec": 17.67,
+   "chars": 1462
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "면적|km2|㎢|km²",
+    "within": "w280011"
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 54
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w280011"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  }
+ ],
+ "opened": [
+  "w182845",
+  "w280011"
+ ],
+ "shown": [
+  "w027623",
+  "w072712",
+  "w182845",
+  "w193837",
+  "w280011",
+  "w319610",
+  "w343347",
+  "w360583",
+  "w543105",
+  "w583342"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 971,
+   "out": 135,
+   "cost": 0.0001646
+  },
+  {
+   "in": 1197,
+   "out": 50,
+   "cost": 0.0001447
+  },
+  {
+   "in": 2542,
+   "out": 209,
+   "cost": 0.0003587
+  },
+  {
+   "in": 4110,
+   "out": 172,
+   "cost": 0.000497
+  },
+  {
+   "in": 4300,
+   "out": 50,
+   "cost": 0.000455
+  },
+  {
+   "in": 5610,
+   "out": 168,
+   "cost": 0.000645
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/3",
+ "glimpsed": "3/3"
+}

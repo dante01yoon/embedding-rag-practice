@@ -1,0 +1,37 @@
+{
+ "run": "n03-oneshot-all-43a0da",
+ "q": "n03",
+ "mode": "oneshot",
+ "set": "all",
+ "status": "answered",
+ "answer": "발췌에는 코리아 익스프레스 에어의 2025년 승객 수가 나오지 않습니다. 발췌 중 양양국제공항 문서에는 이 항공사가 2019년에 전 노선 운항을 중단했다고 나와 있어, 2025년 운항 실적이 있었다는 근거도 없습니다.\n\n답: 모름",
+ "turns": 1,
+ "tokens_in": 3426,
+ "tokens_out": 276,
+ "cost": 0.0004806,
+ "sec": 2.1,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "양양을 거점으로 부산·광주 노선을 띄웠던 소형 항공사 코리아 익스프레스 에어가 2025년 한 해 동안 실어 나른 승객은 몇 명인가?"
+   },
+   "status": "ok",
+   "sec": 0.41,
+   "chars": 3390
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w052393",
+  "w354844",
+  "w525279",
+  "w531107",
+  "w634099"
+ ],
+ "work": 0,
+ "correct": true,
+ "refused": true,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

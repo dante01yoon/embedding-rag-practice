@@ -1,0 +1,65 @@
+{
+ "run": "q03-search-100k-c09fa2",
+ "q": "q03",
+ "mode": "search",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 작품은 와타야 리사의 중편소설 《인스톨》(2001년작, 문예상 수상작)입니다. 위키백과 문서의 한국어 번역본 목록에 따르면 첫 출간본은 김난주 번역으로 현대문학북스에서 2002년 1월에 나왔습니다. 이후 북폴리오(2004년, 김난주 번역)와 황매(2008년, 김수현 번역)에서도 출간되었습니다.\n\n답: 김난주",
+ "turns": 2,
+ "tokens_in": 7957,
+ "tokens_out": 534,
+ "cost": 0.0010627,
+ "sec": 3.7,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "와타야 리사 데뷔 중편소설 2001 번역"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3064
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "와타야 리사 위장 채팅 아르바이트 여고생 초등학생"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3469
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w105186",
+  "w182956",
+  "w291940",
+  "w372621",
+  "w437177",
+  "w571444",
+  "w633878",
+  "w636712"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 663,
+   "out": 308,
+   "cost": 0.0002203
+  },
+  {
+   "in": 7294,
+   "out": 226,
+   "cost": 0.0008424
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

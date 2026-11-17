@@ -1,0 +1,491 @@
+{
+ "run": "h06-pull-all-a55d06",
+ "q": "h06",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 20,
+ "tokens_in": 230421,
+ "tokens_out": 11460,
+ "cost": 0.028772100000000002,
+ "sec": 81.6,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 7월 라이트 노벨 시리즈"
+   },
+   "status": "ok",
+   "sec": 0.29,
+   "chars": 499
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w601789"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 613
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월|2001년7월"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 176
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "고등학교.*(도시|시)"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 출간 라이트 노벨 고등학교 주인공 소설 도시"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 528
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "전격 문고"
+   },
+   "status": "truncated",
+   "sec": 0.01,
+   "chars": 3005
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월|2001년 7월부터|2001년7월"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "2001년 7월부터 전격 문고에서 간행 시리즈 고등학교"
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 448
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w637905"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 577
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년",
+    "within": "r1"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 176
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "학교.{0,40}(도시|시에|인구)|(도시|인구).{0,40}학교"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w590671"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1110
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 7월 간행 시리즈 학원 주인공"
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 549
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년\\s*7월|2001\\.\\s*7|2001년 여름"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "2001년 전격 문고 라이트 노벨 고등학교 시리즈 애니메이션"
+   },
+   "status": "ok",
+   "sec": 0.21,
+   "chars": 500
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "학원|고등학교|여학교",
+    "within": "r1"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w085746"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1181
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 868
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 시리즈 학교 도시 설정 라이트노벨 애니메이션 원작"
+   },
+   "status": "ok",
+   "sec": 0.39,
+   "chars": 543
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(2001|2001년).{0,30}(전격 문고|전격문고)|(전격 문고|전격문고).{0,30}2001"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "7월.{0,20}(전격|간행|발매|발행)"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 177
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "고등학교|고교|학원"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2099
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w234935"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1265
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "인구"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "2001년 7월 제1권 발매 전격문고 시리즈 소설 학교 주인공 도시"
+   },
+   "status": "ok",
+   "sec": 0.37,
+   "chars": 458
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월|2001년7월|2001년 6월|2001년 8월"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 472
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w539710"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년",
+    "within": "r7"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 461
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고에서 간행된 라이트 노벨 시리즈 주인공들이 다니는 학교가 있는 가상의 도시"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 579
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(가상|허구|작중).{0,20}(도시|시)"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 185
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w201629"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "2001년 7월 발매 시작 라이트 노벨 전격문고 제1권 고교생 학교 도시 배경"
+   },
+   "status": "ok",
+   "sec": 0.37,
+   "chars": 465
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월|2001년7월|2001년 7월부터"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 172
+  }
+ ],
+ "opened": [
+  "w085746",
+  "w201629",
+  "w234935",
+  "w539710",
+  "w590671",
+  "w601789",
+  "w637905"
+ ],
+ "shown": [
+  "w003700",
+  "w009060",
+  "w033887",
+  "w051561",
+  "w057741",
+  "w085746",
+  "w101657",
+  "w119776",
+  "w136096",
+  "w172098",
+  "w186746",
+  "w201629",
+  "w234935",
+  "w236056",
+  "w239800",
+  "w242002",
+  "w242487",
+  "w244219",
+  "w248016",
+  "w253773",
+  "w294110",
+  "w328773",
+  "w365664",
+  "w380512",
+  "w382120",
+  "w384789",
+  "w437265",
+  "w449361",
+  "w452396",
+  "w454726",
+  "w473254",
+  "w476157",
+  "w522064",
+  "w523530",
+  "w590671",
+  "w591308"
+ ],
+ "work": 75,
+ "per_turn": [
+  {
+   "in": 1165,
+   "out": 249,
+   "cost": 0.000241
+  },
+  {
+   "in": 1672,
+   "out": 298,
+   "cost": 0.0003162
+  },
+  {
+   "in": 2443,
+   "out": 422,
+   "cost": 0.0004553
+  },
+  {
+   "in": 2793,
+   "out": 312,
+   "cost": 0.0004353
+  },
+  {
+   "in": 6404,
+   "out": 599,
+   "cost": 0.0009399
+  },
+  {
+   "in": 6994,
+   "out": 396,
+   "cost": 0.0008974
+  },
+  {
+   "in": 7861,
+   "out": 365,
+   "cost": 0.0009686
+  },
+  {
+   "in": 9150,
+   "out": 568,
+   "cost": 0.001199
+  },
+  {
+   "in": 9828,
+   "out": 798,
+   "cost": 0.0013818
+  },
+  {
+   "in": 10475,
+   "out": 584,
+   "cost": 0.0013395
+  },
+  {
+   "in": 11887,
+   "out": 578,
+   "cost": 0.0014777
+  },
+  {
+   "in": 13407,
+   "out": 513,
+   "cost": 0.0015972
+  },
+  {
+   "in": 13807,
+   "out": 879,
+   "cost": 0.0018202
+  },
+  {
+   "in": 15945,
+   "out": 305,
+   "cost": 0.001747
+  },
+  {
+   "in": 17214,
+   "out": 990,
+   "cost": 0.0022164
+  },
+  {
+   "in": 17286,
+   "out": 744,
+   "cost": 0.0021006
+  },
+  {
+   "in": 18331,
+   "out": 518,
+   "cost": 0.0020921
+  },
+  {
+   "in": 20196,
+   "out": 755,
+   "cost": 0.0023971
+  },
+  {
+   "in": 21103,
+   "out": 768,
+   "cost": 0.0024943
+  },
+  {
+   "in": 22460,
+   "out": 819,
+   "cost": 0.0026555
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "0/1"
+}

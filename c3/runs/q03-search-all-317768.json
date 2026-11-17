@@ -1,0 +1,62 @@
+{
+ "run": "q03-search-all-317768",
+ "q": "q03",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문하신 작품은 와타야 리사의 중편 「인스톨」(2001년 발표)입니다. 검색 결과의 '한국어 번역본 정보'에 따르면 세 가지 판본이 있습니다.\n\n- 김난주 옮김, 현대문학북스, 2002년 1월 출간\n- 김난주 옮김, 북폴리오, 2004년 7월 출간\n- 김수현 옮김, 황매, 2008년 7월 출간\n\n가장 이른 2002년 1월 판이 한국 첫 출간본이므로 번역자는 김난주입니다. 다만 검색 결과에 출간 순서가 명시되어 있지는 않고, 목록의 날짜로 판단한 것입니다.\n\n답: 김난주",
+ "turns": 2,
+ "tokens_in": 7038,
+ "tokens_out": 629,
+ "cost": 0.0010183,
+ "sec": 4.1,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "와타야 리사 인스톨 번역"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2788
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "와타야 리사 인스톨 한국 출간 옮긴이"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 2788
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w437177",
+  "w541360",
+  "w565318",
+  "w635733",
+  "w636712"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 663,
+   "out": 309,
+   "cost": 0.0002208
+  },
+  {
+   "in": 6375,
+   "out": 320,
+   "cost": 0.0007975
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

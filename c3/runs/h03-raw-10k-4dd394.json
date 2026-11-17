@@ -1,0 +1,107 @@
+{
+ "run": "h03-raw-10k-4dd394",
+ "q": "h03",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 여성 래퍼는 길미(1983년 4월 10일 대구 출생)입니다. 문서에 따르면 그녀는 크레이지덕 군단 준비가 무산된 뒤 고향 대구로 내려와 대구가톨릭대학교에 진학했습니다. 대구가톨릭대학교는 대구 외에 경상북도 경산시에도 있다고 문서에 나옵니다(경산시 문서 및 대학 문서). 경산시 문서에는 \"경산시의 전체 면적은 411.70km2\"라고 나와 있습니다.\n\n답: 411.70km²",
+ "turns": 5,
+ "tokens_in": 12671,
+ "tokens_out": 807,
+ "cost": 0.0016706,
+ "sec": 8.3,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "크레이지덕"
+   },
+   "status": "ok",
+   "sec": 0.42,
+   "chars": 171
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w182845"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1258
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "대구가톨릭대학교"
+   },
+   "status": "ok",
+   "sec": 0.42,
+   "chars": 553
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "km2|km²|제곱킬로미터|면적",
+    "within": "r2"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 165
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w280011"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  }
+ ],
+ "opened": [
+  "w182845",
+  "w280011"
+ ],
+ "shown": [
+  "w022792",
+  "w182845",
+  "w280011",
+  "w319610"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 971,
+   "out": 139,
+   "cost": 0.0001666
+  },
+  {
+   "in": 1197,
+   "out": 50,
+   "cost": 0.0001447
+  },
+  {
+   "in": 2542,
+   "out": 173,
+   "cost": 0.0003407
+  },
+  {
+   "in": 3153,
+   "out": 233,
+   "cost": 0.0004318
+  },
+  {
+   "in": 4808,
+   "out": 212,
+   "cost": 0.0005868
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/3",
+ "glimpsed": "3/3"
+}

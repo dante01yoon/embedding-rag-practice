@@ -1,0 +1,102 @@
+{
+ "run": "h08-pull-10k-11e82a",
+ "q": "h08",
+ "mode": "pull",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "도원동의 공립 초등학교는 대구노전초, 대구대곡초, 대구도원초 세 곳이고, 이 중 가장 먼저 개교한 곳은 대구대곡초등학교입니다.\n\n- 대구대곡초등학교: 1996년 9월 1일 개교 (제1회 졸업 1997년 2월 20일, 졸업생 116명)\n- 대구노전초등학교: 1997년 3월 3일 개교\n- 대구도원초등학교: 1997년 9월 1일 개교\n\n대곡초의 연혁 문서에 \"1997년 2월 20일 : 제1회 졸업 (졸업생 116명)\"이라고 나와 있습니다.\n\n답: 116명",
+ "turns": 4,
+ "tokens_in": 11821,
+ "tokens_out": 958,
+ "cost": 0.0016611,
+ "sec": 6.7,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구 달서구 도원동 초등학교",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 458
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w461574"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "도원동.*초등학교|초등학교.*도원동"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 364
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w123267"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w120038"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1134
+  }
+ ],
+ "opened": [
+  "w120038",
+  "w123267",
+  "w461574"
+ ],
+ "shown": [
+  "w120038",
+  "w123267",
+  "w461574"
+ ],
+ "work": 100,
+ "per_turn": [
+  {
+   "in": 1191,
+   "out": 112,
+   "cost": 0.0001751
+  },
+  {
+   "in": 1651,
+   "out": 112,
+   "cost": 0.0002211
+  },
+  {
+   "in": 3281,
+   "out": 264,
+   "cost": 0.0004601
+  },
+  {
+   "in": 5698,
+   "out": 470,
+   "cost": 0.0008048
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "3/3",
+ "glimpsed": "3/3"
+}

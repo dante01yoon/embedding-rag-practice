@@ -1,0 +1,484 @@
+{
+ "run": "h06-pull-all-e203e7",
+ "q": "h06",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 20,
+ "tokens_in": 163917,
+ "tokens_out": 12694,
+ "cost": 0.0227387,
+ "sec": 95.2,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 7월 라이트 노벨 시리즈"
+   },
+   "status": "ok",
+   "sec": 0.43,
+   "chars": 499
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w601789"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 613
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w637905"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 577
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월|2001年7月|2001\\.7|2001년 7월"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 출간 라이트 노벨 고등학교 가상의 도시"
+   },
+   "status": "ok",
+   "sec": 0.4,
+   "chars": 474
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 324
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "전격 문고.{0,80}(2001|시리즈)|(2001|시리즈).{0,80}전격 문고"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 292
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 7월 발매 소설 고등학교 주인공 도시 배경"
+   },
+   "status": "ok",
+   "sec": 0.3,
+   "chars": 499
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001.{0,6}7월|7월.{0,10}2001|2001年"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(平成13年|2001).{0,20}(刊行|発売|出版|連載)"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "高校.{0,40}(市|町)の(人口|住民)|人口.{0,30}(約|およそ).{0,10}万人"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "전격 문고"
+   },
+   "status": "truncated",
+   "sec": 0.02,
+   "chars": 2988
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년.{0,10}(부터|간행|발매|출간)"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 7월부터 간행 시리즈 고등학교 학생 주인공"
+   },
+   "status": "ok",
+   "sec": 0.27,
+   "chars": 577
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001年"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "市.{0,20}人口.{0,10}(約|およそ)|架空の(都市|市|街)"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 619
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "가상의 (도시|도시명|마을|시)|모델로 한 (도시|마을)"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 라이트 노벨 가상의 도시 배경 고등학교 시리즈 2001년 시작"
+   },
+   "status": "none",
+   "sec": 0.25,
+   "chars": 565
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(2001|01)[.\\-/년 ]{1,3}(0?7)|(0?7)월.{0,5}2001"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "고등학교.{0,60}(도시|시에|시의|시 )"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w253773"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 406
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w437269"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 381
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w238084"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 689
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "Dengeki Bunko 2001 light novel series high school fictional city"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 469
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "라이트 노벨 2001년 7월 전격문고 출간 제1권 고등학교"
+   },
+   "status": "ok",
+   "sec": 0.31,
+   "chars": 456
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "7월.{0,15}(간행|발매|출간|시작)|(간행|발매|출간).{0,15}7월"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 335
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "고등학교를 배경으로 한 소설"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 671
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 시리즈 고등학교 학생 소설 가상 도시 인구 명"
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 502
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "인구.{0,20}(명|만 명)"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 660
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "전격.{0,60}7월|7월.{0,60}전격"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 216
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고에서 출간된 고등학교 라이트 노벨 애니메이션 학교 소재 도시 설정 가상"
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 586
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "2001년 전격 문고 창간 시리즈 주인공 고교 재학 도시 소설 애니메이션화"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 539
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 ?7월"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  }
+ ],
+ "opened": [
+  "w238084",
+  "w253773",
+  "w437269",
+  "w601789",
+  "w637905"
+ ],
+ "shown": [
+  "w003700",
+  "w009060",
+  "w033887",
+  "w051561",
+  "w057741",
+  "w067735",
+  "w101657",
+  "w136096",
+  "w148408",
+  "w154703",
+  "w186746",
+  "w187689",
+  "w207857",
+  "w234935",
+  "w236056",
+  "w239800",
+  "w242002",
+  "w242487",
+  "w244219",
+  "w253773",
+  "w323297",
+  "w328773",
+  "w365664",
+  "w380512",
+  "w382120",
+  "w437269",
+  "w449361",
+  "w452396",
+  "w522064",
+  "w523530",
+  "w547147",
+  "w556962",
+  "w575851",
+  "w591308"
+ ],
+ "work": 84,
+ "per_turn": [
+  {
+   "in": 1165,
+   "out": 349,
+   "cost": 0.000291
+  },
+  {
+   "in": 1672,
+   "out": 280,
+   "cost": 0.0003072
+  },
+  {
+   "in": 2938,
+   "out": 350,
+   "cost": 0.0004688
+  },
+  {
+   "in": 3033,
+   "out": 463,
+   "cost": 0.0005348
+  },
+  {
+   "in": 3930,
+   "out": 795,
+   "cost": 0.0007905
+  },
+  {
+   "in": 4320,
+   "out": 470,
+   "cost": 0.000667
+  },
+  {
+   "in": 4956,
+   "out": 515,
+   "cost": 0.0007531
+  },
+  {
+   "in": 5051,
+   "out": 774,
+   "cost": 0.0008921
+  },
+  {
+   "in": 5302,
+   "out": 83,
+   "cost": 0.0005717
+  },
+  {
+   "in": 8327,
+   "out": 782,
+   "cost": 0.0012237
+  },
+  {
+   "in": 9063,
+   "out": 602,
+   "cost": 0.0012073
+  },
+  {
+   "in": 9279,
+   "out": 563,
+   "cost": 0.0012094
+  },
+  {
+   "in": 9955,
+   "out": 754,
+   "cost": 0.0013725
+  },
+  {
+   "in": 10679,
+   "out": 902,
+   "cost": 0.0015189
+  },
+  {
+   "in": 10921,
+   "out": 479,
+   "cost": 0.0013316
+  },
+  {
+   "in": 12531,
+   "out": 862,
+   "cost": 0.0016841
+  },
+  {
+   "in": 13463,
+   "out": 662,
+   "cost": 0.0016773
+  },
+  {
+   "in": 14626,
+   "out": 913,
+   "cost": 0.0019191
+  },
+  {
+   "in": 15881,
+   "out": 857,
+   "cost": 0.0020166
+  },
+  {
+   "in": 16825,
+   "out": 1239,
+   "cost": 0.002302
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "0/1"
+}

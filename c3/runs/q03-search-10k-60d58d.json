@@ -1,0 +1,65 @@
+{
+ "run": "q03-search-10k-60d58d",
+ "q": "q03",
+ "mode": "search",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 작품은 와타야 리사의 중편소설 『인스톨』입니다. 검색된 위키백과 문서의 한국어 번역본 정보에 따르면 가장 먼저 나온 한국어판은 현대문학북스가 2002년 1월에 펴낸 판본이고, 번역은 김난주가 맡았습니다. 같은 역자가 북폴리오에서 2004년 7월에 다시 펴냈고, 황매에서 2008년 7월에 나온 판본은 김수현이 옮겼습니다.\n\n답: 김난주",
+ "turns": 2,
+ "tokens_in": 5877,
+ "tokens_out": 598,
+ "cost": 0.0008866999999999999,
+ "sec": 4.1,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "와타야 리사 인스톨 번역"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2361
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "와타야 리사 인스톨 한국어판 옮긴이"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2158
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w035277",
+  "w176468",
+  "w193875",
+  "w544456",
+  "w556820",
+  "w581446",
+  "w586756",
+  "w636712"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 663,
+   "out": 342,
+   "cost": 0.0002373
+  },
+  {
+   "in": 5214,
+   "out": 256,
+   "cost": 0.0006494
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

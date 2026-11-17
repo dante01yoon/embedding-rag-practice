@@ -8,6 +8,7 @@
 | `k8s/qa_*.json*`, `k8s/ctx_ko.json`, `d9/` 실습 문서 | 위 쿠버네티스 문서를 바탕으로 만든 질문 · 맥락 문장 | CC BY 4.0 (원문 출처: Kubernetes 문서) |
 | `books/books_ko_raw.csv` 및 `books/books_clean.csv`, `books_kind.csv`, `books_mood.csv`, `tagged_description.txt`, `queries_e2.json`, `e5/gold_hugo.json` | 한국어 위키백과의 책 문서(각 행의 `url`이 원문)를 정리 · 가공 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (같은 조건으로만 재배포) |
 | `a4/miracl_ko/`, `vectors/docids_ko.json`, `vectors/queries_ko.tsv`, `vectors/qrels_ko.tsv` | [MIRACL](https://huggingface.co/datasets/miracl/miracl) (Zhang et al., 2023) 한국어 dev 질문 100개 · 판정 + 위키백과 문단 32,651개 | 질문 · 판정: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) · 문단: 위키백과 [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) |
+| 릴리스 `c3-data-v1`의 `wiki-10k.tar.gz` · `wiki-100k.tar.gz`(풀면 `wiki/10k/`, `wiki/100k/`, `wiki/docs.db`. 저장소에는 넣지 않음), 그리고 이 문서들에서 나온 `c3/questions*.json`, `c3/logs/`, `c3/runs/`의 질문 · 근거 문장 · 발췌 | 한국어 위키백과 2023-11-01 덤프 — Hugging Face [`wikimedia/wikipedia`](https://huggingface.co/datasets/wikimedia/wikipedia) `20231101.ko`(문서 647,897개)에서 1만 개 · 10만 개를 골라 문서 하나를 텍스트 파일 하나로 저장. 각 파일의 첫 줄이 문서 제목이고 원문은 `https://ko.wikipedia.org/wiki/<제목>` | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (같은 조건으로만 재배포) |
 | `chinook/chinook.sqlite` | [Chinook Database](https://github.com/lerocha/chinook-database) © 2008-2024 Luis Rocha | MIT (`chinook/LICENSE.md`) |
 | `pdf/kogl_guide.pdf` | 공공저작물 저작권 관리 및 이용지침 해설서(2026), 한국문화정보원 — https://www.kogl.or.kr/edu/eduDataView.do?dataIdx=178 | [공공누리 제1유형](https://www.kogl.or.kr/info/licenseType1.do) (출처표시) |
 | `pdf/irs_p501.pdf` | IRS Publication 501 (2025) — https://www.irs.gov/pub/irs-pdf/p501.pdf | 미국 연방정부 저작물 (17 U.S.C. §105, 퍼블릭 도메인) |
@@ -17,3 +18,4 @@
 ## 넣지 않은 데이터
 - 영어 도서 목록(`books_en_raw.csv`): 실습 코드에서 쓰지 않고, 소개 글의 재배포 조건이 분명하지 않아 넣지 않았습니다.
 - 벡터 · 벡터 DB 파일: 용량이 커서 넣지 않았습니다. 만드는 법은 [README](README.md#벡터-파일-만들기)에 있습니다.
+- C3의 위키백과 문서 묶음: 용량이 커서 저장소 대신 릴리스에 올렸습니다. 받는 법은 [`c3/README.md`](c3/README.md)에 있습니다. 약 65만 개 전체 묶음은 배포하지 않습니다.

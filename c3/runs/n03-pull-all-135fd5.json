@@ -1,0 +1,243 @@
+{
+ "run": "n03-pull-all-135fd5",
+ "q": "n03",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "작업 폴더에서 찾은 문서에는 이 질문에 답할 수치가 없습니다.\n\n- **코리아 익스프레스 에어(w052393)**: 2012년 양양 기점 국내선 운항, 2016년 양양~부산 재취항, 2019년 12월 31일 전 노선 중단, 2020년 5월 28일 휴업신고까지 적혀 있습니다. 2025년 승객 수는 없고, 문서 전체(1,657자)를 읽어 확인했습니다.\n- **양양국제공항(w354844)**: 2009년 취항과 2012년 광주·부산 신규취항 같은 연혁만 있고, 항공사별 승객 수는 없습니다.\n- **KEA(w153612)**, **대한민국의 공항(w422682)**, **기타큐슈 공항(w494541)**: 항공사 소개나 취항 기록뿐입니다.\n\n'코리아 익스프레스', '승객', '2025' 등으로 여러 번 검색했지만 해당 수치는 나오지 않았습니다. 이 항공사는 2020년에 휴업신고를 했기 때문에 2025년 실적 자체가 없을 가능성도 큽니다.\n\n답: 모름",
+ "turns": 10,
+ "tokens_in": 52994,
+ "tokens_out": 2338,
+ "cost": 0.0064684,
+ "sec": 15.4,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "코리아익스프레스에어 양양 부산 광주 승객",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 461
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w052393"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1268
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w052393",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 515
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025|승객|여객 수|명을",
+    "within": "w052393"
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 50
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "코리아 익스프레스|코리아익스프레스|Korea Express"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 418
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "코리아 익스프레스 에어 2025년 승객 수송",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 509
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "코리아 익스프레스|코리아익스프레스"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 771
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w354844",
+    "at": "코리아 익스프레스"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(코리아 익스프레스|Korea Express)[^。]{0,200}(승객|여객|탑승)"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w153612"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 112
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025년[^。]{0,60}승객|승객[^。]{0,60}2025"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 192
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "코리아 익스프레스 에어 항공사 승객 수 연간 실적",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.11,
+   "chars": 491
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "코리아 익스프레스|Korea Express",
+    "within": "r3"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "승객|탑승객|여객",
+    "within": "w052393"
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 58
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "승객|탑승|여객|명",
+    "within": "r1"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 460
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "코리아 익스프레스 에어[^。]{0,120}(명|만 명|승객)"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 180
+  }
+ ],
+ "opened": [
+  "w052393",
+  "w153612",
+  "w354844"
+ ],
+ "shown": [
+  "w052393",
+  "w153612",
+  "w354844",
+  "w422682",
+  "w426980",
+  "w468589",
+  "w494541"
+ ],
+ "work": 185,
+ "per_turn": [
+  {
+   "in": 1201,
+   "out": 136,
+   "cost": 0.0001881
+  },
+  {
+   "in": 1676,
+   "out": 50,
+   "cost": 0.0001926
+  },
+  {
+   "in": 2943,
+   "out": 204,
+   "cost": 0.0003963
+  },
+  {
+   "in": 3670,
+   "out": 181,
+   "cost": 0.0004575
+  },
+  {
+   "in": 4695,
+   "out": 232,
+   "cost": 0.0005855
+  },
+  {
+   "in": 6778,
+   "out": 239,
+   "cost": 0.0007973
+  },
+  {
+   "in": 7070,
+   "out": 252,
+   "cost": 0.000833
+  },
+  {
+   "in": 7866,
+   "out": 248,
+   "cost": 0.0009106
+  },
+  {
+   "in": 8139,
+   "out": 177,
+   "cost": 0.0009024
+  },
+  {
+   "in": 8956,
+   "out": 619,
+   "cost": 0.0012051
+  }
+ ],
+ "correct": true,
+ "refused": true,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

@@ -1,0 +1,123 @@
+{
+ "run": "h03-raw-100k-8d02dc",
+ "q": "h03",
+ "mode": "raw",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "길미(1983년 4월 10일 대구 출생)는 크레이지덕 군단 준비가 남성 멤버들의 군입대로 무산된 뒤 고향 대구로 내려와 대구가톨릭대학교에 진학했습니다. 대구가톨릭대학교는 대구광역시 중구·남구와 경상북도 경산시에 소재한다고 나옵니다. 경산시 문서에 따르면 경산시의 전체 면적은 411.70km²입니다.\n\n답: 411.70km²",
+ "turns": 5,
+ "tokens_in": 17262,
+ "tokens_out": 833,
+ "cost": 0.0021427,
+ "sec": 9.2,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "크레이지덕"
+   },
+   "status": "ok",
+   "sec": 1.53,
+   "chars": 171
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w182845"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1258
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "대구가톨릭대학교"
+   },
+   "status": "truncated",
+   "sec": 1.5,
+   "chars": 2847
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "면적|km",
+    "within": "r2"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 304
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w280011"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  }
+ ],
+ "opened": [
+  "w182845",
+  "w280011"
+ ],
+ "shown": [
+  "w022792",
+  "w027623",
+  "w072129",
+  "w100568",
+  "w118781",
+  "w122327",
+  "w165419",
+  "w182845",
+  "w193837",
+  "w197802",
+  "w264252",
+  "w280011",
+  "w285367",
+  "w314816",
+  "w319610",
+  "w344521",
+  "w347876",
+  "w460435",
+  "w479151",
+  "w488492"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 971,
+   "out": 148,
+   "cost": 0.0001711
+  },
+  {
+   "in": 1197,
+   "out": 50,
+   "cost": 0.0001447
+  },
+  {
+   "in": 2542,
+   "out": 152,
+   "cost": 0.0003302
+  },
+  {
+   "in": 5381,
+   "out": 219,
+   "cost": 0.0006476
+  },
+  {
+   "in": 7171,
+   "out": 264,
+   "cost": 0.0008491
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/3",
+ "glimpsed": "3/3"
+}

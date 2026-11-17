@@ -1,0 +1,166 @@
+{
+ "run": "h07-search-all-5dcb2b",
+ "q": "h07",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 74620,
+ "tokens_out": 2359,
+ "cost": 0.0086415,
+ "sec": 14.4,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 혼고 미츠루 감독"
+   },
+   "status": "ok",
+   "sec": 0.15,
+   "chars": 3273
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 시리즈 목록"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3778
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 감독 혼고 미츠루 1993 1994 1995 1996 1997"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3255
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 혼고 미츠루 연출 작품 제작 연도"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3797
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 애니메이션 극장판 목록 혼고 미츠루 하라 케이이치 감독 개봉일"
+   },
+   "status": "ok",
+   "sec": 0.19,
+   "chars": 2973
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 전설을 부르는 춤을 춰라 아미고 감독"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3212
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 감독 혼고 미츠루 2007년 2008년 2009년 작품"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 3274
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 감독 혼고 미츠루 2002 2003 2004 2005 2006"
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 3260
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 애니메이션 극장판 폭발 온천 부글부글 대작전 1999 감독 편성"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3701
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 흑부리 마왕의 야망 감독 혼고 미츠루"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3266
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w015443",
+  "w047654",
+  "w112636",
+  "w139839",
+  "w158646",
+  "w161886",
+  "w284065",
+  "w284332",
+  "w284994",
+  "w286288",
+  "w290169",
+  "w305749",
+  "w307679",
+  "w308332",
+  "w311566",
+  "w331533",
+  "w400989",
+  "w446962",
+  "w545525",
+  "w620868",
+  "w644647",
+  "w645269"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 647,
+   "out": 241,
+   "cost": 0.0001852
+  },
+  {
+   "in": 8092,
+   "out": 442,
+   "cost": 0.0010302
+  },
+  {
+   "in": 15369,
+   "out": 284,
+   "cost": 0.0016789
+  },
+  {
+   "in": 21834,
+   "out": 689,
+   "cost": 0.0025279
+  },
+  {
+   "in": 28678,
+   "out": 703,
+   "cost": 0.0032193
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/5",
+ "glimpsed": "5/5"
+}

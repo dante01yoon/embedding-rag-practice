@@ -1,0 +1,89 @@
+{
+ "run": "q06-pull-all-3c6a62",
+ "q": "q06",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "이 만화는 『철야의 노래(よふかしのうた)』입니다. 검색으로 가져온 문서 w359531에 따르면, 2022년 6월 시점에 전자판을 포함한 누계 발행 부수는 **250만 부를 돌파**했습니다.\n\n답: 250만 부",
+ "turns": 4,
+ "tokens_in": 9172,
+ "tokens_out": 1019,
+ "cost": 0.0014267,
+ "sec": 8.1,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "夜フカシのうた コトヤマ 週刊少年サンデー 発行部数",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 488
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "요후카시노 우타 코토야마 흡혈귀 나즈나",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.11,
+   "chars": 404
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "よふかしのうた 累計発行部数",
+    "k": 50
+   },
+   "status": "none",
+   "sec": 0.0,
+   "chars": 140
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w359531"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  }
+ ],
+ "opened": [
+  "w359531"
+ ],
+ "shown": [],
+ "work": 99,
+ "per_turn": [
+  {
+   "in": 1248,
+   "out": 388,
+   "cost": 0.0003188
+  },
+  {
+   "in": 1726,
+   "out": 373,
+   "cost": 0.0003591
+  },
+  {
+   "in": 2406,
+   "out": 50,
+   "cost": 0.0002656
+  },
+  {
+   "in": 3792,
+   "out": 208,
+   "cost": 0.0004832
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,114 @@
+{
+ "run": "h03-pull-100k-5a04a7",
+ "q": "h03",
+ "mode": "pull",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "경산시의 전체 면적은 **411.70km²**입니다.\n\n근거는 다음과 같습니다.\n- 길미(1983년 4월 10일 대구 출생)는 크레이지덕 군단 준비가 무산된 뒤 고향 대구로 내려와 대구가톨릭대학교에 진학했습니다.\n- 대구가톨릭대학교 문서에는 경상북도 경산시와 대구광역시 중구·남구에 캠퍼스가 있다고 나옵니다. 1987년에 효성여자대학교 하양캠퍼스로 이전했다는 연혁도 있습니다.\n- 경산시 문서의 지리 항목에 \"경산시의 전체 면적은 411.70km2\"라고 되어 있습니다.\n\n답: 411.70km²",
+ "turns": 5,
+ "tokens_in": 16696,
+ "tokens_out": 1077,
+ "cost": 0.0022081,
+ "sec": 6.9,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "크레이지덕 군단 여성 래퍼 대구 출생 1983년",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.11,
+   "chars": 407
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w182845"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1258
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w588569"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 267
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구가톨릭대학교 경산 캠퍼스",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 434
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w319610"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w280011"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  }
+ ],
+ "opened": [
+  "w182845",
+  "w280011",
+  "w319610",
+  "w588569"
+ ],
+ "shown": [],
+ "work": 100,
+ "per_turn": [
+  {
+   "in": 1247,
+   "out": 240,
+   "cost": 0.0002447
+  },
+  {
+   "in": 1674,
+   "out": 97,
+   "cost": 0.0002159
+  },
+  {
+   "in": 3372,
+   "out": 321,
+   "cost": 0.0004977
+  },
+  {
+   "in": 3898,
+   "out": 97,
+   "cost": 0.0004383
+  },
+  {
+   "in": 6505,
+   "out": 322,
+   "cost": 0.0008115
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "3/3",
+ "glimpsed": "3/3"
+}

@@ -1,0 +1,89 @@
+{
+ "run": "q05-pull-all-4670d1",
+ "q": "q05",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "처음 이 앨범을 낸 음반사는 **도시바 EMI**입니다.\n\n문서 '비행기구름 (음반)'에 따르면 앨범 《히코키구모(비행기구름)》은 1973년 11월 20일 도시바 EMI에서 발매되었고, 음원 발매권 사정으로 잠깐 알파 레코드에서도 발매된 적이 있습니다.\n\n답: 도시바 EMI",
+ "turns": 4,
+ "tokens_in": 10567,
+ "tokens_out": 727,
+ "cost": 0.0014202,
+ "sec": 5.6,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "아라이 유미 첫 앨범 1973 알파 레코드",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 483
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w452012"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 198
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w331793"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1083
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w508335"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  }
+ ],
+ "opened": [
+  "w331793",
+  "w452012",
+  "w508335"
+ ],
+ "shown": [],
+ "work": 50,
+ "per_turn": [
+  {
+   "in": 1230,
+   "out": 270,
+   "cost": 0.000258
+  },
+  {
+   "in": 1690,
+   "out": 97,
+   "cost": 0.0002175
+  },
+  {
+   "in": 3150,
+   "out": 169,
+   "cost": 0.0003995
+  },
+  {
+   "in": 4497,
+   "out": 191,
+   "cost": 0.0005452
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,88 @@
+{
+ "run": "q08-raw-all-4fec73",
+ "q": "q08",
+ "mode": "raw",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "이 역은 루지힐역입니다. 루지힐역의 전신은 1856년 개통한 포트유니언역이고, 로렌스 애비뉴와 이스트 애비뉴에 위치합니다. 서쪽으로 바로 다음 역은 길드우드역입니다.\n\n길드우드역 문서에 따르면 2016년 1월 31일 새 터널·엘리베이터와 새 역 건물 공사에 들어갔고, 공사는 2019년 7월 3일에 완공되었습니다.\n\n답: 2019년 7월 3일",
+ "turns": 3,
+ "tokens_in": 7461,
+ "tokens_out": 864,
+ "cost": 0.0011781,
+ "sec": 43.8,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "Guildwood"
+   },
+   "status": "ok",
+   "sec": 19.25,
+   "chars": 131
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "포트유니언|Port Union"
+   },
+   "status": "ok",
+   "sec": 19.07,
+   "chars": 611
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w100553"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w420747"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1260
+  }
+ ],
+ "opened": [
+  "w100553",
+  "w420747"
+ ],
+ "shown": [
+  "w004866",
+  "w100553",
+  "w420747",
+  "w616356",
+  "w636859"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 1000,
+   "out": 228,
+   "cost": 0.000214
+  },
+  {
+   "in": 1879,
+   "out": 352,
+   "cost": 0.0003639
+  },
+  {
+   "in": 4582,
+   "out": 284,
+   "cost": 0.0006002
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/2",
+ "glimpsed": "2/2"
+}

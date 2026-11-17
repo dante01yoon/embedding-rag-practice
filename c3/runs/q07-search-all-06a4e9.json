@@ -1,0 +1,67 @@
+{
+ "run": "q07-search-all-06a4e9",
+ "q": "q07",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문하신 영화는 《회로》(Kairo)입니다. 한국어 위키백과 '회로 (영화)' 문서에 \"로튼 토마토에서 73%의 점수를 받았다\"고 나와 있습니다. 이 문서는 2001년 개봉, 2006년 할리우드 리메이크 '펄스'도 언급하고 있어 질문의 조건과 일치합니다. 다만 수치는 문서 작성 시점의 값일 수 있습니다.\n\n답: 73%",
+ "turns": 2,
+ "tokens_in": 6220,
+ "tokens_out": 381,
+ "cost": 0.0008125000000000001,
+ "sec": 2.7,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "구로사와 기요시 회로 2001 로튼 토마토"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3290
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Kairo 2001 Rotten Tomatoes"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1620
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w027205",
+  "w215057",
+  "w300594",
+  "w342662",
+  "w442040",
+  "w488761",
+  "w514898",
+  "w520112",
+  "w544581",
+  "w629325"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 662,
+   "out": 174,
+   "cost": 0.0001532
+  },
+  {
+   "in": 5558,
+   "out": 207,
+   "cost": 0.0006593
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

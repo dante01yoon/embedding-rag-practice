@@ -1,0 +1,74 @@
+{
+ "run": "q06-raw-10k-47fe27",
+ "q": "q06",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 작품은 『철야의 노래(よふかしのうた)』입니다. 문서에 따르면 2022년 6월 시점에서 전자판을 포함한 누계 발행 부수는 **250만 부**를 돌파했습니다.\n\n답: 250만 부",
+ "turns": 3,
+ "tokens_in": 5010,
+ "tokens_out": 505,
+ "cost": 0.0007535,
+ "sec": 4.4,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "よふかしのうた"
+   },
+   "status": "ok",
+   "sec": 0.51,
+   "chars": 177
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "累計発行部数"
+   },
+   "status": "none",
+   "sec": 0.41,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w359531"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  }
+ ],
+ "opened": [
+  "w359531"
+ ],
+ "shown": [
+  "w359531"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 972,
+   "out": 293,
+   "cost": 0.0002437
+  },
+  {
+   "in": 1326,
+   "out": 50,
+   "cost": 0.0001576
+  },
+  {
+   "in": 2712,
+   "out": 162,
+   "cost": 0.0003522
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

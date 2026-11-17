@@ -1,0 +1,98 @@
+{
+ "run": "q08-search-all-3caf3d",
+ "q": "q08",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 역은 루지힐역입니다. 루지힐역 문서에 따르면 서쪽으로 바로 다음 역은 길드우드역입니다. 길드우드역 문서에는 \"2016년 1월 31일부터 … 새로운 역 건물을 짓기 위한 공사에 돌입하였다. 공사는 2019년 7월 3일에 완공하였다.\"라고 나와 있습니다.\n\n답: 2019년 7월 3일",
+ "turns": 3,
+ "tokens_in": 21125,
+ "tokens_out": 1225,
+ "cost": 0.002725,
+ "sec": 7.3,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "포트유니언역 GO 트랜싯"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3345
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Port Union GO station Lawrence Avenue East Avenue"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3649
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "루지힐역 새 역 건물 공사 완료"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 3355
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Rouge Hill GO station new station building construction 2016 completed"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3206
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w023999",
+  "w024895",
+  "w048156",
+  "w100553",
+  "w111433",
+  "w172310",
+  "w239670",
+  "w275400",
+  "w315277",
+  "w317484",
+  "w345858",
+  "w375610",
+  "w380151",
+  "w402267",
+  "w419957",
+  "w420747",
+  "w598050",
+  "w613337"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 712,
+   "out": 533,
+   "cost": 0.0003377
+  },
+  {
+   "in": 7319,
+   "out": 436,
+   "cost": 0.0009499
+  },
+  {
+   "in": 13094,
+   "out": 256,
+   "cost": 0.0014374
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/2",
+ "glimpsed": "2/2"
+}

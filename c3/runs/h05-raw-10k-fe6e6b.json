@@ -1,0 +1,135 @@
+{
+ "run": "h05-raw-10k-fe6e6b",
+ "q": "h05",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "가네코 마코토(1975년 11월 8일생, 닛폰햄 파이터스 소속)의 문서에 따르면, 그는 2009년 정규 시즌에서 7경기 연속 2루타 기록과 함께 **월간 타율 4할 2푼 3리**를 기록해 퍼시픽 리그 월간 MVP(야수 부문)에 선정되었습니다.\n\n답: 4할 2푼 3리",
+ "turns": 5,
+ "tokens_in": 16111,
+ "tokens_out": 930,
+ "cost": 0.0020761,
+ "sec": 8.9,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2009年4月.*(月間MVP|月間最優秀選手)"
+   },
+   "status": "none",
+   "sec": 0.32,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1975年生まれ.*日本ハム"
+   },
+   "status": "none",
+   "sec": 0.32,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "닛폰햄"
+   },
+   "status": "ok",
+   "sec": 0.3,
+   "chars": 1803
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2009년 4월.*MVP"
+   },
+   "status": "none",
+   "sec": 0.34,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "월간 ?MVP|월간 최우수|월간 MVP"
+   },
+   "status": "ok",
+   "sec": 0.48,
+   "chars": 1211
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1975년.*(생|출생).*파이터스|파이터스.*1975년"
+   },
+   "status": "ok",
+   "sec": 0.39,
+   "chars": 181
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w199008",
+    "at": "월간 타율"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1270
+  }
+ ],
+ "opened": [
+  "w199008"
+ ],
+ "shown": [
+  "w047416",
+  "w092243",
+  "w109764",
+  "w150343",
+  "w199008",
+  "w217096",
+  "w225222",
+  "w318804",
+  "w323991",
+  "w326250",
+  "w446879",
+  "w463545",
+  "w601140",
+  "w611037",
+  "w642792"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 960,
+   "out": 198,
+   "cost": 0.000195
+  },
+  {
+   "in": 1176,
+   "out": 133,
+   "cost": 0.0001841
+  },
+  {
+   "in": 3168,
+   "out": 197,
+   "cost": 0.0004153
+  },
+  {
+   "in": 4696,
+   "out": 188,
+   "cost": 0.0005636
+  },
+  {
+   "in": 6111,
+   "out": 214,
+   "cost": 0.0007181
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

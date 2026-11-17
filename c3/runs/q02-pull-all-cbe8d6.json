@@ -1,0 +1,90 @@
+{
+ "run": "q02-pull-all-cbe8d6",
+ "q": "q02",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "**답: 지와몰마을**\n\n백아면 문서에 따르면 1984년 동복수원지 확장공사로 와천리 일부가 수몰지역에 편입되어 지와몰마을과 모릿내마을이 폐촌되었습니다. 이 문서는 백아면이 청동기 시대 고인돌 62기가 분포한 면이라는 점도 함께 기록하고 있습니다. 다만 2020년 명칭 변경에 관한 내용은 확인하지 못했습니다.\n\n답: 지와몰마을",
+ "turns": 4,
+ "tokens_in": 8524,
+ "tokens_out": 974,
+ "cost": 0.0013394000000000001,
+ "sec": 6.1,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "화순군 동복수원지 확장공사 1984 폐촌 모릿내마을",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 407
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "모릿내|동복수원지|폐촌"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 169
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w560323"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 209
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  }
+ ],
+ "opened": [
+  "w222523",
+  "w560323"
+ ],
+ "shown": [
+  "w222523"
+ ],
+ "work": 50,
+ "per_turn": [
+  {
+   "in": 1223,
+   "out": 214,
+   "cost": 0.0002293
+  },
+  {
+   "in": 1642,
+   "out": 211,
+   "cost": 0.0002697
+  },
+  {
+   "in": 2163,
+   "out": 237,
+   "cost": 0.0003348
+  },
+  {
+   "in": 3496,
+   "out": 312,
+   "cost": 0.0005056
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

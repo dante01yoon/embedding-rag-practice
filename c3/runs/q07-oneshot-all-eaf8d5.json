@@ -1,0 +1,37 @@
+{
+ "run": "q07-oneshot-all-eaf8d5",
+ "q": "q07",
+ "mode": "oneshot",
+ "set": "all",
+ "status": "answered",
+ "answer": "검색 결과의 '회로(영화)' 문서에 \"해당 영화는 로튼 토마토에서 73%의 점수를 받았다.\"라고 나와 있습니다.\n\n답: 73%",
+ "turns": 1,
+ "tokens_in": 3154,
+ "tokens_out": 116,
+ "cost": 0.0003734,
+ "sec": 1.4,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "구로사와 기요시 감독이 2001년에 개봉한 일본 영화로, 2006년에 할리우드에서 '펄스'라는 제목으로 리메이크되었다. 이 영화가 로튼 토마토에서 받은 점수는 몇 퍼센트인가?"
+   },
+   "status": "ok",
+   "sec": 0.44,
+   "chars": 2974
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w027205",
+  "w144170",
+  "w402351",
+  "w500582",
+  "w554066"
+ ],
+ "work": 0,
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

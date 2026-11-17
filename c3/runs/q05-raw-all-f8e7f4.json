@@ -1,0 +1,263 @@
+{
+ "run": "q05-raw-all-f8e7f4",
+ "q": "q05",
+ "mode": "raw",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "아라이 유미(유밍)의 첫 앨범 《히코키구모》(비행기구름)는 1973년 11월 20일 도시바 EMI에서 발매되었고, 음원 발매권 사정으로 잠시 알파 레코드에서도 나왔습니다(문서 w508335). 따라서 처음 이 앨범을 낸 음반사는 도시바 EMI입니다.\n\n답: 도시바 EMI",
+ "turns": 15,
+ "tokens_in": 59619,
+ "tokens_out": 1828,
+ "cost": 0.006875900000000001,
+ "sec": 198.1,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "아라이 유미|유밍|Yumi Arai|Arai Yumi"
+   },
+   "status": "timeout",
+   "sec": 20.02,
+   "chars": 68
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "알파 레코드"
+   },
+   "status": "timeout",
+   "sec": 20.02,
+   "chars": 68
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1973년 11월 20일"
+   },
+   "status": "timeout",
+   "sec": 20.01,
+   "chars": 68
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "유밍"
+   },
+   "status": "timeout",
+   "sec": 20.01,
+   "chars": 68
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "아라이"
+   },
+   "status": "timeout",
+   "sec": 20.01,
+   "chars": 68
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "Yumi Arai"
+   },
+   "status": "timeout",
+   "sec": 20.01,
+   "chars": 68
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "일본의 가수"
+   },
+   "status": "timeout",
+   "sec": 20.0,
+   "chars": 68
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "음반사"
+   },
+   "status": "truncated",
+   "sec": 17.06,
+   "chars": 2694
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "유밍",
+    "within": "r1"
+   },
+   "status": "ok",
+   "sec": 0.49,
+   "chars": 171
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w232860"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w232860",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1267
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "엑스프레스|Express|히코키구모",
+    "within": "r2"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 175
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "ひこうき雲|히코키구모|엑스프레스 레코드"
+   },
+   "status": "ok",
+   "sec": 17.9,
+   "chars": 978
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w508335"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  }
+ ],
+ "opened": [
+  "w232860",
+  "w508335"
+ ],
+ "shown": [
+  "w000683",
+  "w000712",
+  "w001246",
+  "w001507",
+  "w001672",
+  "w001720",
+  "w001988",
+  "w002494",
+  "w002657",
+  "w002975",
+  "w003258",
+  "w003587",
+  "w003779",
+  "w004577",
+  "w004725",
+  "w005479",
+  "w005851",
+  "w006741",
+  "w007321",
+  "w007686",
+  "w232860",
+  "w241181",
+  "w258982",
+  "w262507",
+  "w314068",
+  "w422727",
+  "w508335"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 954,
+   "out": 100,
+   "cost": 0.0001454
+  },
+  {
+   "in": 1093,
+   "out": 52,
+   "cost": 0.0001353
+  },
+  {
+   "in": 1212,
+   "out": 95,
+   "cost": 0.0001687
+  },
+  {
+   "in": 1334,
+   "out": 71,
+   "cost": 0.0001689
+  },
+  {
+   "in": 1450,
+   "out": 135,
+   "cost": 0.0002125
+  },
+  {
+   "in": 1566,
+   "out": 150,
+   "cost": 0.0002316
+  },
+  {
+   "in": 1686,
+   "out": 157,
+   "cost": 0.0002471
+  },
+  {
+   "in": 1805,
+   "out": 93,
+   "cost": 0.000227
+  },
+  {
+   "in": 4360,
+   "out": 159,
+   "cost": 0.0005155
+  },
+  {
+   "in": 4603,
+   "out": 50,
+   "cost": 0.0004853
+  },
+  {
+   "in": 5959,
+   "out": 73,
+   "cost": 0.0006324
+  },
+  {
+   "in": 7333,
+   "out": 185,
+   "cost": 0.0008258
+  },
+  {
+   "in": 7597,
+   "out": 308,
+   "cost": 0.0009137
+  },
+  {
+   "in": 8660,
+   "out": 50,
+   "cost": 0.000891
+  },
+  {
+   "in": 10007,
+   "out": 150,
+   "cost": 0.0010757
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

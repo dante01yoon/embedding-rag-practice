@@ -1,0 +1,123 @@
+{
+ "run": "q07-search-all-d4461d",
+ "q": "q07",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "로튼 토마토에서 이 영화는 **73%**의 점수를 받았다.\n\n구로사와 기요시 감독의 《회로(回路, Kairo)》 문서에 \"2001년 개봉했다\", \"로튼 토마토에서 73%의 점수를 받았다\", \"할리우드 리메이크작은 2006년에 펄스라는 이름으로 개봉되었다\"는 내용이 함께 나와 있다. 펄스 문서도 2006년 짐 손제로 감독의 리메이크이며 《회로》의 리메이크라고 확인해 준다.\n\n답: 73%",
+ "turns": 4,
+ "tokens_in": 28210,
+ "tokens_out": 931,
+ "cost": 0.0032865,
+ "sec": 6.3,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "회로 구로사와 기요시 로튼 토마토"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 2911
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Kairo 2001 Rotten Tomatoes"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1620
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "회로 (2001년 영화) 펄스 리메이크"
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 2481
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Pulse 2006 remake Kiyoshi Kurosawa Rotten Tomatoes score"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1398
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "회로 2001년 영화 공포 구로사와 기요시 인터넷 유령"
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 2729
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Kairo Kurosawa Rotten Tomatoes 신선도"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1839
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w027205",
+  "w215057",
+  "w264256",
+  "w284409",
+  "w300594",
+  "w332120",
+  "w342122",
+  "w342662",
+  "w358430",
+  "w366581",
+  "w387045",
+  "w402351",
+  "w442040",
+  "w488761",
+  "w514898",
+  "w520112",
+  "w544581",
+  "w570185",
+  "w629325",
+  "w640046"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 662,
+   "out": 245,
+   "cost": 0.0001887
+  },
+  {
+   "in": 5126,
+   "out": 191,
+   "cost": 0.0006081
+  },
+  {
+   "in": 8946,
+   "out": 233,
+   "cost": 0.0010111
+  },
+  {
+   "in": 13476,
+   "out": 262,
+   "cost": 0.0014786
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

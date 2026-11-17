@@ -1,0 +1,153 @@
+{
+ "run": "n03-pull-all-457f8c",
+ "q": "n03",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "문서에서는 2025년 승객 수를 찾지 못했습니다. 코리아 익스프레스 에어 문서(w052393)는 2019년 12월 31일 전 노선 운항 중단, 2020년 3월 재취항 무산, 2020년 5월 28일 서울지방항공청 휴업신고까지만 기록하고 있어서 2025년 실적은 확인되지 않습니다. 양양국제공항, 기타큐슈 공항, 무안국제공항 문서도 확인했지만 이 항공사의 2025년 승객 통계는 없었습니다.\n\n답: 모름",
+ "turns": 7,
+ "tokens_in": 24475,
+ "tokens_out": 1118,
+ "cost": 0.0030065,
+ "sec": 8.3,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "코리아익스프레스에어 양양 항공사",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.09,
+   "chars": 494
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "코리아\\s*익스프레스\\s*에어|Korea Express Air"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "코리아 익스프레스 에어 승객 수송 양양국제공항",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 509
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "양양"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 967
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w052393"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1268
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w052393",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 515
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "코리아\\s*익스프레스|익스프레스\\s*에어"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1349
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025년.{0,80}승객|승객.{0,80}2025년"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  }
+ ],
+ "opened": [
+  "w052393"
+ ],
+ "shown": [
+  "w052393",
+  "w153612",
+  "w266559",
+  "w334299",
+  "w354844",
+  "w379807",
+  "w422682",
+  "w435689",
+  "w468589",
+  "w489842",
+  "w494541",
+  "w516301"
+ ],
+ "work": 195,
+ "per_turn": [
+  {
+   "in": 1201,
+   "out": 134,
+   "cost": 0.0001871
+  },
+  {
+   "in": 1705,
+   "out": 70,
+   "cost": 0.0002055
+  },
+  {
+   "in": 1799,
+   "out": 136,
+   "cost": 0.0002479
+  },
+  {
+   "in": 3326,
+   "out": 50,
+   "cost": 0.0003576
+  },
+  {
+   "in": 4593,
+   "out": 115,
+   "cost": 0.0005168
+  },
+  {
+   "in": 5156,
+   "out": 298,
+   "cost": 0.0006646
+  },
+  {
+   "in": 6695,
+   "out": 315,
+   "cost": 0.000827
+  }
+ ],
+ "correct": true,
+ "refused": true,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

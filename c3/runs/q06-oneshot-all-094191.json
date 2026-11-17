@@ -1,0 +1,37 @@
+{
+ "run": "q06-oneshot-all-094191",
+ "q": "q06",
+ "mode": "oneshot",
+ "set": "all",
+ "status": "answered",
+ "answer": "철야의 노래 발췌에 따르면, 2022년 6월 시점에서 전자판을 포함한 누계 발행 부수는 250만 부를 돌파했습니다.\n\n답: 250만 부",
+ "turns": 1,
+ "tokens_in": 3417,
+ "tokens_out": 236,
+ "cost": 0.0004597,
+ "sec": 2.3,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "등교를 거부하던 중학생이 밤에 흡혈귀 소녀를 만나는 일본 만화로, 코토야마가 원작하여 2019년 39호부터 주간 소년 선데이에서 연재되고 있다. 2022년 6월 기준 전자판 포함 누계 발행 부수는 몇 부를 넘었나?"
+   },
+   "status": "ok",
+   "sec": 0.67,
+   "chars": 3256
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w025176",
+  "w189736",
+  "w359531",
+  "w419743",
+  "w535154"
+ ],
+ "work": 0,
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

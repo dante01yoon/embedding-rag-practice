@@ -1,0 +1,156 @@
+{
+ "run": "n03-search-all-a6678d",
+ "q": "n03",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 63957,
+ "tokens_out": 1124,
+ "cost": 0.006957699999999999,
+ "sec": 10.9,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 승객"
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 2746
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 양양 부산 광주 노선"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3377
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 2025년 승객 수송"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 3114
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 여객 수송 실적 연도별"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2845
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 휴업신고 이후 승객 명 수송"
+   },
+   "status": "ok",
+   "sec": 0.11,
+   "chars": 3240
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 2025년 승객 명 운송 실적"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 3385
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 2020년 휴업 이후 면허 취소 항공 통계 승객"
+   },
+   "status": "ok",
+   "sec": 0.28,
+   "chars": 3031
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 2025년 탑승객"
+   },
+   "status": "ok",
+   "sec": 0.2,
+   "chars": 2545
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 2020년 2021년 2022년 2023년 2024년 2025년 현황"
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 2501
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w032841",
+  "w052393",
+  "w071210",
+  "w104336",
+  "w124172",
+  "w153612",
+  "w157215",
+  "w210619",
+  "w238472",
+  "w286832",
+  "w301910",
+  "w354844",
+  "w354866",
+  "w370835",
+  "w425535",
+  "w435689",
+  "w468589",
+  "w501830",
+  "w521614",
+  "w531107",
+  "w641202"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 637,
+   "out": 166,
+   "cost": 0.0001467
+  },
+  {
+   "in": 6708,
+   "out": 210,
+   "cost": 0.0007758
+  },
+  {
+   "in": 12654,
+   "out": 231,
+   "cost": 0.0013809
+  },
+  {
+   "in": 19191,
+   "out": 312,
+   "cost": 0.0020751
+  },
+  {
+   "in": 24767,
+   "out": 205,
+   "cost": 0.0025792
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

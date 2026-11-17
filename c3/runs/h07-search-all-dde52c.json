@@ -1,0 +1,187 @@
+{
+ "run": "h07-search-all-dde52c",
+ "q": "h07",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 77833,
+ "tokens_out": 3230,
+ "cost": 0.009398299999999998,
+ "sec": 18.8,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 감독 혼고 미츠루"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3078
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 혼고 미츠루 감독 작품"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3273
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 감독 혼고 미츠루 제작 연도"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3276
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 시리즈 목록 감독"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3790
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 스태프 감독 혼고 미츠루 각본"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3082
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 엄청난 태풍을 부르는 금창의 용사 스태프 감독"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3724
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 감독 : 혼고 미츠루 각본 연출 스태프 2000년대"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 3283
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 흑부리 마왕의 야망 스태프 감독"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3757
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 초시공 태풍을 부르는 나의 신부 감독"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3318
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 액션가면 VS 그래그래 마왕 감독"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3690
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 암흑 마왕 대추적 감독"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3767
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 엄청난 태풍을 부르는 금창의 용사 감독 혼고"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3724
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w015443",
+  "w035770",
+  "w112636",
+  "w158646",
+  "w161886",
+  "w168474",
+  "w284065",
+  "w284332",
+  "w284994",
+  "w286288",
+  "w288885",
+  "w308332",
+  "w310262",
+  "w311566",
+  "w328276",
+  "w331533",
+  "w362105",
+  "w400989",
+  "w419129",
+  "w428841",
+  "w438283",
+  "w446962",
+  "w504934",
+  "w522818",
+  "w644647"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 647,
+   "out": 281,
+   "cost": 0.0002052
+  },
+  {
+   "in": 7360,
+   "out": 474,
+   "cost": 0.000973
+  },
+  {
+   "in": 14772,
+   "out": 762,
+   "cost": 0.0018582
+  },
+  {
+   "in": 22010,
+   "out": 752,
+   "cost": 0.002577
+  },
+  {
+   "in": 33044,
+   "out": 961,
+   "cost": 0.0037849
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/5",
+ "glimpsed": "5/5"
+}

@@ -1,0 +1,96 @@
+{
+ "run": "q07-search-all-b501ff",
+ "q": "q07",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문하신 영화는 《회로》(Kairo)이며, 한국어 위키백과 '회로 (영화)' 문서에 따르면 로튼 토마토에서 **73%**의 점수를 받았습니다. 같은 문서에 2006년 할리우드 리메이크작이 '펄스'라는 제목으로 개봉했다는 내용도 있어 질문의 조건과 일치합니다. 다만 근거는 이 위키백과 문서 한 곳이며, 로튼 토마토 사이트에서 직접 확인하지는 않았습니다.\n\n답: 73%",
+ "turns": 3,
+ "tokens_in": 14645,
+ "tokens_out": 604,
+ "cost": 0.0017664999999999998,
+ "sec": 5.1,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "구로사와 기요시 회로 로튼 토마토"
+   },
+   "status": "ok",
+   "sec": 0.11,
+   "chars": 2911
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Kairo 2001 Rotten Tomatoes"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1620
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "회로 2001년 일본 영화 펄스 리메이크"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 2323
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Pulse 2006 Kiyoshi Kurosawa remake Rotten Tomatoes score"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 1398
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w027205",
+  "w215057",
+  "w262287",
+  "w300594",
+  "w342122",
+  "w342662",
+  "w363268",
+  "w402351",
+  "w442040",
+  "w451652",
+  "w488761",
+  "w514898",
+  "w520112",
+  "w544581",
+  "w629325",
+  "w640046"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 662,
+   "out": 171,
+   "cost": 0.0001517
+  },
+  {
+   "in": 5126,
+   "out": 184,
+   "cost": 0.0006046
+  },
+  {
+   "in": 8857,
+   "out": 249,
+   "cost": 0.0010102
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

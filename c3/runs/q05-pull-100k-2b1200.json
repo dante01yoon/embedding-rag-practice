@@ -1,0 +1,75 @@
+{
+ "run": "q05-pull-100k-2b1200",
+ "q": "q05",
+ "mode": "pull",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "「비행기구름」 음반 문서에 따르면, 이 앨범은 1973년 11월 20일 도시바 EMI에서 발매되었고, 음원 발매권 사정으로 잠깐 알파 레코드에서도 발매되었습니다.\n\n답: 도시바 EMI (Toshiba EMI)",
+ "turns": 3,
+ "tokens_in": 5666,
+ "tokens_out": 599,
+ "cost": 0.0008661000000000001,
+ "sec": 4.5,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "荒井由実 ひこうき雲 1973 アルバム 発売 エクspress アルファ",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 549
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "유밍 아라이 유미 데뷔 앨범 ひこうき雲",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 465
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "알파 레코드|アルファ|Alpha Records"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 328
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w262507",
+  "w508335"
+ ],
+ "work": 99,
+ "per_turn": [
+  {
+   "in": 1230,
+   "out": 274,
+   "cost": 0.00026
+  },
+  {
+   "in": 1772,
+   "out": 154,
+   "cost": 0.0002542
+  },
+  {
+   "in": 2664,
+   "out": 171,
+   "cost": 0.0003519
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,67 @@
+{
+ "run": "q07-search-100k-b6097a",
+ "q": "q07",
+ "mode": "search",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "구로사와 기요시 감독의 영화 『회로(回路, Kairo)』는 2001년 개봉작이며, 2006년 할리우드에서 『펄스』로 리메이크되었습니다. 검색된 한국어 위키백과 문서(회로 (영화))에 따르면 이 영화는 로튼 토마토에서 73%의 점수를 받았습니다. 다만 로튼 토마토 원본 페이지를 직접 확인하지는 않았고, 검색으로 얻은 위키백과 문서의 내용입니다.\n\n답: 73%",
+ "turns": 2,
+ "tokens_in": 6225,
+ "tokens_out": 414,
+ "cost": 0.0008295,
+ "sec": 2.6,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "구로사와 기요시 회로 2001 로튼 토마토"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2781
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Kairo 2001 Rotten Tomatoes"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2180
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w027205",
+  "w114433",
+  "w124113",
+  "w136294",
+  "w243924",
+  "w287306",
+  "w332120",
+  "w520112",
+  "w567058",
+  "w614523"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 662,
+   "out": 180,
+   "cost": 0.0001562
+  },
+  {
+   "in": 5563,
+   "out": 234,
+   "cost": 0.0006733
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

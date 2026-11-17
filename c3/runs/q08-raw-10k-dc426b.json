@@ -1,0 +1,99 @@
+{
+ "run": "q08-raw-10k-dc426b",
+ "q": "q08",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 역은 루지힐역(Rouge Hill)이고, 그 서쪽 바로 다음 역은 길드우드역(Guildwood)입니다. 길드우드역 문서에 따르면 2016년 1월 31일 새 터널·엘리베이터 설치와 새 역 건물 공사에 들어갔고, 공사는 2019년 7월 3일에 완공되었습니다.\n\n답: 2019년 7월 3일",
+ "turns": 4,
+ "tokens_in": 9472,
+ "tokens_out": 1629,
+ "cost": 0.0017617,
+ "sec": 10.9,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "Guildwood.*(공사|건물|준공|완공)"
+   },
+   "status": "none",
+   "sec": 0.49,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "Port Union"
+   },
+   "status": "ok",
+   "sec": 0.4,
+   "chars": 176
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w420747"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1260
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "길우드|Guildwood"
+   },
+   "status": "ok",
+   "sec": 0.47,
+   "chars": 131
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w100553"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  }
+ ],
+ "opened": [
+  "w100553",
+  "w420747"
+ ],
+ "shown": [
+  "w100553",
+  "w420747"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 1000,
+   "out": 427,
+   "cost": 0.0003135
+  },
+  {
+   "in": 1349,
+   "out": 865,
+   "cost": 0.0005674
+  },
+  {
+   "in": 2892,
+   "out": 132,
+   "cost": 0.0003552
+  },
+  {
+   "in": 4231,
+   "out": 205,
+   "cost": 0.0005256
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/2",
+ "glimpsed": "2/2"
+}

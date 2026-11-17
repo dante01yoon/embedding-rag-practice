@@ -1,0 +1,87 @@
+{
+ "run": "q10-raw-10k-2a006b",
+ "q": "q10",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답: 2011년 10월 5일\n\n예술의전당(주최 기관)의 음악당 시설 중 기업은행이 건설비를 부담해 이름이 붙은 'IBK 챔버홀(600석)'은 공사 기간을 거쳐 2011년 10월 5일 개관했습니다.\n\n답: 2011년 10월 5일",
+ "turns": 3,
+ "tokens_in": 6927,
+ "tokens_out": 519,
+ "cost": 0.0009521999999999999,
+ "sec": 4.9,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "교향악축제"
+   },
+   "status": "ok",
+   "sec": 0.28,
+   "chars": 392
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "챔버홀"
+   },
+   "status": "ok",
+   "sec": 0.3,
+   "chars": 169
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w603011",
+    "at": "IBK 챔버홀"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w223013"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  }
+ ],
+ "opened": [
+  "w223013",
+  "w603011"
+ ],
+ "shown": [
+  "w060393",
+  "w223013",
+  "w603011"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 971,
+   "out": 248,
+   "cost": 0.0002211
+  },
+  {
+   "in": 1647,
+   "out": 151,
+   "cost": 0.0002402
+  },
+  {
+   "in": 4309,
+   "out": 120,
+   "cost": 0.0004909
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/2",
+ "glimpsed": "2/2"
+}

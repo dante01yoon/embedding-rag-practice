@@ -1,0 +1,100 @@
+{
+ "run": "h08-raw-10k-b2af4a",
+ "q": "h08",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "대구대곡초등학교가 도원동의 공립 초등학교 가운데 가장 먼저 개교했고, 제1회 졸업생은 116명입니다.\n\n- 대구대곡초등학교: 1996년 9월 1일 개교 → 1997년 2월 20일 \"제1회 졸업 (졸업생 116명)\"\n- 대구노전초등학교: 1997년 3월 3일 개교\n- 대구도원초등학교: 1997년 9월 1일 개교 → 제1회 졸업생 69명 (비교용)\n\n답: 116명",
+ "turns": 3,
+ "tokens_in": 8331,
+ "tokens_out": 760,
+ "cost": 0.0012131,
+ "sec": 6.0,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "도원동"
+   },
+   "status": "ok",
+   "sec": 0.17,
+   "chars": 448
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제1회 졸업생"
+   },
+   "status": "ok",
+   "sec": 0.35,
+   "chars": 472
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w123267"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w461574"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w120038"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1134
+  }
+ ],
+ "opened": [
+  "w120038",
+  "w123267",
+  "w461574"
+ ],
+ "shown": [
+  "w120038",
+  "w123267",
+  "w155321",
+  "w185068",
+  "w364983",
+  "w461574",
+  "w558108"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 915,
+   "out": 124,
+   "cost": 0.0001535
+  },
+  {
+   "in": 1930,
+   "out": 220,
+   "cost": 0.000303
+  },
+  {
+   "in": 5486,
+   "out": 416,
+   "cost": 0.0007566
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "3/3",
+ "glimpsed": "3/3"
+}

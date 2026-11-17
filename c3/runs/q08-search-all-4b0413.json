@@ -1,0 +1,144 @@
+{
+ "run": "q08-search-all-4b0413",
+ "q": "q08",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 역은 루지힐역입니다. 루지힐역 문서에 따르면 로렌스 애비뉴와 이스트 애비뉴에 있고, 전신은 1856년 그랜드트렁크 철도가 개통한 포트유니언역입니다. 서쪽의 다음 역은 길드우드역이고, 길드우드역 문서에는 \"2016년 1월 31일부터 … 새로운 역 건물을 짓기 위한 공사에 돌입하였다. 공사는 2019년 7월 3일에 완공하였다.\"라고 나와 있습니다.\n\n답: 2019년 7월 3일",
+ "turns": 5,
+ "tokens_in": 68579,
+ "tokens_out": 2264,
+ "cost": 0.0079899,
+ "sec": 13.2,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "Guildwood GO station 새 역 건물 공사"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3592
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Guildwood GO station rebuilt construction completed"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3067
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "포트유니언역 로렌스 애비뉴 이스트 애비뉴 1856"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3163
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "에글린턴역 GO 트랜싯 레이크쇼어 이스트 역 건물 공사 2016 완공"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3592
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 2016년 역 건물 공사 완공 승강장 엘리베이터"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 3723
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 역사 재건축 공사 착공 2016년 완료"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 3400
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 2016년 공사 착공 2019년 7월 3일 완공"
+   },
+   "status": "ok",
+   "sec": 0.37,
+   "chars": 3655
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w026317",
+  "w036047",
+  "w038441",
+  "w100553",
+  "w218914",
+  "w224157",
+  "w278822",
+  "w291078",
+  "w305512",
+  "w358647",
+  "w359437",
+  "w363903",
+  "w390774",
+  "w396825",
+  "w402267",
+  "w402947",
+  "w420747",
+  "w428118",
+  "w432541",
+  "w470337",
+  "w479884",
+  "w485591",
+  "w499180",
+  "w529607",
+  "w545169",
+  "w587357",
+  "w596207"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 712,
+   "out": 205,
+   "cost": 0.0001737
+  },
+  {
+   "in": 7167,
+   "out": 1328,
+   "cost": 0.0013807
+  },
+  {
+   "in": 14262,
+   "out": 293,
+   "cost": 0.0015727
+  },
+  {
+   "in": 21452,
+   "out": 148,
+   "cost": 0.0022192
+  },
+  {
+   "in": 24986,
+   "out": 290,
+   "cost": 0.0026436
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/2",
+ "glimpsed": "2/2"
+}

@@ -1,0 +1,207 @@
+{
+ "run": "h02-pull-all-5e0817",
+ "q": "h02",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 인물은 넋업샨입니다. 1979년 9월 20일생이고, 기계치로 1999년 데뷔해 I.F.에서 2007년 4월 해체 때까지 활동했습니다. 학력은 한국국제대학교 경영학과로 적혀 있습니다.\n\n한국국제대학교는 경상남도 진주시에 있었고, 2023년 8월 31일 폐교됐습니다. 진주시 역대 시장 표에서 초대 시장은 정종철이며, 임기는 1945년 12월 14일부터 1948년 11월 5일까지입니다.\n\n답: 정종철",
+ "turns": 11,
+ "tokens_in": 70236,
+ "tokens_out": 1681,
+ "cost": 0.007864099999999999,
+ "sec": 13.1,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "기계치 I.F. 래퍼 1979년 9월 20일 출생",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.33,
+   "chars": 423
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w359675"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w056411"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 703
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w785"
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 36
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w457136"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1260
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w000785"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "한국국제대학교 폐교",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 411
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w461996"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주시 초대 시장 1945년 12월",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 422
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w404228"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 265
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1945년\\s*12월"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 470
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w385456",
+    "at": "초대"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  }
+ ],
+ "opened": [
+  "w000785",
+  "w056411",
+  "w359675",
+  "w385456",
+  "w404228",
+  "w457136",
+  "w461996"
+ ],
+ "shown": [
+  "w174391",
+  "w385456",
+  "w492256"
+ ],
+ "work": 150,
+ "per_turn": [
+  {
+   "in": 1257,
+   "out": 154,
+   "cost": 0.0002027
+  },
+  {
+   "in": 1682,
+   "out": 97,
+   "cost": 0.0002167
+  },
+  {
+   "in": 3740,
+   "out": 176,
+   "cost": 0.000462
+  },
+  {
+   "in": 5080,
+   "out": 139,
+   "cost": 0.0005775
+  },
+  {
+   "in": 6352,
+   "out": 297,
+   "cost": 0.0007837
+  },
+  {
+   "in": 6819,
+   "out": 50,
+   "cost": 0.0007069
+  },
+  {
+   "in": 8076,
+   "out": 170,
+   "cost": 0.0008926
+  },
+  {
+   "in": 8556,
+   "out": 50,
+   "cost": 0.0008806
+  },
+  {
+   "in": 8850,
+   "out": 92,
+   "cost": 0.000931
+  },
+  {
+   "in": 9337,
+   "out": 147,
+   "cost": 0.0010072
+  },
+  {
+   "in": 10487,
+   "out": 309,
+   "cost": 0.0012032
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "3/3",
+ "glimpsed": "3/3"
+}

@@ -1,0 +1,89 @@
+{
+ "run": "q06-pull-all-13bc53",
+ "q": "q06",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답: 250만 부\n\n2022년 6월 시점 전자판을 포함한 누계 발행 부수가 250만 부를 돌파했다고 나와 있습니다. 해당 작품은 코토야마 원작의 『철야의 노래』(주간 소년 선데이, 2019년 39호 연재 시작)입니다.\n\n답: 250만 부",
+ "turns": 4,
+ "tokens_in": 10422,
+ "tokens_out": 749,
+ "cost": 0.0014167,
+ "sec": 6.1,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "코토야마 원작 주간 소년 선데이 흡혈귀 소녀 등교 거부 중학생",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 427
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "코토야마 흡혈귀 만화 주간 소년 선데이 2019 연재",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 444
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w535154"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 510
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w359531"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  }
+ ],
+ "opened": [
+  "w359531",
+  "w535154"
+ ],
+ "shown": [],
+ "work": 64,
+ "per_turn": [
+  {
+   "in": 1248,
+   "out": 386,
+   "cost": 0.0003178
+  },
+  {
+   "in": 2224,
+   "out": 169,
+   "cost": 0.0003069
+  },
+  {
+   "in": 2771,
+   "out": 72,
+   "cost": 0.0003131
+  },
+  {
+   "in": 4179,
+   "out": 122,
+   "cost": 0.0004789
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

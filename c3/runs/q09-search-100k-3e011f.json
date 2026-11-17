@@ -1,0 +1,65 @@
+{
+ "run": "q09-search-100k-3e011f",
+ "q": "q09",
+ "mode": "search",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 선수는 박성진(1985년 1월 28일생, 공격수)입니다. 박성진 문서에 따르면 2014 시즌을 앞두고 FC 안양의 새 주장으로 임명되었고, 당시 감독은 이우형이었습니다. 이우형 문서에는 1966년 2월 2일생으로 나와 있고, 분류 정보에도 1966년 출생으로 되어 있습니다.\n\n답: 1966년",
+ "turns": 2,
+ "tokens_in": 8711,
+ "tokens_out": 433,
+ "cost": 0.0010876,
+ "sec": 2.9,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "서울용두초 축구 시작 동국대 고양 KB국민은행 입단 FC 안양 주장"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3600
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "FC 안양 2014 주장 임명 감독"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3719
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w028894",
+  "w117832",
+  "w128116",
+  "w155341",
+  "w375420",
+  "w441628",
+  "w489037",
+  "w644700"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 693,
+   "out": 191,
+   "cost": 0.0001648
+  },
+  {
+   "in": 8018,
+   "out": 242,
+   "cost": 0.0009228
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/2",
+ "glimpsed": "2/2"
+}

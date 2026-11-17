@@ -1,0 +1,65 @@
+{
+ "run": "q09-search-10k-6a92e0",
+ "q": "q09",
+ "mode": "search",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 선수는 박성진입니다. 그는 서울용두초등학교 5학년 때 축구를 시작했고, 동국대를 졸업한 뒤 2007년 고양 KB국민은행에 입단했습니다. 2013년 FC 안양에 입단했고, 2014 시즌을 앞두고 당시 감독 이우형에게 주장으로 임명되었습니다.\n\n이우형 감독은 1966년 2월 2일에 태어났습니다(문서에 \"이우형(李愚衡, 1966년 2월 2일 ~ )\"으로 나와 있습니다).\n\n답: 1966년",
+ "turns": 2,
+ "tokens_in": 7413,
+ "tokens_out": 470,
+ "cost": 0.0009762999999999999,
+ "sec": 3.3,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "서울용두초 축구 시작 동국대 고양 KB국민은행 입단 FC 안양 주장"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2636
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "FC 안양 2014 주장 임명 감독"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 3411
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w021256",
+  "w155341",
+  "w177675",
+  "w375420",
+  "w438142",
+  "w444501",
+  "w488965",
+  "w640259"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 693,
+   "out": 199,
+   "cost": 0.0001688
+  },
+  {
+   "in": 6720,
+   "out": 271,
+   "cost": 0.0008075
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/2",
+ "glimpsed": "2/2"
+}

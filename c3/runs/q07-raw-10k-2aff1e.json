@@ -1,0 +1,81 @@
+{
+ "run": "q07-raw-10k-2aff1e",
+ "q": "q07",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "로튼 토마토에서 받은 점수는 **73%**입니다.\n\n'회로 (영화)' 문서에 \"구로사와 기요시 감독의 영화로, 2001년 개봉했다. 해당 영화는 로튼 토마토에서 73%의 점수를 받았다. 이 영화의 할리우드 리메이크작은 2006년에 펄스라는 이름으로 개봉되었다.\"라고 나와 있습니다.\n\n답: 73%",
+ "turns": 2,
+ "tokens_in": 5426,
+ "tokens_out": 395,
+ "cost": 0.0007401,
+ "sec": 4.7,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "로튼 토마토|Rotten Tomatoes"
+   },
+   "status": "ok",
+   "sec": 0.47,
+   "chars": 774
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "회로|Kairo"
+   },
+   "status": "truncated",
+   "sec": 0.43,
+   "chars": 2825
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w006187",
+  "w006502",
+  "w010206",
+  "w011553",
+  "w027205",
+  "w028130",
+  "w028302",
+  "w037129",
+  "w037692",
+  "w037726",
+  "w047271",
+  "w052762",
+  "w055683",
+  "w063118",
+  "w069479",
+  "w069480",
+  "w070010",
+  "w073650",
+  "w080465",
+  "w087157",
+  "w087414",
+  "w125631",
+  "w287306",
+  "w571476"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 950,
+   "out": 167,
+   "cost": 0.0001785
+  },
+  {
+   "in": 4476,
+   "out": 228,
+   "cost": 0.0005616
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

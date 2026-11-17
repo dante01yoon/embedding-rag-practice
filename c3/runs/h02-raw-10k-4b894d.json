@@ -1,0 +1,131 @@
+{
+ "run": "h02-raw-10k-4b894d",
+ "q": "h02",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 래퍼는 넋업샨(1979년 9월 20일생, 기계치 → I.F. 활동, 2007년 4월 해체)입니다. 그의 학력은 \"한국국제대학교 경영학과\"로 적혀 있습니다.\n\n- 한국국제대학교는 경상남도 진주시에 있던 사립대학으로, 2023년 8월 31일 폐교되었습니다.\n- 진주시의 역대 시장 표에서 초대 시장은 정종철이며, 임기는 1945년 12월 14일부터 1948년 11월 5일까지입니다.\n\n답: 정종철",
+ "turns": 7,
+ "tokens_in": 24370,
+ "tokens_out": 847,
+ "cost": 0.0028605,
+ "sec": 9.0,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "I\\.F\\.|기계치"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 599
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w000785"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "한국국제대학교"
+   },
+   "status": "ok",
+   "sec": 0.37,
+   "chars": 389
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w461996"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주시장"
+   },
+   "status": "ok",
+   "sec": 0.47,
+   "chars": 309
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w385456",
+    "at": "정종철"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  }
+ ],
+ "opened": [
+  "w000785",
+  "w385456",
+  "w461996"
+ ],
+ "shown": [
+  "w000785",
+  "w123583",
+  "w226371",
+  "w276548",
+  "w294550",
+  "w325646",
+  "w385456",
+  "w461996"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 981,
+   "out": 129,
+   "cost": 0.0001626
+  },
+  {
+   "in": 1613,
+   "out": 50,
+   "cost": 0.0001863
+  },
+  {
+   "in": 2885,
+   "out": 178,
+   "cost": 0.0003775
+  },
+  {
+   "in": 3326,
+   "out": 50,
+   "cost": 0.0003576
+  },
+  {
+   "in": 4583,
+   "out": 79,
+   "cost": 0.0004978
+  },
+  {
+   "in": 4915,
+   "out": 73,
+   "cost": 0.000528
+  },
+  {
+   "in": 6067,
+   "out": 288,
+   "cost": 0.0007507
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "3/3",
+ "glimpsed": "3/3"
+}

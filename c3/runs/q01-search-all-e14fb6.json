@@ -1,0 +1,97 @@
+{
+ "run": "q01-search-all-e14fb6",
+ "q": "q01",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답은 **631그루**입니다.\n\n대구평리초등학교는 대구 서구 평리동의 공립 초등학교이며 1967년에 개교했습니다. 학교 연혁에 \"2003-11-08 교내 수목 631그루 식재 (서구청 기증)-때죽나무 200그루 외 7종\"이라고 나와 있습니다.\n\n답: 631그루",
+ "turns": 3,
+ "tokens_in": 18502,
+ "tokens_out": 466,
+ "cost": 0.0020832,
+ "sec": 4.5,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구 서구 평리동 초등학교 1967년 개교 서구청 기증 수목"
+   },
+   "status": "ok",
+   "sec": 0.29,
+   "chars": 3529
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "평리초등학교 2003년 11월 서구청 기증 나무"
+   },
+   "status": "ok",
+   "sec": 0.35,
+   "chars": 3060
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구평리초등학교 1967년 개교"
+   },
+   "status": "ok",
+   "sec": 0.2,
+   "chars": 1430
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "평리초등학교 교내 수목 기증 서구청 그루"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2450
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w063836",
+  "w169430",
+  "w179132",
+  "w179447",
+  "w185285",
+  "w300811",
+  "w305076",
+  "w346816",
+  "w364323",
+  "w424927",
+  "w461023",
+  "w504438",
+  "w537520",
+  "w593711",
+  "w596448",
+  "w629219",
+  "w633330"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 632,
+   "out": 161,
+   "cost": 0.0001437
+  },
+  {
+   "in": 7081,
+   "out": 174,
+   "cost": 0.0007951
+  },
+  {
+   "in": 10789,
+   "out": 131,
+   "cost": 0.0011444
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

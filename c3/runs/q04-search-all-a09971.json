@@ -1,0 +1,143 @@
+{
+ "run": "q04-search-all-a09971",
+ "q": "q04",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 텅스텐 광업회사는 **알몬티 인더스트리스(Almonty Industries)**입니다. 한국어 위키백과 '알몬티 인더스트리스' 문서에 따르면 \"알몬티\"의 '알(Al)'은 대니얼 다마토의 아버지 '알 다마토(Al D'Amato)', '몬티(MONTY)'는 루이스 블랙의 아버지 '몬티 블랙(Monty Black)'에서 유래했습니다.\n\n같은 문서의 역사 항목에는 \"2015년 알몬티사는 캐나다의 울프마이닝 주식회사()와 대한민국 상동 광산 프로젝트(Sangdong project)를 인수하였다\"라고 나옵니다. 괄호 안 원어 표기는 검색 결과에서 확인되지 않았습니다. 이 문서 외에 다른 자료로 회사명을 교차 확인하지는 못했습니다.\n\n답: 울프마이닝 주식회사(Wolf Mining, 캐나다)",
+ "turns": 4,
+ "tokens_in": 45791,
+ "tokens_out": 1811,
+ "cost": 0.0054846,
+ "sec": 10.4,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "상동 텅스텐 광산 2015 인수 캐나다"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3715
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Sangdong tungsten project 2015 acquisition Canadian company"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2735
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Almonty Industries name origin father Daniel D'Amato Lewis Black"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2963
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "알몬티 상동 광업권 인수 2015 캐나다 회사 공동"
+   },
+   "status": "ok",
+   "sec": 0.09,
+   "chars": 3539
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Almonty Sangdong 2015 acquisition Korea Tungsten Canadian partner"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2782
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "알몬티 사명 유래 아버지 이름 한 음절"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 2935
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Almonty name derived from fathers Daniel D'Amato Lewis Black"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3631
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w001195",
+  "w014022",
+  "w025073",
+  "w050482",
+  "w085171",
+  "w106329",
+  "w123394",
+  "w128871",
+  "w138081",
+  "w202659",
+  "w234768",
+  "w245983",
+  "w260765",
+  "w295711",
+  "w365526",
+  "w382111",
+  "w437991",
+  "w493802",
+  "w497449",
+  "w515979",
+  "w520985",
+  "w539319",
+  "w560831",
+  "w563346",
+  "w566422",
+  "w583447",
+  "w590646",
+  "w595808",
+  "w602245",
+  "w631699",
+  "w639541"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 666,
+   "out": 405,
+   "cost": 0.0002691
+  },
+  {
+   "in": 9415,
+   "out": 400,
+   "cost": 0.0011415
+  },
+  {
+   "in": 15378,
+   "out": 393,
+   "cost": 0.0017343
+  },
+  {
+   "in": 20332,
+   "out": 613,
+   "cost": 0.0023397
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

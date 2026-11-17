@@ -1,0 +1,339 @@
+{
+ "run": "h04-search-all-d53e5b",
+ "q": "h04",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "검색 결과로는 확인하지 못했습니다.\n\n질문에 맞는 영화는 《애정의 조건》(1983, 제임스 L. 브룩스 감독)으로 보입니다. 원작은 래리 맥머트리의 소설이고, 아카데미 각색상을 받았다는 내용도 문서에 있습니다. 하지만 검색된 문서 중 어디에도 소설의 시대 배경 연도가 나오지 않았습니다. 영화 문서에는 \"소설을 바탕으로 한다\"는 설명과 수상 목록만 있고, 연도 변경에 대한 내용은 없었습니다. 여러 검색어(한국어·영어)로 확인했지만 소설의 연도를 말하는 근거는 찾지 못했습니다. 제 기억으로 추정하는 연도는 근거가 없으므로 답으로 쓰지 않겠습니다.\n\n답: 모름",
+ "turns": 12,
+ "tokens_in": 342197,
+ "tokens_out": 4648,
+ "cost": 0.0365437,
+ "sec": 33.1,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "아카데미 각색상 수상 영화 시대 배경 1983년 원작 소설 연도 변경"
+   },
+   "status": "ok",
+   "sec": 0.3,
+   "chars": 3001
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "원작 소설은 시대 배경을 1983년에서 옮겼다 영화 아카데미 각색 시나리오상"
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 2924
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 래리 맥머트리 소설 시대 배경"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 3140
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment 소설 원작 1960년대 영화 1983년으로 변경"
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 2860
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 소설 래리 맥머트리 1960년대 배경 영화는 1983년으로 설정"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 3101
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment McMurtry novel set in year film changed to 1983"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3754
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 원작 소설 연도 1960년대 영화에서 1983년 각색"
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 2926
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment novel Larry McMurtry 1975 set in 1960s Houston film updated"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3736
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 (소설) 래리 맥머트리 1975년 출간 배경"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 3173
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment film setting changed from novel 1960s to 1980s James L. Brooks"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3741
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 소설 시대 배경 영화 각색 시기 변경"
+   },
+   "status": "ok",
+   "sec": 0.11,
+   "chars": 3180
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "래리 맥머트리 애정의 조건 소설 1960년대를 배경으로 한 소설"
+   },
+   "status": "ok",
+   "sec": 0.14,
+   "chars": 2616
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment novel 1975 McMurtry Aurora Greenway set in 1960s novel timeline"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3455
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "소설 애정의 조건은 1960년대가 배경이며 영화는 1980년대로 옮겼다"
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 2283
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment book Aurora Greenway 1960s Houston Iowa novel period"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3414
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 소설 1970년대 배경 원작과 달리 영화는 1983년"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 2342
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment film moved the story to 1983 from the novel's year"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3746
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment 1983 film novel set in 1960s updated setting Brooks changed time period"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 3736
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 래리 맥머트리 원작 소설 줄거리 오로라 그린웨이 엠마"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 2993
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment McMurtry novel 1975 Aurora Greenway story begins year"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 2984
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 소설 원작 시대 1960년대 영화 1983년 설정 차이"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 2515
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w000368",
+  "w005964",
+  "w021106",
+  "w021760",
+  "w037648",
+  "w039311",
+  "w046397",
+  "w057857",
+  "w062209",
+  "w092445",
+  "w093531",
+  "w097259",
+  "w100282",
+  "w130218",
+  "w148749",
+  "w154383",
+  "w165340",
+  "w168171",
+  "w182470",
+  "w190049",
+  "w191828",
+  "w201202",
+  "w203938",
+  "w216552",
+  "w218901",
+  "w220490",
+  "w228423",
+  "w243666",
+  "w263956",
+  "w279180",
+  "w288105",
+  "w314099",
+  "w314146",
+  "w333465",
+  "w334223",
+  "w350477",
+  "w351093",
+  "w360492",
+  "w374672",
+  "w376516",
+  "w379160",
+  "w398119",
+  "w401951",
+  "w468456",
+  "w478672",
+  "w482180",
+  "w493541",
+  "w505373",
+  "w515902",
+  "w537796",
+  "w545827",
+  "w550444",
+  "w552641",
+  "w559520",
+  "w568868",
+  "w586648",
+  "w596547",
+  "w602201",
+  "w603856",
+  "w618583",
+  "w629786"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 664,
+   "out": 1085,
+   "cost": 0.0006089
+  },
+  {
+   "in": 6598,
+   "out": 257,
+   "cost": 0.0007883
+  },
+  {
+   "in": 12693,
+   "out": 254,
+   "cost": 0.0013963
+  },
+  {
+   "in": 17759,
+   "out": 232,
+   "cost": 0.0018919
+  },
+  {
+   "in": 22705,
+   "out": 310,
+   "cost": 0.0024255
+  },
+  {
+   "in": 27777,
+   "out": 223,
+   "cost": 0.0028892
+  },
+  {
+   "in": 30939,
+   "out": 397,
+   "cost": 0.0032924
+  },
+  {
+   "in": 35449,
+   "out": 253,
+   "cost": 0.0036714
+  },
+  {
+   "in": 39891,
+   "out": 342,
+   "cost": 0.0041601
+  },
+  {
+   "in": 44195,
+   "out": 313,
+   "cost": 0.004576
+  },
+  {
+   "in": 49381,
+   "out": 320,
+   "cost": 0.0050981
+  },
+  {
+   "in": 54146,
+   "out": 662,
+   "cost": 0.0057456
+  }
+ ],
+ "correct": false,
+ "refused": true,
+ "evidence": "0/1",
+ "glimpsed": "0/1"
+}

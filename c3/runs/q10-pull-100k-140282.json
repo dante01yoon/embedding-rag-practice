@@ -1,0 +1,84 @@
+{
+ "run": "q10-pull-100k-140282",
+ "q": "q10",
+ "mode": "pull",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "교향악축제(예술의전당 주최)의 시설인 음악당 안의 'IBK 챔버홀'은 2011년 10월 5일에 개관했습니다.\n\n근거: 교향악축제 문서에 1989년 '제1회 교향악축제'로 이름 붙었고 1996년부터 매년 4월에 열린다는 내용이 있고, 예술의전당 문서에 음악당 내 IBK 챔버홀(600석, 기업은행 부담으로 명칭 확정)이 2011년 10월 5일 개관했다고 나와 있습니다.\n\n답: 2011년 10월 5일",
+ "turns": 3,
+ "tokens_in": 8252,
+ "tokens_out": 874,
+ "cost": 0.0012622,
+ "sec": 5.5,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "1989년 제1회 관현악단 릴레이 공연 1996년부터 매년 4월",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.09,
+   "chars": 470
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "예술의전당 IBK챔버홀 개관",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 396
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w223013"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w603011"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  }
+ ],
+ "opened": [
+  "w223013",
+  "w603011"
+ ],
+ "shown": [],
+ "work": 98,
+ "per_turn": [
+  {
+   "in": 1247,
+   "out": 501,
+   "cost": 0.0003752
+  },
+  {
+   "in": 2201,
+   "out": 160,
+   "cost": 0.0003001
+  },
+  {
+   "in": 4804,
+   "out": 213,
+   "cost": 0.0005869
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/2",
+ "glimpsed": "2/2"
+}

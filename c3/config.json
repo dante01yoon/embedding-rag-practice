@@ -1,0 +1,42 @@
+{
+ "model": "anthropic/claude-haiku-5.5",
+ "max_turns": 20,
+ "token_cap": 300000,
+ "temperature": 0,
+ "system": "한국어 위키백과 문서 묶음에서 근거를 찾아 질문에 답하세요. 도구로 직접 확인한 내용만 근거로 삼으세요. 마지막에 한 줄로 '답: …'을 쓰고, 끝내 찾지 못하면 '답: 모름'이라고 쓰세요.",
+ "tools": {
+  "page": 20,
+  "read_chars": 1200,
+  "find_timeout": 20,
+  "pull": [
+   50,
+   300
+  ],
+  "work_max": 1500,
+  "snippet": 700
+ },
+ "index": "Kiwi 형태소(N·V·S) · SQLite FTS5 · 제목 5 : 본문 1 · 본문 전체",
+ "plan": [
+  [
+   "all",
+   1
+  ],
+  [
+   "100k",
+   1
+  ],
+  [
+   "10k",
+   1
+  ],
+  [
+   "all",
+   2
+  ],
+  [
+   "all",
+   3
+  ]
+ ],
+ "started": "2026-11-16 18:55"
+}

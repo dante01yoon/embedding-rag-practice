@@ -1,0 +1,93 @@
+{
+ "run": "q06-search-all-25238d",
+ "q": "q06",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 작품은 『철야의 노래(よふかしのうた)』입니다. 한국어 위키백과 「철야의 노래」 문서에 따르면, 2022년 6월 시점에서 전자판을 포함한 누계 발행 부수는 **250만 부를 돌파**했습니다. 문서 본문과 원작자 「코토야마」 문서에서 2019년 39호 연재 시작도 확인했습니다.\n\n답: 250만 부",
+ "turns": 3,
+ "tokens_in": 15270,
+ "tokens_out": 756,
+ "cost": 0.001905,
+ "sec": 5.1,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "よふかしのうた 累計発行部数"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 749
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "よふかしのうた コトヤマ 週刊少年サンデー 2019年 39号"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 2916
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "철야의 노래 누계 발행 부수"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2374
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "철야의 노래 만화 흡혈귀 소녀 등교 거부 연재"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3118
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w002668",
+  "w083200",
+  "w170376",
+  "w262378",
+  "w280302",
+  "w359531",
+  "w369352",
+  "w374072",
+  "w410096",
+  "w436489",
+  "w456571",
+  "w535154",
+  "w605945"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 684,
+   "out": 357,
+   "cost": 0.0002469
+  },
+  {
+   "in": 4432,
+   "out": 185,
+   "cost": 0.0005357
+  },
+  {
+   "in": 10154,
+   "out": 214,
+   "cost": 0.0011224
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,97 @@
+{
+ "run": "q05-search-10k-eb7ea2",
+ "q": "q05",
+ "mode": "search",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "처음 이 앨범을 낸 음반사는 **도시바 EMI**입니다.\n\n한국어 위키백과 '비행기구름 (음반)' 문서에 따르면, 《히코키구모》(비행기구름)는 아라이 유미의 첫 앨범으로 1973년 11월 20일 도시바 EMI에서 발매되었습니다. 음원 발매권 사정으로 잠시 알파 레코드에서도 발매된 적이 있습니다.\n\n답: 도시바 EMI",
+ "turns": 3,
+ "tokens_in": 17794,
+ "tokens_out": 575,
+ "cost": 0.0020669,
+ "sec": 4.4,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "아라이 유미 1973년 11월 20일 첫 앨범 알파 레코드"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3162
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Yumi Arai 1973 debut album Alfa Records"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2830
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "비행기구름 아라이 유미 음반사 발매 알파 레코드 재발매"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2610
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "비행기구름 1973 앨범 East Wind 음반"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2648
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w077789",
+  "w078341",
+  "w079750",
+  "w115184",
+  "w150652",
+  "w277781",
+  "w287084",
+  "w291785",
+  "w340262",
+  "w340347",
+  "w396994",
+  "w406050",
+  "w476340",
+  "w508335",
+  "w547600",
+  "w568682",
+  "w631749"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 666,
+   "out": 158,
+   "cost": 0.0001456
+  },
+  {
+   "in": 6090,
+   "out": 177,
+   "cost": 0.0006975
+  },
+  {
+   "in": 11038,
+   "out": 240,
+   "cost": 0.0012238
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

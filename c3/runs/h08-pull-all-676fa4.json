@@ -1,0 +1,174 @@
+{
+ "run": "h08-pull-all-676fa4",
+ "q": "h08",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "**답: 116명**\n\n도원동의 공립 초등학교는 대구대곡초등학교(1996년 9월 1일 개교), 대구노전초등학교(1997년 3월 3일 개교), 대구도원초등학교(1997년 9월 1일 개교, 작업 폴더의 연혁 문서에서 확인)입니다. 대구교육대학교 대구부설초등학교는 1956년에 인가받았지만 국립이라 공립 기준에서 제외했습니다. 따라서 가장 먼저 개교한 공립 학교는 대구대곡초등학교입니다. 이 학교의 연혁에는 \"1997년 2월 20일: 제1회 졸업 (졸업생 116명)\"이라고 적혀 있습니다.",
+ "turns": 6,
+ "tokens_in": 24941,
+ "tokens_out": 1625,
+ "cost": 0.0033066000000000003,
+ "sec": 13.0,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구 달서구 도원동 초등학교",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 440
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w324825"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 130
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w561344"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 606
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구노전초등학교 개교 제1회 졸업생",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.19,
+   "chars": 448
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구도원초등학교 개교",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 439
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구대곡초등학교 개교",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 462
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w120038"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1134
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "대구도원초등학교|대구대곡초등학교"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 686
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w517268"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1272
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w123267"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제1회|제 1회|개교",
+    "within": "r1"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 311
+  }
+ ],
+ "opened": [
+  "w120038",
+  "w123267",
+  "w324825",
+  "w517268",
+  "w561344"
+ ],
+ "shown": [
+  "w123267",
+  "w123268",
+  "w442754",
+  "w561344",
+  "w599517"
+ ],
+ "work": 216,
+ "per_turn": [
+  {
+   "in": 1191,
+   "out": 112,
+   "cost": 0.0001751
+  },
+  {
+   "in": 1635,
+   "out": 97,
+   "cost": 0.000212
+  },
+  {
+   "in": 2489,
+   "out": 330,
+   "cost": 0.0004139
+  },
+  {
+   "in": 3920,
+   "out": 270,
+   "cost": 0.000527
+  },
+  {
+   "in": 7053,
+   "out": 318,
+   "cost": 0.0008643
+  },
+  {
+   "in": 8653,
+   "out": 498,
+   "cost": 0.0011143
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/3",
+ "glimpsed": "2/3"
+}

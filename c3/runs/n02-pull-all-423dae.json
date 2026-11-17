@@ -1,0 +1,530 @@
+{
+ "run": "n02-pull-all-423dae",
+ "q": "n02",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 20,
+ "tokens_in": 241950,
+ "tokens_out": 7436,
+ "cost": 0.027913,
+ "sec": 50.8,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "크레용 신짱 극장판 혼고 미츠루 감독 2025",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 684
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 469
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w644647"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 251
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w439252"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 732
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.28,
+   "chars": 784
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025년.{0,20}(개봉|극장판)|(개봉|공개).{0,10}2025"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 373
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025",
+    "within": "r2"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 341
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w015443"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 809
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025|2024년 4월|2025년"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 583
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025 혼고 미츠루",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 660
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "혼고 미츠루"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1326
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025|2024",
+    "within": "r5"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(극장판|THE MOVIE).{0,60}(2025|2024)"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "크레용 신짱 극장판 2025년 개봉 작품",
+    "k": 150
+   },
+   "status": "ok",
+   "sec": 0.31,
+   "chars": 699
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025",
+    "within": "r5"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(감독|연출)\\s*:?\\s*혼고"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 668
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025년\\s*4월|2025년\\s*1월|2025년\\s*5월|2025년 개봉"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 479
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 최신작 2024 2025 공개",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 654
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "202[45]",
+    "within": "r5"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(2025|2024)년?.{0,40}(개봉|공개|상영)|(개봉|공개|상영).{0,40}(2025|2024)"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 819
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w158646"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 932
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "감독\\s*:?\\s*[가-힣]+",
+    "within": "r6"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 655
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 제33작 제34작 제35작",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.19,
+   "chars": 693
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "감독\\s*:\\s*혼고 미츠루"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 686
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "크레용 신짱"
+   },
+   "status": "truncated",
+   "sec": 0.03,
+   "chars": 3217
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "크레용 신짱 극장판 목록 감독 혼고 미츠루 작품",
+    "k": 300
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 694
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "202[3-5]년.{0,30}(개봉|공개)",
+    "within": "r11"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025",
+    "within": "r11"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "짱구"
+   },
+   "status": "truncated",
+   "sec": 0.05,
+   "chars": 2680
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(202[4-9])",
+    "within": "r11"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(제|第)\\s*3[1-9]\\s*(작|부|弾|作)|3[1-9]부작|3[1-9]번째"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 675
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "크레용 신짱 극장판 33 34 35 36 2025 2026 개봉 일본 애니메이션 영화",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.16,
+   "chars": 650
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제\\s*3[2-9]\\s*부작|3[2-9]부작"
+   },
+   "status": "none",
+   "sec": 0.04,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w354166"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 730
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(32|33|34)\\s*(부작|번째|작)"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 164
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 제32부작 제33부작 극장판 2024 2025",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.16,
+   "chars": 595
+  }
+ ],
+ "opened": [
+  "w015443",
+  "w158646",
+  "w354166",
+  "w439252",
+  "w644647"
+ ],
+ "shown": [
+  "w015443",
+  "w030983",
+  "w035770",
+  "w039866",
+  "w043159",
+  "w047654",
+  "w050417",
+  "w050449",
+  "w056345",
+  "w062761",
+  "w066068",
+  "w076929",
+  "w091585",
+  "w106202",
+  "w112636",
+  "w116617",
+  "w120251",
+  "w123572",
+  "w129086",
+  "w136379",
+  "w136628",
+  "w139839",
+  "w157588",
+  "w158431",
+  "w160752",
+  "w161886",
+  "w162104",
+  "w162753",
+  "w168474",
+  "w195300",
+  "w198070",
+  "w242247",
+  "w243681",
+  "w273349",
+  "w283845",
+  "w284332",
+  "w284994",
+  "w286288",
+  "w288885",
+  "w289551",
+  "w289718",
+  "w290169",
+  "w308332",
+  "w349802",
+  "w350680",
+  "w354166",
+  "w399564",
+  "w400989",
+  "w456462",
+  "w501017",
+  "w552885",
+  "w577626",
+  "w615165",
+  "w644647"
+ ],
+ "work": 459,
+ "per_turn": [
+  {
+   "in": 1183,
+   "out": 290,
+   "cost": 0.0002633
+  },
+  {
+   "in": 1922,
+   "out": 137,
+   "cost": 0.0002607
+  },
+  {
+   "in": 2763,
+   "out": 298,
+   "cost": 0.0004253
+  },
+  {
+   "in": 3529,
+   "out": 323,
+   "cost": 0.0005144
+  },
+  {
+   "in": 4864,
+   "out": 176,
+   "cost": 0.0005744
+  },
+  {
+   "in": 6138,
+   "out": 428,
+   "cost": 0.0008278
+  },
+  {
+   "in": 7510,
+   "out": 338,
+   "cost": 0.00092
+  },
+  {
+   "in": 8911,
+   "out": 214,
+   "cost": 0.0009981
+  },
+  {
+   "in": 9142,
+   "out": 480,
+   "cost": 0.0011542
+  },
+  {
+   "in": 10024,
+   "out": 532,
+   "cost": 0.0012684
+  },
+  {
+   "in": 11371,
+   "out": 557,
+   "cost": 0.0014156
+  },
+  {
+   "in": 12201,
+   "out": 715,
+   "cost": 0.0015776
+  },
+  {
+   "in": 14144,
+   "out": 652,
+   "cost": 0.0017404
+  },
+  {
+   "in": 15697,
+   "out": 550,
+   "cost": 0.0018447
+  },
+  {
+   "in": 16475,
+   "out": 367,
+   "cost": 0.001831
+  },
+  {
+   "in": 20481,
+   "out": 234,
+   "cost": 0.0021651
+  },
+  {
+   "in": 20727,
+   "out": 321,
+   "cost": 0.0022332
+  },
+  {
+   "in": 23639,
+   "out": 428,
+   "cost": 0.0025779
+  },
+  {
+   "in": 25151,
+   "out": 167,
+   "cost": 0.0025986
+  },
+  {
+   "in": 26078,
+   "out": 229,
+   "cost": 0.0027223
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

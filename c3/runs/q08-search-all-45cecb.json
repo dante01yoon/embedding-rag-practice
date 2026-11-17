@@ -1,0 +1,179 @@
+{
+ "run": "q08-search-all-45cecb",
+ "q": "q08",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 66412,
+ "tokens_out": 1234,
+ "cost": 0.0072582,
+ "sec": 9.5,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "포트유니언역 GO 트랜싯"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3345
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Port Union GO station west Rouge Hill Guildwood station rebuild 2016"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2756
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 공사 2016년 완공"
+   },
+   "status": "ok",
+   "sec": 0.2,
+   "chars": 3720
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Guildwood station construction 2016 completed new station building"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2849
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 역사 리모델링 공사 시작 2016년 완료"
+   },
+   "status": "ok",
+   "sec": 0.21,
+   "chars": 3619
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 새 역사 건물 개장"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3725
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 2016년 공사 시작 역사 건물 교체 완공 날짜"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 3647
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Guildwood GO station 2016 construction began new station building completed"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3155
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 역사 건물 공사 2016년 착공 완공 시설 개선 프로젝트"
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 3443
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 VIA 철도 승강장 건설 공사 역사 완료"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3715
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w026317",
+  "w048156",
+  "w064691",
+  "w068913",
+  "w083912",
+  "w100553",
+  "w115697",
+  "w126792",
+  "w143245",
+  "w146242",
+  "w172310",
+  "w203567",
+  "w211509",
+  "w279307",
+  "w315277",
+  "w317484",
+  "w319778",
+  "w358647",
+  "w359437",
+  "w368014",
+  "w375493",
+  "w375610",
+  "w384722",
+  "w392308",
+  "w402267",
+  "w409074",
+  "w419957",
+  "w420747",
+  "w479884",
+  "w509031",
+  "w594368",
+  "w598050",
+  "w617632",
+  "w626200",
+  "w627348"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 712,
+   "out": 368,
+   "cost": 0.0002552
+  },
+  {
+   "in": 6835,
+   "out": 215,
+   "cost": 0.000791
+  },
+  {
+   "in": 12646,
+   "out": 186,
+   "cost": 0.0013576
+  },
+  {
+   "in": 20023,
+   "out": 185,
+   "cost": 0.0020948
+  },
+  {
+   "in": 26196,
+   "out": 280,
+   "cost": 0.0027596
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/2",
+ "glimpsed": "2/2"
+}

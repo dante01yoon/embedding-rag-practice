@@ -1,0 +1,326 @@
+{
+ "run": "h01-search-10k-8c4a12",
+ "q": "h01",
+ "mode": "search",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "token_cap",
+ "answer": "",
+ "turns": 11,
+ "tokens_in": 322411,
+ "tokens_out": 4841,
+ "cost": 0.034661599999999994,
+ "sec": 35.8,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "2009년 사명 변경 양양 거점 부산 광주 노선 항공사"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3341
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "대학 산하 항공사 2009년 양양공항 소형 항공사"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2249
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "한서대학교 항공캠퍼스 2009년 개교 태안"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3115
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안군 고려 원나라 이름 바뀌고 군으로 승격"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2870
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안 지명 유래 고려 원나라 승격 군"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2781
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안군 연혁 고려 기아 원 황제 태안으로 개칭"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2641
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안군 역사 소진현 고려 태안으로 개명 군 승격"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2727
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안 명칭 유래 원나라 황제 총애 고려 인물"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2864
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안군 연혁 고려 충렬왕 태안 이름 바뀜 현에서 군으로"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2624
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안군 행정구역 연혁 기안현 해풍군 고려"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2379
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안군 고려시대 기안현 승격 태안 개명 원 황제 신임"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2759
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안 역사 고려 태안군 이름 얻음 유래 인물 원나라 조정"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2757
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "기안현 태안 기황후 원나라 지명 변경"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 3480
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안군 기씨 고려 원 황실 공로 태안 군 승격"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2959
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "기안현 태안 개명 기자오 기철 고려 원 순제"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2637
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안 기황후 고향 군 승격 지명"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2606
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "기안현 기자오 태안"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2768
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안군 기씨 기황후 고향 기안 태안 승격 원 세조"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2272
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안 기씨 기황후 본관 태안 기자오 고려 원 고향"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 3368
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "기황후 고향 태안"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2766
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "기자오 고향 기안 태안 승격"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2610
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "태안 지명 기씨 기안부 태안군 이름 변경 고려 시대"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2610
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w019256",
+  "w035146",
+  "w043910",
+  "w045590",
+  "w052393",
+  "w098113",
+  "w098897",
+  "w132544",
+  "w167488",
+  "w174096",
+  "w181158",
+  "w184599",
+  "w186260",
+  "w203280",
+  "w217001",
+  "w236631",
+  "w239761",
+  "w250902",
+  "w276864",
+  "w277074",
+  "w277339",
+  "w284876",
+  "w296780",
+  "w298049",
+  "w300915",
+  "w307902",
+  "w315029",
+  "w316217",
+  "w319610",
+  "w324087",
+  "w330411",
+  "w345837",
+  "w354866",
+  "w380861",
+  "w421154",
+  "w457480",
+  "w469782",
+  "w490963",
+  "w584278",
+  "w594833",
+  "w601473",
+  "w603743",
+  "w638821",
+  "w641357"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 721,
+   "out": 400,
+   "cost": 0.0002721
+  },
+  {
+   "in": 6318,
+   "out": 331,
+   "cost": 0.0007973
+  },
+  {
+   "in": 12433,
+   "out": 306,
+   "cost": 0.0013963
+  },
+  {
+   "in": 18014,
+   "out": 313,
+   "cost": 0.0019579
+  },
+  {
+   "in": 23826,
+   "out": 320,
+   "cost": 0.0025426
+  },
+  {
+   "in": 28847,
+   "out": 489,
+   "cost": 0.0031292
+  },
+  {
+   "in": 34518,
+   "out": 550,
+   "cost": 0.0037268
+  },
+  {
+   "in": 41242,
+   "out": 645,
+   "cost": 0.0044467
+  },
+  {
+   "in": 46632,
+   "out": 481,
+   "cost": 0.0049037
+  },
+  {
+   "in": 51730,
+   "out": 481,
+   "cost": 0.0054135
+  },
+  {
+   "in": 58130,
+   "out": 525,
+   "cost": 0.0060755
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/3",
+ "glimpsed": "3/3"
+}

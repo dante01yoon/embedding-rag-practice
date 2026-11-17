@@ -1,0 +1,114 @@
+{
+ "run": "q09-pull-10k-30873d",
+ "q": "q09",
+ "mode": "pull",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답은 1966년입니다.\n\n1985년 1월 28일생 박성진(공격수)은 서울용두초 5학년 때 축구를 시작했고, 동국대를 졸업한 뒤 2007년 고양 KB국민은행에 입단했습니다. 2013년 신생팀 FC 안양에 입단했고, 2014 시즌을 앞두고 이우형 감독의 신임을 받아 주장으로 임명됐습니다. 이우형 감독은 1966년 2월 2일생입니다.\n\n답: 1966년",
+ "turns": 5,
+ "tokens_in": 20122,
+ "tokens_out": 792,
+ "cost": 0.0024082,
+ "sec": 6.2,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "FC 안양 주장 동국대 고양 KB국민은행 공격수",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 443
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "서울용두초등학교 축구 시작 동국대학교 졸업",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 417
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w375420"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1265
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w438142"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 654
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w375420",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1268
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w155341"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  }
+ ],
+ "opened": [
+  "w155341",
+  "w375420",
+  "w438142"
+ ],
+ "shown": [],
+ "work": 97,
+ "per_turn": [
+  {
+   "in": 1257,
+   "out": 235,
+   "cost": 0.0002432
+  },
+  {
+   "in": 2184,
+   "out": 97,
+   "cost": 0.0002669
+  },
+  {
+   "in": 4215,
+   "out": 104,
+   "cost": 0.0004735
+  },
+  {
+   "in": 5570,
+   "out": 170,
+   "cost": 0.000642
+  },
+  {
+   "in": 6896,
+   "out": 186,
+   "cost": 0.0007826
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/2",
+ "glimpsed": "2/2"
+}

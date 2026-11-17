@@ -1,0 +1,74 @@
+{
+ "run": "q07-pull-100k-ff97fa",
+ "q": "q07",
+ "mode": "pull",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답은 73%입니다. 작업 폴더에서 찾은 '회로 (영화)' 문서에 \"로튼 토마토에서 73%의 점수를 받았다\"고 적혀 있고, 이 영화가 2001년 개봉작이며 할리우드 리메이크가 2006년 '펄스'라는 이름으로 나왔다는 내용도 함께 확인했습니다.\n\n답: 73%",
+ "turns": 3,
+ "tokens_in": 6168,
+ "tokens_out": 459,
+ "cost": 0.0008462999999999999,
+ "sec": 3.2,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "구로사와 기요시 회로 2001 영화 펄스 리메이크 로튼 토마토",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 453
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "로튼 토마토|Rotten Tomatoes",
+    "within": ""
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 43
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w027205"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  }
+ ],
+ "opened": [
+  "w027205"
+ ],
+ "shown": [],
+ "work": 50,
+ "per_turn": [
+  {
+   "in": 1226,
+   "out": 185,
+   "cost": 0.0002151
+  },
+  {
+   "in": 1715,
+   "out": 131,
+   "cost": 0.000237
+  },
+  {
+   "in": 3227,
+   "out": 143,
+   "cost": 0.0003942
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

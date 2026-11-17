@@ -1,0 +1,107 @@
+{
+ "run": "q04-search-all-e49500",
+ "q": "q04",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 회사는 **알몬티 인더스트리스(Almonty Industries)**입니다. 회사명의 '알(Al)'은 대니얼 다마토의 아버지 Al D'Amato에서, '몬티(Monty)'는 루이스 블랙의 아버지 Monty Black에서 따왔습니다.\n\n상동광산 관련 문서에는 \"2006년 캐나다 Woulfe Mining Corp.이 상동광산의 광업권을 인수한 이래로 … 2015년 9월 Almonty Industries Inc.가 Woulfe Mining Corp.을 인수·합병 하면서 상동광산 재개발을 위한 국내 법인인 (주)알몬티 대한중석의 100% 지분을 소유하고 있다.\"라고 나와 있습니다. 즉 2015년 상동 프로젝트 인수에 함께한 캐나다 회사는 Woulfe Mining Corp.입니다. 다만 문서에는 2015년 인수 방식이 합병으로 서술되어 있어, \"함께한\"이라는 표현을 이 합병 관계로 이해했습니다.\n\n답: Woulfe Mining Corp. (캐나다 회사, 알몬티가 2015년 9월 인수·합병)",
+ "turns": 3,
+ "tokens_in": 24824,
+ "tokens_out": 1627,
+ "cost": 0.0032959,
+ "sec": 10.6,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "상동 텅스텐 광산 2015 인수 캐나다"
+   },
+   "status": "ok",
+   "sec": 0.45,
+   "chars": 3715
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Sangdong tungsten project 2015 acquisition Canadian company"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2735
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Daniel D'Amato father Lewis Black father tungsten company name"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3384
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Almonty Sangdong 2015 Woulfe Mining acquisition"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 2436
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Almonty Industries name Almon Monty D'Amato Lewis Black father"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3361
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w001195",
+  "w085171",
+  "w106329",
+  "w138081",
+  "w202659",
+  "w225142",
+  "w245983",
+  "w267663",
+  "w365526",
+  "w379160",
+  "w416065",
+  "w488853",
+  "w493802",
+  "w514798",
+  "w520985",
+  "w539319",
+  "w566422",
+  "w590646",
+  "w602245"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 666,
+   "out": 383,
+   "cost": 0.0002581
+  },
+  {
+   "in": 9493,
+   "out": 533,
+   "cost": 0.0012158
+  },
+  {
+   "in": 14665,
+   "out": 711,
+   "cost": 0.001822
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "1/1"
+}

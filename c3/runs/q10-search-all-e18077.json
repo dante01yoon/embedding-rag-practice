@@ -1,0 +1,252 @@
+{
+ "run": "q10-search-all-e18077",
+ "q": "q10",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "token_cap",
+ "answer": "",
+ "turns": 13,
+ "tokens_in": 307154,
+ "tokens_out": 2531,
+ "cost": 0.0319809,
+ "sec": 20.1,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "1989년 제1회 관현악단 연주 1996년부터 매년 4월 음악제"
+   },
+   "status": "ok",
+   "sec": 0.35,
+   "chars": 3717
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "은행 이름 챔버홀 개관"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 2848
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "IBK 챔버홀 개관 예술의전당 음악당 신축"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3605
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "IBK챔버홀 기업은행 명칭 공연장 완공 2011년 개관"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 3657
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "예술의전당 IBK 챔버홀 준공 개관 연도 리사이틀홀 증축"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3611
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "새로 건립된 공연장 IBK 챔버홀 확정 2010년 1월 발전계획 공사 완료 개관"
+   },
+   "status": "ok",
+   "sec": 0.33,
+   "chars": 3074
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "IBK 챔버홀 개관 600석 예술의전당 2011년"
+   },
+   "status": "ok",
+   "sec": 0.2,
+   "chars": 3591
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "IBK챔버홀 개관식"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2939
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "예술의전당 음악당 IBK 챔버홀 기업은행 45억 명칭 확정 개관 년"
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 3442
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "예술의전당 IBK 챔버홀 공사 완료 개관 기념 공연"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3489
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "공연장 명칭을 IBK 챔버홀로 확정하였으며 준공 개관"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3199
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "음악당 리사이틀홀 자리 새 공연장 건립 챔버홀 완공"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3200
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "예술의전당 음악당 리사이틀홀 철거 신축 챔버홀 2011년 개관 기업은행 후원"
+   },
+   "status": "ok",
+   "sec": 0.25,
+   "chars": 3610
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "예술의전당 IBK챔버홀 2011년 준공 2012년 개관"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 3613
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w033009",
+  "w056061",
+  "w128922",
+  "w144691",
+  "w156667",
+  "w166151",
+  "w220293",
+  "w223013",
+  "w268959",
+  "w290644",
+  "w304731",
+  "w352658",
+  "w379189",
+  "w427716",
+  "w430270",
+  "w442244",
+  "w443751",
+  "w457041",
+  "w466315",
+  "w491094",
+  "w501823",
+  "w504296",
+  "w512380",
+  "w546440",
+  "w551914",
+  "w555832",
+  "w560884",
+  "w577484",
+  "w596064",
+  "w603011",
+  "w614515",
+  "w646421"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 683,
+   "out": 347,
+   "cost": 0.0002418
+  },
+  {
+   "in": 7198,
+   "out": 239,
+   "cost": 0.0008393
+  },
+  {
+   "in": 10744,
+   "out": 119,
+   "cost": 0.0011339
+  },
+  {
+   "in": 14308,
+   "out": 164,
+   "cost": 0.0015128
+  },
+  {
+   "in": 17798,
+   "out": 169,
+   "cost": 0.0018643
+  },
+  {
+   "in": 20719,
+   "out": 93,
+   "cost": 0.0021184
+  },
+  {
+   "in": 24198,
+   "out": 153,
+   "cost": 0.0024963
+  },
+  {
+   "in": 27052,
+   "out": 195,
+   "cost": 0.0028027
+  },
+  {
+   "in": 30423,
+   "out": 223,
+   "cost": 0.0031538
+  },
+  {
+   "in": 33736,
+   "out": 147,
+   "cost": 0.0034471
+  },
+  {
+   "in": 36773,
+   "out": 199,
+   "cost": 0.0037768
+  },
+  {
+   "in": 39968,
+   "out": 242,
+   "cost": 0.0041178
+  },
+  {
+   "in": 43554,
+   "out": 241,
+   "cost": 0.0044759
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/2",
+ "glimpsed": "2/2"
+}

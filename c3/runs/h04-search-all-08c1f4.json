@@ -1,0 +1,125 @@
+{
+ "run": "h04-search-all-08c1f4",
+ "q": "h04",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답은 **1987년**입니다.\n\n《콜 미 바이 유어 네임》(2017, 루카 구아다니노 감독)은 1983년 북부 이탈리아를 배경으로 합니다. 한국어 위키백과 '콜 미 바이 유어 네임' 문서에는 이 영화가 원작 소설과 다른 점으로, \"그는 배경의 해를 1987년에서 1983년으로 바꿨다\"는 내용이 나옵니다. 같은 문서에서 원작 소설은 안드레 애치먼의 2007년 동명 소설이라고 확인됩니다.\n\n아카데미 각색상 수상은 검색 결과에서 \"제90회 미국 아카데미상에서 각색\"까지만 보여서 직접 확인하지는 못했습니다. 다만 이 작품이 각색상을 받은 것은 제가 알고 있는 사실입니다.\n\n답: 1987년",
+ "turns": 4,
+ "tokens_in": 34522,
+ "tokens_out": 1780,
+ "cost": 0.0043422,
+ "sec": 12.9,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "콜 미 바이 유어 네임 소설 시대 배경 연도 1983"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 2763
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Call Me by Your Name novel Aciman set in year 1983 film changed setting"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3361
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "콜 미 바이 유어 네임 원작 소설 1987년 배경 영화 1983년으로 변경"
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 2422
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "안드레 애치먼 콜 미 바이 유어 네임 소설 1987년 여름"
+   },
+   "status": "ok",
+   "sec": 0.2,
+   "chars": 2849
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "콜 미 바이 유어 네임 원작 소설은 배경 연도 구아다니노 시대를 1983년으로 옮겼다"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 2990
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Call Me by Your Name Aciman novel takes place 1987 Italy summer"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3412
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w004549",
+  "w019946",
+  "w025190",
+  "w073136",
+  "w120897",
+  "w124621",
+  "w125631",
+  "w132894",
+  "w149876",
+  "w156173",
+  "w251171",
+  "w292934",
+  "w356463",
+  "w365576",
+  "w423812",
+  "w506141",
+  "w508100",
+  "w515804",
+  "w522773",
+  "w529332",
+  "w571037",
+  "w618583"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 664,
+   "out": 667,
+   "cost": 0.0003999
+  },
+  {
+   "in": 5900,
+   "out": 289,
+   "cost": 0.0007345
+  },
+  {
+   "in": 11280,
+   "out": 293,
+   "cost": 0.0012745
+  },
+  {
+   "in": 16678,
+   "out": 531,
+   "cost": 0.0019333
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

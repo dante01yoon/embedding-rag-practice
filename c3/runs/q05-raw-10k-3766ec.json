@@ -1,0 +1,66 @@
+{
+ "run": "q05-raw-10k-3766ec",
+ "q": "q05",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "아라이 유미의 첫 앨범 《히코키구모》(비행기구름)는 위키백과 문서에 따르면 1973년 11월 20일 도시바 EMI에서 발매되었고, 음원 발매권 사정으로 잠깐 알파 레코드에서도 발매된 적이 있습니다. 따라서 처음 이 앨범을 낸 음반사는 도시바 EMI입니다.\n\n답: 도시바 EMI",
+ "turns": 3,
+ "tokens_in": 4909,
+ "tokens_out": 271,
+ "cost": 0.0006264,
+ "sec": 3.2,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "아라이 유미|유밍|Yumi Arai"
+   },
+   "status": "ok",
+   "sec": 0.47,
+   "chars": 290
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w508335"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  }
+ ],
+ "opened": [
+  "w508335"
+ ],
+ "shown": [
+  "w167080",
+  "w508335"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 954,
+   "out": 64,
+   "cost": 0.0001274
+  },
+  {
+   "in": 1304,
+   "out": 50,
+   "cost": 0.0001554
+  },
+  {
+   "in": 2651,
+   "out": 157,
+   "cost": 0.0003436
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

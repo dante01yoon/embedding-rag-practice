@@ -1,0 +1,160 @@
+{
+ "run": "h05-search-all-357d8a",
+ "q": "h05",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 68592,
+ "tokens_out": 1830,
+ "cost": 0.0077742,
+ "sec": 13.0,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "2009年4月 パ・リーグ 月間MVP 野手 日本ハム"
+   },
+   "status": "ok",
+   "sec": 0.11,
+   "chars": 3632
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "2009年4月 月間MVP 打率 パシフィック・リーグ 野手"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 3634
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "月間MVP 2009年4月 パ・リーグ 野手 受賞"
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 3634
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "1975年生まれ 日本ハム 2009年4月 月間MVP"
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 3632
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "퍼시픽 리그 월간 MVP 2009년 4월 野手"
+   },
+   "status": "ok",
+   "sec": 0.27,
+   "chars": 2674
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "2009年4月 月間MVP 野手部門 選出 打率 日本ハム 1975年生まれ"
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 3632
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "日本ハム 1975年生まれ 2009年4月 月間MVP 打率"
+   },
+   "status": "ok",
+   "sec": 0.11,
+   "chars": 3632
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "일본 프로 야구 월간 MVP 2009년 4월 퍼시픽 리그 야수 수상 타율"
+   },
+   "status": "ok",
+   "sec": 0.31,
+   "chars": 3462
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "가네코 마코토 월간 MVP 2009년 4월"
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 2115
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "金子誠 月間MVP 2009年4月 打率"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 3634
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w000473",
+  "w013515",
+  "w073796",
+  "w093376",
+  "w160094",
+  "w199008",
+  "w208730",
+  "w255310",
+  "w273977",
+  "w344486",
+  "w372008",
+  "w424280",
+  "w432901",
+  "w521723",
+  "w575528",
+  "w595967"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 672,
+   "out": 341,
+   "cost": 0.0002377
+  },
+  {
+   "in": 7285,
+   "out": 384,
+   "cost": 0.0009205
+  },
+  {
+   "in": 13890,
+   "out": 415,
+   "cost": 0.0015965
+  },
+  {
+   "in": 19962,
+   "out": 392,
+   "cost": 0.0021922
+  },
+  {
+   "in": 26783,
+   "out": 298,
+   "cost": 0.0028273
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,65 @@
+{
+ "run": "q06-raw-100k-24ec1c",
+ "q": "q06",
+ "mode": "raw",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답: 250만 부\n\n2022년 6월 시점에서 전자판을 포함한 누계 발행 부수는 250만 부를 돌파했다고 나와 있습니다(문서 w359531 '철야의 노래').",
+ "turns": 3,
+ "tokens_in": 4808,
+ "tokens_out": 394,
+ "cost": 0.0006778,
+ "sec": 6.7,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "コトヤマ|よふかしのうた|夜フカシ"
+   },
+   "status": "ok",
+   "sec": 3.35,
+   "chars": 177
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w359531"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  }
+ ],
+ "opened": [
+  "w359531"
+ ],
+ "shown": [
+  "w359531"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 972,
+   "out": 267,
+   "cost": 0.0002307
+  },
+  {
+   "in": 1225,
+   "out": 50,
+   "cost": 0.0001475
+  },
+  {
+   "in": 2611,
+   "out": 77,
+   "cost": 0.0002996
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

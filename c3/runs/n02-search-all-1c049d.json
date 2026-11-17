@@ -1,0 +1,173 @@
+{
+ "run": "n02-search-all-1c049d",
+ "q": "n02",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 79281,
+ "tokens_out": 2205,
+ "cost": 0.0090306,
+ "sec": 15.1,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 2025 혼고 미츠루"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3775
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉"
+   },
+   "status": "ok",
+   "sec": 0.18,
+   "chars": 3793
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 제33부작 2025년 개봉"
+   },
+   "status": "ok",
+   "sec": 0.21,
+   "chars": 3803
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "クレヨンしんちゃん 劇場版 2025年 公開 本郷みつる 監督"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3707
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉 작품"
+   },
+   "status": "ok",
+   "sec": 0.21,
+   "chars": 3793
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "映画クレヨンしんちゃん 2025年4月 公開 タイトル"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3733
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 제34작 2025 혼고 미츠루 감독"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3279
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 2025년 개봉 감독 혼고 미츠루 작품 목록"
+   },
+   "status": "ok",
+   "sec": 0.21,
+   "chars": 3063
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "オラと博士の夏休み おわらない七日間の旅"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3241
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 오라와 박사의 여름방학"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3317
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w015443",
+  "w050417",
+  "w089368",
+  "w112636",
+  "w139839",
+  "w145379",
+  "w158646",
+  "w161710",
+  "w161886",
+  "w179267",
+  "w273977",
+  "w279205",
+  "w279434",
+  "w284332",
+  "w286288",
+  "w308332",
+  "w331533",
+  "w335263",
+  "w342284",
+  "w362105",
+  "w381145",
+  "w439252",
+  "w440119",
+  "w487081",
+  "w522818",
+  "w558329",
+  "w582127",
+  "w644647",
+  "w645269"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 619,
+   "out": 336,
+   "cost": 0.0002299
+  },
+  {
+   "in": 8483,
+   "out": 470,
+   "cost": 0.0010833
+  },
+  {
+   "in": 16205,
+   "out": 397,
+   "cost": 0.001819
+  },
+  {
+   "in": 23658,
+   "out": 561,
+   "cost": 0.0026463
+  },
+  {
+   "in": 30316,
+   "out": 441,
+   "cost": 0.0032521
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

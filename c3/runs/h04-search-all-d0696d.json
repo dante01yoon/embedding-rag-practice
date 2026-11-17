@@ -1,0 +1,163 @@
+{
+ "run": "h04-search-all-d0696d",
+ "q": "h04",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 51635,
+ "tokens_out": 2247,
+ "cost": 0.006286999999999999,
+ "sec": 13.8,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "콜 미 바이 유어 네임 소설 1983년 영화 배경 연도 변경"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 2395
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Call Me by Your Name novel set in 1982 Aciman film 1983"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3372
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "콜 미 바이 유어 네임 원작 소설 배경 1982년 여름"
+   },
+   "status": "ok",
+   "sec": 0.2,
+   "chars": 2469
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "안드레 애치먼 소설 콜 미 바이 유어 네임 시대 배경"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 2535
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "그해, 여름 손님 소설 1987년 배경 영화 1983년으로 변경"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 2308
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Call Me by Your Name novel 1987 film changed setting 1983"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2893
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "콜 미 바이 유어 네임 영화 소설과 달리 시대 배경을 1980년대로 변경"
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 2807
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Call Me by Your Name Aciman novel summer 1987 Elio Oliver"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2937
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "그해, 여름 손님 줄거리 엘리오 올리버 여름 소설 배경 연도"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3179
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w025190",
+  "w046397",
+  "w078326",
+  "w085236",
+  "w102796",
+  "w107410",
+  "w125631",
+  "w132894",
+  "w202403",
+  "w204441",
+  "w237421",
+  "w255017",
+  "w278613",
+  "w284683",
+  "w286101",
+  "w302823",
+  "w318290",
+  "w365576",
+  "w377669",
+  "w395747",
+  "w423812",
+  "w467326",
+  "w499566",
+  "w506141",
+  "w508100",
+  "w571037",
+  "w585573",
+  "w618583"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 664,
+   "out": 812,
+   "cost": 0.0004724
+  },
+  {
+   "in": 5239,
+   "out": 528,
+   "cost": 0.0007879
+  },
+  {
+   "in": 10375,
+   "out": 355,
+   "cost": 0.001215
+  },
+  {
+   "in": 15126,
+   "out": 320,
+   "cost": 0.0016726
+  },
+  {
+   "in": 20231,
+   "out": 232,
+   "cost": 0.0021391
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,461 @@
+{
+ "run": "h06-pull-all-1e09e4",
+ "q": "h06",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 20,
+ "tokens_in": 218523,
+ "tokens_out": 11900,
+ "cost": 0.0278023,
+ "sec": 83.0,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 7월 라이트 노벨 시리즈"
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 499
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w601789"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 613
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고에서 2001년 간행 시작 시리즈 고등학교 주인공"
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 555
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 475
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w637905"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 577
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월|2001년 7월부터|전격 문고.{0,40}2001"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "스트로베리 패닉 소설 고등학교 도시 인구"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 442
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "인구"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 275
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w231052"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 257
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "학원|고등학교|도시"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1770
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w527412"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "도시|인구|시\\b|市|현\\b",
+    "within": "r3"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 1415
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진다이.{0,60}(시|市|도시)|(시|도시).{0,30}진다이|만 명|명 정도|인구"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 275
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w527412",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1266
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월|2001년 여름|2001년.{0,20}전격 문고|전격 문고.{0,30}2001년"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 7월 발매 1권 고등학교 소설 시리즈 도시"
+   },
+   "status": "ok",
+   "sec": 0.79,
+   "chars": 457
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w539710"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년",
+    "within": "r5"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "가상의 도시 고등학교 배경 라이트 노벨 전격 문고 연재"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 480
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "가상의 도시|가상 도시|가상의 지방|가공의 도시"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 177
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 748
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "전격 문고.{0,80}(간행|발매|출간|연재)"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 1554
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001年|2001년 7월|2001년부터"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월|2001년 7월에|2001년 6월|2001년 8월"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 182
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 창간 시리즈 학원 고등학교 도시 가상 배경 라이트노벨 애니메이션"
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 542
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년",
+    "offset": 20
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 31
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "인구.{0,10}(약|만)|(약|만).{0,5}명"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 172
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "2001년 7월 전격문고 창간 라이트노벨 시리즈 주인공 고등학교 소설 무대 가상 도시"
+   },
+   "status": "ok",
+   "sec": 0.3,
+   "chars": 489
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "2001년 7월부터 간행 라이트 노벨 아스키 미디어 워크스 고등학교 학생 주인공 시리즈"
+   },
+   "status": "ok",
+   "sec": 0.28,
+   "chars": 577
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년 7월|2001년 7월부터|2001年7月"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "가상의|가상 도시|모델로 한|모델로 한 도시"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1317
+  }
+ ],
+ "opened": [
+  "w231052",
+  "w527412",
+  "w539710",
+  "w601789",
+  "w637905"
+ ],
+ "shown": [
+  "w003700",
+  "w033887",
+  "w051561",
+  "w089047",
+  "w092893",
+  "w099033",
+  "w119776",
+  "w136096",
+  "w168020",
+  "w201629",
+  "w229521",
+  "w234935",
+  "w239800",
+  "w242002",
+  "w242487",
+  "w244219",
+  "w293753",
+  "w380512",
+  "w382541",
+  "w386975",
+  "w421944",
+  "w431427",
+  "w439472",
+  "w450638",
+  "w455883",
+  "w493377",
+  "w527412",
+  "w534240",
+  "w539710",
+  "w575851",
+  "w589498",
+  "w591308",
+  "w627670",
+  "w638339"
+ ],
+ "work": 105,
+ "per_turn": [
+  {
+   "in": 1165,
+   "out": 335,
+   "cost": 0.000284
+  },
+  {
+   "in": 1672,
+   "out": 224,
+   "cost": 0.0002792
+  },
+  {
+   "in": 2437,
+   "out": 492,
+   "cost": 0.0004897
+  },
+  {
+   "in": 3590,
+   "out": 353,
+   "cost": 0.0005355
+  },
+  {
+   "in": 4167,
+   "out": 483,
+   "cost": 0.0006582
+  },
+  {
+   "in": 4755,
+   "out": 618,
+   "cost": 0.0007845
+  },
+  {
+   "in": 5382,
+   "out": 386,
+   "cost": 0.0007312
+  },
+  {
+   "in": 7243,
+   "out": 392,
+   "cost": 0.0009203
+  },
+  {
+   "in": 10200,
+   "out": 498,
+   "cost": 0.001269
+  },
+  {
+   "in": 11823,
+   "out": 515,
+   "cost": 0.0014398
+  },
+  {
+   "in": 12502,
+   "out": 354,
+   "cost": 0.0014272
+  },
+  {
+   "in": 13936,
+   "out": 779,
+   "cost": 0.0017831
+  },
+  {
+   "in": 14726,
+   "out": 657,
+   "cost": 0.0018011
+  },
+  {
+   "in": 15532,
+   "out": 899,
+   "cost": 0.0020027
+  },
+  {
+   "in": 17134,
+   "out": 786,
+   "cost": 0.0021064
+  },
+  {
+   "in": 17220,
+   "out": 666,
+   "cost": 0.002055
+  },
+  {
+   "in": 18101,
+   "out": 909,
+   "cost": 0.0022646
+  },
+  {
+   "in": 18204,
+   "out": 1144,
+   "cost": 0.0023924
+  },
+  {
+   "in": 18998,
+   "out": 721,
+   "cost": 0.0022603
+  },
+  {
+   "in": 19736,
+   "out": 689,
+   "cost": 0.0023181
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "0/1"
+}

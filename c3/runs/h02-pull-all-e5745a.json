@@ -1,0 +1,397 @@
+{
+ "run": "h02-pull-all-e5745a",
+ "q": "h02",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 20,
+ "tokens_in": 196573,
+ "tokens_out": 3175,
+ "cost": 0.0212448,
+ "sec": 34.7,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "I.F. 기계치 래퍼 1979년 9월 20일",
+    "k": 20
+   },
+   "status": "ok",
+   "sec": 0.32,
+   "chars": 428
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w359675"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w419062"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1265
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w457136"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1260
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w000785"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "한국국제대학교 폐교",
+    "k": 20
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 410
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w461996"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주시 초대 시장 1945년 12월",
+    "k": 20
+   },
+   "status": "ok",
+   "sec": 0.27,
+   "chars": 421
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w404228"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 265
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1945년\\s*12월.{0,30}(취임|시장)|(시장|초대).{0,20}1945년\\s*12월"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 206
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "초대.{0,15}(진주|진양)|진주.{0,20}초대"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주시 역대 시장 목록 진양군수",
+    "k": 30
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 465
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주시장.{0,40}(취임|임명)|(취임|임명).{0,40}진주"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w350455"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 292
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w278522"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 414
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주(시)?\\s*시장"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 321
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w626799"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 652
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주시 행정 연혁 1945년 시 승격",
+    "k": 30
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 430
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1945년.{0,30}(초대|취임)|(초대|취임).{0,30}1945년"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 206
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "초대\\s*(진주)?\\s*시장|초대\\s*시장"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w095779"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 206
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1945년\\s*12월"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 322
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주시 역사 해방 이후 시장 취임",
+    "k": 30
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 452
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "초대.{0,20}시장|시장.{0,20}초대"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 318
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주.{0,40}1945년|1945년.{0,40}진주"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 308
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주시",
+    "k": 20
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 463
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(진주부윤|진주부 부윤|초대 진주|진주시 초대)"
+   },
+   "status": "none",
+   "sec": 0.03,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주시장.{0,30}\\d{4}년"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 177
+  }
+ ],
+ "opened": [
+  "w000785",
+  "w095779",
+  "w278522",
+  "w350455",
+  "w359675",
+  "w404228",
+  "w419062",
+  "w457136",
+  "w461996",
+  "w626799"
+ ],
+ "shown": [],
+ "work": 133,
+ "per_turn": [
+  {
+   "in": 1222,
+   "out": 195,
+   "cost": 0.0002197
+  },
+  {
+   "in": 1640,
+   "out": 97,
+   "cost": 0.0002125
+  },
+  {
+   "in": 4257,
+   "out": 176,
+   "cost": 0.0005137
+  },
+  {
+   "in": 6789,
+   "out": 239,
+   "cost": 0.0007984
+  },
+  {
+   "in": 7252,
+   "out": 50,
+   "cost": 0.0007502
+  },
+  {
+   "in": 8509,
+   "out": 170,
+   "cost": 0.0009359
+  },
+  {
+   "in": 8989,
+   "out": 50,
+   "cost": 0.0009239
+  },
+  {
+   "in": 9283,
+   "out": 120,
+   "cost": 0.0009883
+  },
+  {
+   "in": 9576,
+   "out": 125,
+   "cost": 0.0010201
+  },
+  {
+   "in": 9672,
+   "out": 224,
+   "cost": 0.0010792
+  },
+  {
+   "in": 10272,
+   "out": 97,
+   "cost": 0.0010757
+  },
+  {
+   "in": 11095,
+   "out": 150,
+   "cost": 0.0011845
+  },
+  {
+   "in": 11454,
+   "out": 50,
+   "cost": 0.0011704
+  },
+  {
+   "in": 12126,
+   "out": 237,
+   "cost": 0.0013311
+  },
+  {
+   "in": 12886,
+   "out": 182,
+   "cost": 0.0013796
+  },
+  {
+   "in": 13263,
+   "out": 105,
+   "cost": 0.0013788
+  },
+  {
+   "in": 13631,
+   "out": 313,
+   "cost": 0.0015196
+  },
+  {
+   "in": 14501,
+   "out": 127,
+   "cost": 0.0015136
+  },
+  {
+   "in": 14856,
+   "out": 176,
+   "cost": 0.0015736
+  },
+  {
+   "in": 15300,
+   "out": 292,
+   "cost": 0.001676
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "2/3"
+}

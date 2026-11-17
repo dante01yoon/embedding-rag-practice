@@ -1,0 +1,124 @@
+{
+ "run": "q04-search-all-1438ee",
+ "q": "q04",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답: 울프 마이닝(Woulfe Mining Corp., 캐나다)\n\n이 회사는 알몬티 인더스트리스(Almonty Industries)입니다. 회사 이름 '알(Al)'은 대니얼 다마토의 아버지 Al D'Amato에서, '몬티(Monty)'는 루이스 블랙의 아버지 Monty Black에서 따왔다고 문서에 나옵니다. 위키백과 문서에 따르면 2015년 알몬티는 캐나다의 울프 마이닝 주식회사와 함께 대한민국 상동 광산 프로젝트(Sangdong project)를 인수했습니다. 다른 검색 결과인 상동광산 문서도 2015년 9월 Almonty Industries가 Woulfe Mining Corp.을 인수·합병했다고 전합니다.\n\n답: 울프 마이닝(Woulfe Mining Corp.)",
+ "turns": 3,
+ "tokens_in": 26508,
+ "tokens_out": 1348,
+ "cost": 0.0033248,
+ "sec": 7.2,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "상동 텅스텐 광산 2015 인수 캐나다"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3715
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Sangdong tungsten project acquisition 2015 Canadian company"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2735
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Daniel D'Amato father name tungsten company named"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3529
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "알몬티 상동 광업권 인수 2015 캐나다 회사 공동"
+   },
+   "status": "ok",
+   "sec": 0.09,
+   "chars": 3539
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Almonty Sangdong acquisition 2015 Woulfe Mining Canadian"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2436
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Almonty Industries name Alvin D'Amato Montague Black"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 1641
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w001195",
+  "w106329",
+  "w128871",
+  "w202659",
+  "w225142",
+  "w229702",
+  "w245983",
+  "w260765",
+  "w263772",
+  "w282237",
+  "w325345",
+  "w370685",
+  "w379160",
+  "w382111",
+  "w416065",
+  "w437991",
+  "w488853",
+  "w493802",
+  "w514798",
+  "w520985",
+  "w539319",
+  "w566422",
+  "w590646",
+  "w602245",
+  "w622406",
+  "w629095"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 666,
+   "out": 385,
+   "cost": 0.0002591
+  },
+  {
+   "in": 9379,
+   "out": 509,
+   "cost": 0.0011924
+  },
+  {
+   "in": 16463,
+   "out": 454,
+   "cost": 0.0018733
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

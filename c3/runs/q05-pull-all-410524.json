@@ -1,0 +1,74 @@
+{
+ "run": "q05-pull-all-410524",
+ "q": "q05",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답: 도시바 EMI\n\n첫 앨범 《히코키구모(비행기구름)》은 1973년 11월 20일 도시바 EMI에서 발매되었고, 음원 발매권 사정으로 잠시 알파 레코드에서도 발매되었다는 내용이 '비행기구름 (음반)' 문서에 나와 있습니다.",
+ "turns": 3,
+ "tokens_in": 6230,
+ "tokens_out": 532,
+ "cost": 0.0008889999999999999,
+ "sec": 4.5,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "아라이 유미 첫 앨범 1973년 11월 20일 알파 레코드",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.68,
+   "chars": 468
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w452012"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 198
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w508335"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  }
+ ],
+ "opened": [
+  "w452012",
+  "w508335"
+ ],
+ "shown": [],
+ "work": 50,
+ "per_turn": [
+  {
+   "in": 1230,
+   "out": 310,
+   "cost": 0.000278
+  },
+  {
+   "in": 1686,
+   "out": 97,
+   "cost": 0.0002171
+  },
+  {
+   "in": 3314,
+   "out": 125,
+   "cost": 0.0003939
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

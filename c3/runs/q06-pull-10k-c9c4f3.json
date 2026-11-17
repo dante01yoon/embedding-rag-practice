@@ -1,0 +1,79 @@
+{
+ "run": "q06-pull-10k-c9c4f3",
+ "q": "q06",
+ "mode": "pull",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "이 작품은 『철야의 노래』(원제 『よふかしのうた』)입니다. 작업 폴더에 가져온 문서에 따르면 2022년 6월 시점에서 전자판을 포함한 누계 발행 부수는 **250만 부를 돌파**했습니다.\n\n답: 250만 부",
+ "turns": 4,
+ "tokens_in": 8152,
+ "tokens_out": 892,
+ "cost": 0.0012612,
+ "sec": 6.9,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "コトヤマ 吸血鬼 少女 不登校 中学生 週刊少年サンデー 2019",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 475
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "よふかしのうた",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 81
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w359531"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  }
+ ],
+ "opened": [
+  "w359531"
+ ],
+ "shown": [],
+ "work": 51,
+ "per_turn": [
+  {
+   "in": 1248,
+   "out": 300,
+   "cost": 0.0002748
+  },
+  {
+   "in": 1738,
+   "out": 367,
+   "cost": 0.0003573
+  },
+  {
+   "in": 1890,
+   "out": 50,
+   "cost": 0.000214
+  },
+  {
+   "in": 3276,
+   "out": 175,
+   "cost": 0.0004151
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

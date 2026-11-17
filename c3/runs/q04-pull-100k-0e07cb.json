@@ -1,0 +1,74 @@
+{
+ "run": "q04-pull-100k-0e07cb",
+ "q": "q04",
+ "mode": "pull",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답은 **울프 마이닝(Wolf Minerals, 울프마이닝 주식회사)**입니다.\n\n근거: 알몬티 인더스트리스 문서에 따르면, 회사명 '알몬티(Almonty)'의 '알(Al)'은 대니얼 다마토의 아버지 알 다마토(Al D'Amato)에서, '몬티(Monty)'는 루이스 블랙의 아버지 몬티 블랙(Monty Black)에서 유래했습니다. 같은 문서는 \"2015년 알몬티사는 캐나다의 울프마이닝 주식회사()와 대한민국 상동 광산 프로젝트(Sangdong project)를 인수하였다\"고 기록합니다.\n\n답: 울프 마이닝(Wolf Minerals, 캐나다)",
+ "turns": 3,
+ "tokens_in": 6763,
+ "tokens_out": 887,
+ "cost": 0.0011198,
+ "sec": 5.5,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "상동 텅스텐 광산 2015 인수 캐나다",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 440
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "Sangdong tungsten mine acquisition 2015 Canadian",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 453
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w245983"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1271
+  }
+ ],
+ "opened": [
+  "w245983"
+ ],
+ "shown": [],
+ "work": 97,
+ "per_turn": [
+  {
+   "in": 1230,
+   "out": 470,
+   "cost": 0.000358
+  },
+  {
+   "in": 2154,
+   "out": 136,
+   "cost": 0.0002834
+  },
+  {
+   "in": 3379,
+   "out": 281,
+   "cost": 0.0004784
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,84 @@
+{
+ "run": "q04-pull-all-2349cd",
+ "q": "q04",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "이 회사는 **울프마이닝(Woulfe Mining Corp.)**입니다.\n\n근거는 다음과 같습니다. 알몬티 인더스트리스(Almonty Industries) 문서에 따르면, 회사명 '알몬티(ALMONTY)'의 '알(Al)'은 대니얼 다마토의 아버지 '알 다마토(Al D'Amato)'에서, '몬티(MONTY)'는 루이스 블랙의 아버지 '몬티 블랙(Monty Black)'에서 왔습니다. 같은 문서는 2015년 알몬티가 캐나다의 울프마이닝 주식회사와 함께 대한민국 상동 광산 프로젝트를 인수했다고 적고 있습니다. 상동광산 문서도 2015년 9월 Almonty Industries Inc.가 Woulfe Mining Corp.을 인수·합병했다고 확인해 줍니다.\n\n답: 울프마이닝(Woulfe Mining Corp.)",
+ "turns": 3,
+ "tokens_in": 8002,
+ "tokens_out": 1055,
+ "cost": 0.0013277000000000002,
+ "sec": 11.7,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "상동 텅스텐 광산 2015 인수 캐나다",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.32,
+   "chars": 411
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "Sangdong tungsten mine acquisition 2015",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 492
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w245983"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1271
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w602245"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1260
+  }
+ ],
+ "opened": [
+  "w245983",
+  "w602245"
+ ],
+ "shown": [],
+ "work": 97,
+ "per_turn": [
+  {
+   "in": 1230,
+   "out": 405,
+   "cost": 0.0003255
+  },
+  {
+   "in": 2129,
+   "out": 232,
+   "cost": 0.0003289
+  },
+  {
+   "in": 4643,
+   "out": 418,
+   "cost": 0.0006733
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

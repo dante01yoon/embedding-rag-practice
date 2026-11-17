@@ -1,0 +1,139 @@
+{
+ "run": "h07-search-all-91cb46",
+ "q": "h07",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 65102,
+ "tokens_out": 1688,
+ "cost": 0.0073542,
+ "sec": 11.9,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 혼고 미츠루 감독"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3078
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 감독 본고 미쓰루"
+   },
+   "status": "ok",
+   "sec": 0.09,
+   "chars": 2933
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 감독 혼고 미츠루"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3078
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 감독 혼고 미쓰루 제작 연도"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3063
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 감독 혼고 미츠루 극장판 시리즈 편"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3273
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 혼고 미쓰루 감독 작품 목록"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3372
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 애니메이션 극장판 목록 감독 혼고 미츠루 개봉일"
+   },
+   "status": "ok",
+   "sec": 0.17,
+   "chars": 3218
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 애니메이션 극장판 감독 혼고 미츠루 1997 2000 2001 2002 개봉"
+   },
+   "status": "ok",
+   "sec": 0.12,
+   "chars": 2972
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w015443",
+  "w139839",
+  "w161886",
+  "w284332",
+  "w286288",
+  "w308332",
+  "w311566",
+  "w331533",
+  "w333852",
+  "w424270",
+  "w469255",
+  "w577626",
+  "w644647"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 647,
+   "out": 451,
+   "cost": 0.0002902
+  },
+  {
+   "in": 6932,
+   "out": 338,
+   "cost": 0.0008622
+  },
+  {
+   "in": 13431,
+   "out": 381,
+   "cost": 0.0015336
+  },
+  {
+   "in": 20426,
+   "out": 269,
+   "cost": 0.0021771
+  },
+  {
+   "in": 23666,
+   "out": 249,
+   "cost": 0.0024911
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/5",
+ "glimpsed": "3/5"
+}

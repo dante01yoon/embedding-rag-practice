@@ -1,0 +1,120 @@
+{
+ "run": "n03-search-all-93ae3e",
+ "q": "n03",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 42608,
+ "tokens_out": 798,
+ "cost": 0.0046598,
+ "sec": 6.7,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 2025년 승객"
+   },
+   "status": "ok",
+   "sec": 0.19,
+   "chars": 2746
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 양양 부산 광주"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2547
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 연간 승객 수 운항 중단 휴업"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 3327
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 승객 명 수송 실적"
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 3165
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 2020년 휴업 면허 취소 2025년"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 2515
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코리아 익스프레스 에어 여객 2025년 탑승객 명"
+   },
+   "status": "ok",
+   "sec": 0.21,
+   "chars": 2807
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w052393",
+  "w071210",
+  "w124172",
+  "w153612",
+  "w157215",
+  "w286832",
+  "w354844",
+  "w431316",
+  "w468589",
+  "w498717",
+  "w500653",
+  "w531107"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 637,
+   "out": 173,
+   "cost": 0.0001502
+  },
+  {
+   "in": 5861,
+   "out": 128,
+   "cost": 0.0006501
+  },
+  {
+   "in": 9134,
+   "out": 142,
+   "cost": 0.0009844
+  },
+  {
+   "in": 12229,
+   "out": 226,
+   "cost": 0.0013359
+  },
+  {
+   "in": 14747,
+   "out": 129,
+   "cost": 0.0015392
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

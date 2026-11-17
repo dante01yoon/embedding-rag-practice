@@ -1,0 +1,74 @@
+{
+ "run": "q03-pull-100k-030e98",
+ "q": "q03",
+ "mode": "pull",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "와타야 리사의 데뷔 중편소설 《인스톨》(2001년작, 제38회 문예상 수상작)은 한국에 처음 김난주의 번역으로 현대문학북스와 북폴리오에서 출간되었습니다. 이후 차기작 《발로 차 주고 싶은 등짝》 출간 뒤 황매에서 김수현 번역으로 재출간되었습니다.\n\n답: 김난주",
+ "turns": 3,
+ "tokens_in": 6642,
+ "tokens_out": 587,
+ "cost": 0.0009577,
+ "sec": 5.0,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "와타야 리사 인스톨 번역",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.29,
+   "chars": 417
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w437177"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 694
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w636712"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  }
+ ],
+ "opened": [
+  "w437177",
+  "w636712"
+ ],
+ "shown": [],
+ "work": 50,
+ "per_turn": [
+  {
+   "in": 1227,
+   "out": 248,
+   "cost": 0.0002467
+  },
+  {
+   "in": 1636,
+   "out": 97,
+   "cost": 0.0002121
+  },
+  {
+   "in": 3779,
+   "out": 242,
+   "cost": 0.0004989
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

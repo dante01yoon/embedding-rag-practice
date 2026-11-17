@@ -1,0 +1,84 @@
+{
+ "run": "q05-raw-100k-e9c2dd",
+ "q": "q05",
+ "mode": "raw",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답은 도시바 EMI입니다. 문서 w508335(\"비행기구름 (음반)\")에 따르면 이 앨범은 1973년 11월 20일 도시바 EMI에서 발매되었고, 음원 발매권의 사정으로 잠깐 알파 레코드에서도 발매된 적이 있습니다.\n\n답: 도시바 EMI",
+ "turns": 3,
+ "tokens_in": 9671,
+ "tokens_out": 271,
+ "cost": 0.0011026,
+ "sec": 4.6,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "아라이 유미|유밍|Yumi Arai|新井"
+   },
+   "status": "ok",
+   "sec": 1.81,
+   "chars": 2723
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w508335"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  }
+ ],
+ "opened": [
+  "w508335"
+ ],
+ "shown": [
+  "w031334",
+  "w034588",
+  "w167080",
+  "w188409",
+  "w195675",
+  "w219604",
+  "w231301",
+  "w262507",
+  "w306286",
+  "w350926",
+  "w375643",
+  "w395603",
+  "w395910",
+  "w452012",
+  "w478536",
+  "w508335",
+  "w510059",
+  "w550893",
+  "w573832",
+  "w645849"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 954,
+   "out": 95,
+   "cost": 0.0001429
+  },
+  {
+   "in": 3685,
+   "out": 50,
+   "cost": 0.0003935
+  },
+  {
+   "in": 5032,
+   "out": 126,
+   "cost": 0.0005662
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

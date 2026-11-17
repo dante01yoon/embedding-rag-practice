@@ -1,0 +1,155 @@
+{
+ "run": "n01-search-all-79300d",
+ "q": "n01",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 53470,
+ "tokens_out": 949,
+ "cost": 0.0058215,
+ "sec": 7.0,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구 서구 평리동 초등학교 1967년 개교"
+   },
+   "status": "ok",
+   "sec": 0.21,
+   "chars": 3351
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "평리초등학교 2025학년도 신입생"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2422
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구평리초등학교 연혁 1967년 개교"
+   },
+   "status": "ok",
+   "sec": 0.18,
+   "chars": 1430
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구평리초등학교 2025학년도 신입생 입학식 명"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3532
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구평리초등학교 2025학년도 신입생 입학식"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3532
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구평리초등학교 학급편성 2025 신입생"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3703
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구평리초등학교 2025 입학 신입생 명 학급 편성 졸업식"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 3401
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구평리초등학교 2024 2023 2022 신입생 입학식 졸업식 총 졸업생수"
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 3389
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w012129",
+  "w062848",
+  "w063836",
+  "w112842",
+  "w112908",
+  "w135852",
+  "w145941",
+  "w179132",
+  "w179447",
+  "w184324",
+  "w185285",
+  "w222787",
+  "w300811",
+  "w319615",
+  "w333244",
+  "w348056",
+  "w364323",
+  "w409042",
+  "w419641",
+  "w451027",
+  "w523063",
+  "w549526",
+  "w566943",
+  "w569118",
+  "w593711",
+  "w610798",
+  "w633330",
+  "w634774",
+  "w646393"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 613,
+   "out": 179,
+   "cost": 0.0001508
+  },
+  {
+   "in": 5944,
+   "out": 181,
+   "cost": 0.0006849
+  },
+  {
+   "in": 10362,
+   "out": 240,
+   "cost": 0.0011562
+  },
+  {
+   "in": 16786,
+   "out": 152,
+   "cost": 0.0017546
+  },
+  {
+   "in": 19765,
+   "out": 197,
+   "cost": 0.002075
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

@@ -1,0 +1,166 @@
+{
+ "run": "n02-search-all-dc47d6",
+ "q": "n02",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 75971,
+ "tokens_out": 1827,
+ "cost": 0.0085106,
+ "sec": 12.6,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 2025 혼고 미츠루"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3775
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉"
+   },
+   "status": "ok",
+   "sec": 0.17,
+   "chars": 3793
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 4월 일본 개봉 작품"
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 3541
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "혼고 미츠루 감독 짱구 극장판 목록"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3286
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025 개봉 제33부작"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3812
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "クレヨンしんちゃん 劇場版 2025 本郷みつる 監督"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2182
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉 감독"
+   },
+   "status": "ok",
+   "sec": 0.2,
+   "chars": 3783
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "クレヨンしんちゃん 劇場版 2025年 公開 タイトル"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 3707
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 제33부작"
+   },
+   "status": "ok",
+   "sec": 0.14,
+   "chars": 3812
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 혼고 미츠루 연출 2025"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3273
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w015443",
+  "w050417",
+  "w112636",
+  "w139839",
+  "w158646",
+  "w161886",
+  "w272277",
+  "w273977",
+  "w279370",
+  "w284332",
+  "w286288",
+  "w308332",
+  "w331533",
+  "w342284",
+  "w362105",
+  "w366727",
+  "w381145",
+  "w400989",
+  "w428841",
+  "w487081",
+  "w582127",
+  "w644647"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 619,
+   "out": 184,
+   "cost": 0.0001539
+  },
+  {
+   "in": 8483,
+   "out": 330,
+   "cost": 0.0010133
+  },
+  {
+   "in": 15598,
+   "out": 407,
+   "cost": 0.0017633
+  },
+  {
+   "in": 21928,
+   "out": 387,
+   "cost": 0.0023863
+  },
+  {
+   "in": 29343,
+   "out": 519,
+   "cost": 0.0031938
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

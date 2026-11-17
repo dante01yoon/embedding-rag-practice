@@ -1,0 +1,128 @@
+{
+ "run": "h05-raw-all-d91d0c",
+ "q": "h05",
+ "mode": "raw",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "그 선수는 가네코 마코토(1975년 11월 8일생)입니다. 그의 문서에 따르면 2009년 4월 7일부터 15일까지 이어진 7경기 연속 2루타 기록과 월간 타율 4할 2푼 3리를 인정받아 퍼시픽 리그 월간 MVP(야수 부문)에 선정되었습니다.\n\n답: 4할 2푼 3리",
+ "turns": 5,
+ "tokens_in": 22375,
+ "tokens_out": 811,
+ "cost": 0.002643,
+ "sec": 81.3,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2009년 4월.*(월간|이달의).*(MVP|선수)"
+   },
+   "status": "none",
+   "sec": 18.72,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "닛폰햄.*1975년"
+   },
+   "status": "timeout",
+   "sec": 20.01,
+   "chars": 68
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "퍼시픽 리그 월간 MVP"
+   },
+   "status": "ok",
+   "sec": 18.27,
+   "chars": 188
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1975년.*닛폰햄"
+   },
+   "status": "ok",
+   "sec": 17.67,
+   "chars": 3796
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w199008"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1267
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w199008",
+    "at": "2009년"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1270
+  }
+ ],
+ "opened": [
+  "w199008"
+ ],
+ "shown": [
+  "w031896",
+  "w094282",
+  "w104683",
+  "w159149",
+  "w161720",
+  "w199008",
+  "w219813",
+  "w277773",
+  "w324777",
+  "w346444",
+  "w369838",
+  "w406552",
+  "w472186",
+  "w491523",
+  "w503884",
+  "w508898",
+  "w574869"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 960,
+   "out": 176,
+   "cost": 0.000184
+  },
+  {
+   "in": 1218,
+   "out": 116,
+   "cost": 0.0001798
+  },
+  {
+   "in": 5383,
+   "out": 166,
+   "cost": 0.0006213
+  },
+  {
+   "in": 6718,
+   "out": 154,
+   "cost": 0.0007488
+  },
+  {
+   "in": 8096,
+   "out": 199,
+   "cost": 0.0009091
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

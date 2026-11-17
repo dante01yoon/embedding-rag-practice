@@ -1,0 +1,98 @@
+{
+ "run": "q05-search-all-72e773",
+ "q": "q05",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "처음 이 앨범을 낸 음반사는 **도시바 EMI**입니다.\n\n한국어 위키백과 '비행기구름 (음반)' 문서에 따르면, 《히코키구모(비행기구름)》은 1973년 11월 20일 도시바 EMI에서 발매되었고, 음원 발매권 사정으로 잠깐 알파 레코드에서도 발매된 적이 있습니다.\n\n답: 도시바 EMI",
+ "turns": 3,
+ "tokens_in": 20234,
+ "tokens_out": 889,
+ "cost": 0.0024679,
+ "sec": 6.1,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "아라이 유미 ひこうき雲 1973 앨범 음반사"
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 3725
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "ひこうき雲 荒井由実 エキスプレス アルファ・レコード 発売"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2177
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "비행기구름 아라이 유미 1973년 11월 20일 발매 엑스프레스"
+   },
+   "status": "ok",
+   "sec": 0.47,
+   "chars": 3063
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "ひこうき雲 1973年11月20日 エキスプレス 東芝EMI 発売"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 3641
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w021180",
+  "w161710",
+  "w232860",
+  "w255310",
+  "w262507",
+  "w301842",
+  "w331793",
+  "w364273",
+  "w372008",
+  "w375643",
+  "w376363",
+  "w419019",
+  "w450801",
+  "w452012",
+  "w503070",
+  "w508335",
+  "w568748",
+  "w582127"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 666,
+   "out": 348,
+   "cost": 0.0002406
+  },
+  {
+   "in": 6698,
+   "out": 292,
+   "cost": 0.0008158
+  },
+  {
+   "in": 12870,
+   "out": 249,
+   "cost": 0.0014115
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

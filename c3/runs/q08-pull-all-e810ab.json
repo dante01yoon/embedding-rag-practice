@@ -1,0 +1,129 @@
+{
+ "run": "q08-pull-all-e810ab",
+ "q": "q08",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "포트유니언역을 전신으로 하는 역은 루지힐역이고, 그 서쪽 바로 다음 역은 길드우드역입니다. 길드우드역 문서에 따르면 2016년 1월 31일 새 역 건물 공사에 들어갔고, 공사는 2019년 7월 3일에 완공되었습니다.\n\n답: 2019년 7월 3일",
+ "turns": 6,
+ "tokens_in": 25131,
+ "tokens_out": 1070,
+ "cost": 0.0030481,
+ "sec": 8.5,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "Rouge Hill GO station new building construction",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 476
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "Port Union GO station 1856 Lawrence Avenue East",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 484
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w420747"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1260
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w420747",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "길드우드역 GO 트랜싯 새 역 건물 공사",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.13,
+   "chars": 434
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2016|공사|완공|준공",
+    "within": "w100553"
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 50
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w100553"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  }
+ ],
+ "opened": [
+  "w100553",
+  "w420747"
+ ],
+ "shown": [],
+ "work": 139,
+ "per_turn": [
+  {
+   "in": 1276,
+   "out": 462,
+   "cost": 0.0003586
+  },
+  {
+   "in": 2287,
+   "out": 50,
+   "cost": 0.0002537
+  },
+  {
+   "in": 3612,
+   "out": 199,
+   "cost": 0.0004607
+  },
+  {
+   "in": 5457,
+   "out": 125,
+   "cost": 0.0006082
+  },
+  {
+   "in": 5580,
+   "out": 50,
+   "cost": 0.000583
+  },
+  {
+   "in": 6919,
+   "out": 184,
+   "cost": 0.0007839
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/2",
+ "glimpsed": "2/2"
+}

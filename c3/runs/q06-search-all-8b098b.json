@@ -1,0 +1,66 @@
+{
+ "run": "q06-search-all-8b098b",
+ "q": "q06",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 작품은 『철야의 노래』입니다. 코토야마가 원작했고, 『주간 소년 선데이』에서 2019년 39호부터 연재되고 있습니다. 문서에 따르면 2022년 6월 시점에서 전자판을 포함한 누계 발행 부수는 250만 부를 돌파했습니다.\n\n답: 250만 부",
+ "turns": 2,
+ "tokens_in": 7845,
+ "tokens_out": 491,
+ "cost": 0.00103,
+ "sec": 3.8,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "코토야마 원작 주간 소년 선데이 흡혈귀 소녀 등교 거부 중학생"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3472
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "코토야마 흡혈귀 만화 누계 발행 부수 2022년 6월"
+   },
+   "status": "ok",
+   "sec": 0.29,
+   "chars": 2787
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w025176",
+  "w054086",
+  "w082623",
+  "w265319",
+  "w279455",
+  "w359531",
+  "w395006",
+  "w509477",
+  "w535154"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 684,
+   "out": 309,
+   "cost": 0.0002229
+  },
+  {
+   "in": 7161,
+   "out": 182,
+   "cost": 0.0008071
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

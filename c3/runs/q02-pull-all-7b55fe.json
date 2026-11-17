@@ -1,0 +1,100 @@
+{
+ "run": "q02-pull-all-7b55fe",
+ "q": "q02",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "화순군 백아면(고인돌 62기, 2020년 1월 1일 '북면'에서 '백아면'으로 명칭 변경)에 대한 문서에 따르면, 1984년 동복수원지 확장공사로 와천리 일부가 수몰지역에 편입되어 **지와몰마을**과 모릿내마을이 폐촌되었습니다.\n\n답: 지와몰마을 (전남 화순군 백아면 와천리)",
+ "turns": 4,
+ "tokens_in": 11232,
+ "tokens_out": 864,
+ "cost": 0.0015552,
+ "sec": 5.9,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "화순군 면 고인돌 62기 2020년 명칭 변경",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 466
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "동복수원지 확장공사 1984년 폐촌 모릿내마을",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 405
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "모릿내|폐촌"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 168
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2020년",
+    "within": "r1"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 164
+  }
+ ],
+ "opened": [
+  "w222523"
+ ],
+ "shown": [
+  "w222523"
+ ],
+ "work": 99,
+ "per_turn": [
+  {
+   "in": 1223,
+   "out": 300,
+   "cost": 0.0002723
+  },
+  {
+   "in": 2194,
+   "out": 131,
+   "cost": 0.0002849
+  },
+  {
+   "in": 3791,
+   "out": 147,
+   "cost": 0.0004526
+  },
+  {
+   "in": 4024,
+   "out": 286,
+   "cost": 0.0005454
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,179 @@
+{
+ "run": "q02-search-all-2a3ed5",
+ "q": "q02",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 63559,
+ "tokens_out": 1126,
+ "cost": 0.0069189,
+ "sec": 8.6,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "동복수원지 확장공사 1984 모릿내마을 폐촌"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 3027
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "화순군 고인돌 62기 2020년 명칭 변경 면"
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 3180
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "사평면 마을 동복수원지 확장공사 폐촌"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2813
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "모릿내마을 화순"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2993
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "동복댐 수몰 마을 1984년 폐촌 화순군 사평면"
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 2469
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "사평면 남면 마을 폐촌 동복수원지"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 2638
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "모릿내 마을 동복댐 수몰"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2680
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "동복수원지 확장 공사 1984년 마을 폐촌 화순"
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 3105
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "동복댐 건설로 폐촌된 마을 모릿내"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 3275
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "화순군 마을 1984년 동복수원지 확장공사로 폐촌"
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 3078
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w021139",
+  "w046638",
+  "w057160",
+  "w062838",
+  "w093080",
+  "w093430",
+  "w096535",
+  "w105794",
+  "w121161",
+  "w141566",
+  "w169111",
+  "w173423",
+  "w193092",
+  "w218091",
+  "w222523",
+  "w231325",
+  "w237037",
+  "w344720",
+  "w363154",
+  "w371371",
+  "w381914",
+  "w391105",
+  "w454385",
+  "w459359",
+  "w466814",
+  "w469656",
+  "w530881",
+  "w564806",
+  "w582735",
+  "w584033",
+  "w598695",
+  "w608314",
+  "w614662",
+  "w627180",
+  "w645751"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 659,
+   "out": 236,
+   "cost": 0.0001839
+  },
+  {
+   "in": 7075,
+   "out": 262,
+   "cost": 0.0008385
+  },
+  {
+   "in": 13098,
+   "out": 186,
+   "cost": 0.0014028
+  },
+  {
+   "in": 18393,
+   "out": 213,
+   "cost": 0.0019458
+  },
+  {
+   "in": 24334,
+   "out": 229,
+   "cost": 0.0025479
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

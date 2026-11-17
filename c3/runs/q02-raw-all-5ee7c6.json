@@ -1,0 +1,74 @@
+{
+ "run": "q02-raw-all-5ee7c6",
+ "q": "q02",
+ "mode": "raw",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 조건은 화순군 백아면 문서와 맞습니다. 이 문서에는 \"1984년 : 동복수원지 확장공사로 인하여 와천리 일부가 수몰지역에 편입되어 지와몰마을과 모릿내마을이 폐촌되었다\"는 기록이 있습니다. 질문에서 함께 언급된 모릿내마을을 제외하면 폐촌된 마을은 지와몰마을입니다. 문서에서 고인돌 62기도 확인했습니다. 다만 2020년 명칭 변경 기록은 이번 검색에서 직접 확인하지 못했습니다.\n\n답: 지와몰마을",
+ "turns": 3,
+ "tokens_in": 5122,
+ "tokens_out": 806,
+ "cost": 0.0009151999999999999,
+ "sec": 40.1,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "동복수원지"
+   },
+   "status": "ok",
+   "sec": 17.8,
+   "chars": 169
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "모릿내"
+   },
+   "status": "ok",
+   "sec": 17.26,
+   "chars": 168
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  }
+ ],
+ "opened": [
+  "w222523"
+ ],
+ "shown": [
+  "w222523"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 947,
+   "out": 213,
+   "cost": 0.0002012
+  },
+  {
+   "in": 1421,
+   "out": 190,
+   "cost": 0.0002371
+  },
+  {
+   "in": 2754,
+   "out": 403,
+   "cost": 0.0004769
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

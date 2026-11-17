@@ -1,0 +1,126 @@
+{
+ "run": "q02-pull-all-71754d",
+ "q": "q02",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답은 **지와몰마을**입니다.\n\n백아면 문서에 따르면, 백아면은 청동기 시대 고인돌이 면 안에 62기 분포해 있고, 2020년 1월 1일 행정구역 명칭이 북면에서 백아면으로 바뀌었습니다. 1984년 동복수원지 확장공사로 와천리 일부가 수몰지역에 편입되면서 지와몰마을과 모릿내마을이 폐촌되었다고 나와 있습니다.\n\n답: 지와몰마을 (전남 화순군 백아면 와천리 일대)",
+ "turns": 5,
+ "tokens_in": 20814,
+ "tokens_out": 998,
+ "cost": 0.0025804,
+ "sec": 6.4,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "동복수원지 확장공사 모릿내마을 폐촌",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.34,
+   "chars": 410
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "화순군 고인돌 62기 2020년 명칭 변경 면",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.3,
+   "chars": 478
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w169111"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 915
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523",
+    "offset": 2400
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 462
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "모릿내|폐촌"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 307
+  }
+ ],
+ "opened": [
+  "w169111",
+  "w222523"
+ ],
+ "shown": [
+  "w056124",
+  "w222523"
+ ],
+ "work": 99,
+ "per_turn": [
+  {
+   "in": 1223,
+   "out": 293,
+   "cost": 0.0002688
+  },
+  {
+   "in": 2211,
+   "out": 191,
+   "cost": 0.0003166
+  },
+  {
+   "in": 4550,
+   "out": 107,
+   "cost": 0.0005085
+  },
+  {
+   "in": 5951,
+   "out": 125,
+   "cost": 0.0006576
+  },
+  {
+   "in": 6879,
+   "out": 282,
+   "cost": 0.0008289
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

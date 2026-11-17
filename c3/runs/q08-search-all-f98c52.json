@@ -1,0 +1,97 @@
+{
+ "run": "q08-search-all-f98c52",
+ "q": "q08",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "루지힐역(Rouge Hill)의 서쪽 바로 다음 역은 길드우드역(Guildwood Station)이고, 이 역의 새 역 건물 공사는 2016년 1월 31일에 시작되어 **2019년 7월 3일**에 완공되었습니다.\n\n검색으로 확인한 내용은 다음과 같습니다.\n- 루지힐역 문서: 역의 전신이 1856년 개통한 포트유니언역이며, 서쪽으로 길드우드역이 있다고 되어 있습니다.\n- 길드우드역 문서: 2016년 1월 31일 공사에 들어갔고 2019년 7월 3일에 완공되었다고 되어 있습니다.\n\n답: 2019년 7월 3일",
+ "turns": 3,
+ "tokens_in": 19905,
+ "tokens_out": 960,
+ "cost": 0.0024704999999999996,
+ "sec": 5.4,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "포트유니언역 GO 트랜싯"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3345
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Rouge Hill GO station new station building construction 2016"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3206
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "길드우드역 새 역 건물 공사 2016 완공"
+   },
+   "status": "ok",
+   "sec": 0.09,
+   "chars": 3730
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Guildwood GO station new station building construction completed"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 2889
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w026317",
+  "w048156",
+  "w100553",
+  "w172310",
+  "w243968",
+  "w279576",
+  "w308490",
+  "w315277",
+  "w317484",
+  "w359437",
+  "w368014",
+  "w375610",
+  "w380151",
+  "w402267",
+  "w419957",
+  "w420747",
+  "w598050"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 712,
+   "out": 422,
+   "cost": 0.0002822
+  },
+  {
+   "in": 6522,
+   "out": 212,
+   "cost": 0.0007582
+  },
+  {
+   "in": 12671,
+   "out": 326,
+   "cost": 0.0014301
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/2",
+ "glimpsed": "2/2"
+}

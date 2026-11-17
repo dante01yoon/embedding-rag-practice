@@ -1,0 +1,131 @@
+{
+ "run": "q09-raw-100k-a1e5da",
+ "q": "q09",
+ "mode": "raw",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 선수는 박성진(1985년 1월 28일생, 공격수)입니다. 박성진 문서에 따르면 그는 2007년 고양 KB국민은행에 입단했고, 2013년 신생팀 FC 안양에 입단했습니다. 2014 시즌을 앞두고 당시 FC 안양의 이우형 감독이 그를 새 주장으로 임명했습니다. 이우형 문서에는 그가 1966년 2월 2일에 태어났다고 나와 있습니다.\n\n답: 1966년",
+ "turns": 7,
+ "tokens_in": 24489,
+ "tokens_out": 781,
+ "cost": 0.0028393999999999997,
+ "sec": 9.8,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "서울용두초"
+   },
+   "status": "ok",
+   "sec": 1.32,
+   "chars": 742
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "FC 안양|안양 FC|국민은행",
+    "within": "r1"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 172
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w375420"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1265
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w375420",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1268
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "이우형"
+   },
+   "status": "ok",
+   "sec": 1.42,
+   "chars": 545
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w155341"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  }
+ ],
+ "opened": [
+  "w155341",
+  "w375420"
+ ],
+ "shown": [
+  "w062415",
+  "w155341",
+  "w290370",
+  "w375420",
+  "w389137",
+  "w457983",
+  "w585902",
+  "w595652"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 981,
+   "out": 73,
+   "cost": 0.0001346
+  },
+  {
+   "in": 1760,
+   "out": 84,
+   "cost": 0.000218
+  },
+  {
+   "in": 2014,
+   "out": 50,
+   "cost": 0.0002264
+  },
+  {
+   "in": 3316,
+   "out": 73,
+   "cost": 0.0003681
+  },
+  {
+   "in": 4640,
+   "out": 122,
+   "cost": 0.000525
+  },
+  {
+   "in": 5261,
+   "out": 150,
+   "cost": 0.0006011
+  },
+  {
+   "in": 6517,
+   "out": 229,
+   "cost": 0.0007662
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/2",
+ "glimpsed": "2/2"
+}

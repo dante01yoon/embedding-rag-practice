@@ -1,0 +1,37 @@
+{
+ "run": "h06-oneshot-all-2cf670",
+ "q": "h06",
+ "mode": "oneshot",
+ "set": "all",
+ "status": "answered",
+ "answer": "발췌문에는 2001년 7월에 시작된 전격 문고 시리즈가 나오지 않습니다. 등장하는 시리즈들은 2006년 이후 시작되었고, 소설 속 고등학교가 있는 도시나 그 인구에 대한 내용도 없습니다.\n\n답: 모름",
+ "turns": 1,
+ "tokens_in": 3001,
+ "tokens_out": 292,
+ "cost": 0.0004461,
+ "sec": 2.5,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "전격 문고에서 2001년 7월부터 낸 라이트 노벨 시리즈가 있다. 이 시리즈에서 주인공들이 다니는 고등학교가 있는 소설 속 도시의 인구는 약 몇 명인가?"
+   },
+   "status": "ok",
+   "sec": 0.58,
+   "chars": 2892
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w239800",
+  "w454726",
+  "w575851",
+  "w590671",
+  "w601789"
+ ],
+ "work": 0,
+ "correct": false,
+ "refused": true,
+ "evidence": "0/1",
+ "glimpsed": "0/1"
+}

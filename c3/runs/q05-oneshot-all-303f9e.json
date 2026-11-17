@@ -1,0 +1,37 @@
+{
+ "run": "q05-oneshot-all-303f9e",
+ "q": "q05",
+ "mode": "oneshot",
+ "set": "all",
+ "status": "answered",
+ "answer": "첫 앨범 《히코키구모》(비행기구름)는 1973년 11월 20일에 도시바 EMI에서 발매되었습니다. 음원 발매권 사정으로 잠깐 알파 레코드에서도 발매되었지만, 처음 낸 곳은 도시바 EMI입니다.\n\n답: 도시바 EMI",
+ "turns": 1,
+ "tokens_in": 3936,
+ "tokens_out": 240,
+ "cost": 0.0005136,
+ "sec": 2.3,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "일본 가수 아라이 유미(유밍)의 첫 앨범은 1973년 11월 20일에 나왔는데, 음원 발매권 문제로 한때 알파 레코드에서도 발매된 적이 있다. 처음 이 앨범을 낸 음반사는 어디인가?"
+   },
+   "status": "ok",
+   "sec": 0.91,
+   "chars": 3713
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w262507",
+  "w301842",
+  "w331793",
+  "w508335",
+  "w531406"
+ ],
+ "work": 0,
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

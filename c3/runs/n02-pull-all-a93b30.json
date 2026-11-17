@@ -1,0 +1,466 @@
+{
+ "run": "n02-pull-all-a93b30",
+ "q": "n02",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 20,
+ "tokens_in": 260930,
+ "tokens_out": 6286,
+ "cost": 0.029236,
+ "sec": 53.8,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "크레용 신짱 극장판 혼고 미츠루 2025",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 647
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 678
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w644647"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 251
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025년|2025 년|2025년\\s*\\d+월.*개봉|개봉.*2025",
+    "within": "r1"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 690
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w522818"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w015443"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 809
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉 작품",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 781
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w158646"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 932
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025|개봉",
+    "within": "r1"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 678
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "일본에서 2025|2025년 \\d+월 \\d+일에 개봉|2025년 4월|2025년 1월"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 177
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2024년|2025년|2023년 \\d+월",
+    "within": "r3"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 690
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 제32부 제33부 신작 개봉",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 772
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w578547"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1285
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w622539"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1283
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w574650"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1285
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제3[0-9]부작|제3[0-9]작|3[0-9]번째 극장판"
+   },
+   "status": "none",
+   "sec": 0.05,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제3[0-9]부작|3[0-9]번째 .*극장판|극장판.*2025"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 182
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 4월 일본 개봉 제33부",
+    "k": 300
+   },
+   "status": "ok",
+   "sec": 0.85,
+   "chars": 771
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "짱구.{0,300}2025|2025.{0,300}짱구"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(2022|2023|2024)년 .{0,20}개봉|일본에서 (2022|2023|2024)"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 1633
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제3[2-9]부작"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "신차원 짱구는 못말려 THE MOVIE 제32부작 제34부작",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.4,
+   "chars": 756
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제3[2-9]부"
+   },
+   "status": "none",
+   "sec": 0.03,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "신차원|신 짱구|THE MOVIE"
+   },
+   "status": "truncated",
+   "sec": 0.03,
+   "chars": 2973
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "짱구.{0,400}(2024|2025)|(2024|2025).{0,400}짱구"
+   },
+   "status": "none",
+   "sec": 0.04,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "Crayon Shin-chan movie 2025 Hogo Mitsuru",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.15,
+   "chars": 718
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "짱구",
+    "within": "r1"
+   },
+   "status": "none",
+   "sec": 0.03,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w439252"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 732
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w313998"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "혼고"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 1433
+  }
+ ],
+ "opened": [
+  "w015443",
+  "w158646",
+  "w313998",
+  "w439252",
+  "w522818",
+  "w574650",
+  "w578547",
+  "w622539",
+  "w644647"
+ ],
+ "shown": [
+  "w004382",
+  "w006477",
+  "w016379",
+  "w039738",
+  "w047966",
+  "w050417",
+  "w055747",
+  "w058893",
+  "w068404",
+  "w084371",
+  "w089630",
+  "w096224",
+  "w101746",
+  "w103885",
+  "w104223",
+  "w120251",
+  "w138609",
+  "w139839",
+  "w140344",
+  "w141133",
+  "w158646",
+  "w162753",
+  "w164796",
+  "w167079",
+  "w193726",
+  "w195300",
+  "w197123",
+  "w213309",
+  "w220368",
+  "w280777",
+  "w284332",
+  "w284994",
+  "w286288",
+  "w305877",
+  "w308332",
+  "w354166",
+  "w359003",
+  "w400989",
+  "w462131",
+  "w509037",
+  "w530129",
+  "w551463",
+  "w552110",
+  "w552885",
+  "w568403",
+  "w591361",
+  "w644647"
+ ],
+ "work": 426,
+ "per_turn": [
+  {
+   "in": 1183,
+   "out": 203,
+   "cost": 0.0002198
+  },
+  {
+   "in": 1877,
+   "out": 95,
+   "cost": 0.0002352
+  },
+  {
+   "in": 2863,
+   "out": 458,
+   "cost": 0.0005153
+  },
+  {
+   "in": 5742,
+   "out": 333,
+   "cost": 0.0007407
+  },
+  {
+   "in": 6589,
+   "out": 292,
+   "cost": 0.0008049
+  },
+  {
+   "in": 8309,
+   "out": 152,
+   "cost": 0.0009069
+  },
+  {
+   "in": 8560,
+   "out": 524,
+   "cost": 0.001118
+  },
+  {
+   "in": 10120,
+   "out": 469,
+   "cost": 0.0012465
+  },
+  {
+   "in": 14354,
+   "out": 299,
+   "cost": 0.0015849
+  },
+  {
+   "in": 14455,
+   "out": 447,
+   "cost": 0.001669
+  },
+  {
+   "in": 14713,
+   "out": 375,
+   "cost": 0.0016588
+  },
+  {
+   "in": 15555,
+   "out": 123,
+   "cost": 0.001617
+  },
+  {
+   "in": 15648,
+   "out": 414,
+   "cost": 0.0017718
+  },
+  {
+   "in": 17378,
+   "out": 233,
+   "cost": 0.0018543
+  },
+  {
+   "in": 17457,
+   "out": 331,
+   "cost": 0.0019112
+  },
+  {
+   "in": 18279,
+   "out": 451,
+   "cost": 0.0020534
+  },
+  {
+   "in": 20979,
+   "out": 190,
+   "cost": 0.0021929
+  },
+  {
+   "in": 21081,
+   "out": 335,
+   "cost": 0.0022756
+  },
+  {
+   "in": 21806,
+   "out": 141,
+   "cost": 0.0022511
+  },
+  {
+   "in": 23982,
+   "out": 421,
+   "cost": 0.0026087
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

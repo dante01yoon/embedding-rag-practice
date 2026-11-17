@@ -1,0 +1,155 @@
+{
+ "run": "n02-search-10k-122fdd",
+ "q": "n02",
+ "mode": "search",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "도구로 검색했지만 질문의 조건을 확인할 근거를 찾지 못했습니다. 검색된 문서는 1993년부터 2008년까지의 짱구 극장판(액션가면 VS 그래그래 마왕, 부리부리 왕국의 보물, 흑부리 마왕의 야망, 핸더랜드의 대모험, 금창의 용사 등)과 혼고 미츠루가 감독했다는 정보뿐이었습니다. 2025년 개봉작은 한 건도 확인되지 않았습니다. 추측으로 제목을 적지는 않겠습니다.\n\n답: 모름",
+ "turns": 6,
+ "tokens_in": 110798,
+ "tokens_out": 2482,
+ "cost": 0.0123208,
+ "sec": 16.4,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 2025 개봉 혼고 미츠루"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 3795
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3345
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉 작품"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3765
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "혼고 미츠루 감독 극장판 짱구"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 3811
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 일본 개봉 혼고 미츠루 감독 작품"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3511
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 2025 Crayon Shin-chan movie 2025"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 3757
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉 애니메이션 영화 제목"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3165
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "혼고 미츠루 감독 2025년"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2219
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "크레용 신짱 극장판 2025년 개봉 제목 감독 혼고 미츠루 각본"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 3598
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w275791",
+  "w284332",
+  "w284994",
+  "w286288",
+  "w308332",
+  "w332025",
+  "w363897",
+  "w388186",
+  "w400989",
+  "w409704",
+  "w419129",
+  "w439796",
+  "w452456",
+  "w463489",
+  "w538127"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 619,
+   "out": 188,
+   "cost": 0.0001559
+  },
+  {
+   "in": 8063,
+   "out": 374,
+   "cost": 0.0009933
+  },
+  {
+   "in": 16105,
+   "out": 454,
+   "cost": 0.0018375
+  },
+  {
+   "in": 23659,
+   "out": 387,
+   "cost": 0.0025594
+  },
+  {
+   "in": 29249,
+   "out": 465,
+   "cost": 0.0031574
+  },
+  {
+   "in": 33103,
+   "out": 614,
+   "cost": 0.0036173
+  }
+ ],
+ "correct": true,
+ "refused": true,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

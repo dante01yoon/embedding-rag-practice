@@ -11,6 +11,7 @@
 - macOS · Windows(PowerShell · WSL2) · Linux 중 하나, 디스크 여유 **10GB 이상** (임베딩 모델과 벡터 파일)
 - 파이썬은 따로 설치하지 않아도 됩니다. `uv sync`가 이 저장소에 맞는 버전(3.11~3.12)을 알아서 받아 옵니다.
 - **Docker Desktop** — PostgreSQL·pgvector 수업(B2)과 서비스 나누기 수업(D6)에서만 필요합니다.
+- **C3 챕터(수업 61~66)** — 한국어 위키백과 문서 묶음과 `rg`(ripgrep)가 더 필요합니다. 받는 법과 사전 점검: [C3 자료 받기](c3/README.md)
 
 ## 설치
 ① uv 설치 — 운영체제에 맞는 명령 한 줄 (공식 안내: https://docs.astral.sh/uv/getting-started/installation/)
@@ -195,6 +196,13 @@ bash tools/make_vectors.sh
 | 59 | [최종 미션 — 지원서에 넣을 RAG 평가 리포트](lessons/59-M1/) | [`mission/`](mission/) |
 | | **F · 통합 프로젝트 (업데이트 예정)** | |
 | 60 | [통합 프로젝트 미리보기 — 전·월세 상담 챗봇 설계 (업데이트 예정)](lessons/60-F0/) | — |
+| | **C3 · 문서가 수십만 개일 때 — 끌어와서 grep** (PART C 다음에 이어 듣는 챕터 · 나중에 더해져 번호는 61부터 · [자료 받기](c3/README.md)) | |
+| 61 | [grep이 벡터 검색을 이겼다는 논문 읽기](lessons/61-C3-1/) | [`c3/`](c3/) |
+| 62 | [문서가 늘면 grep은 얼마나 느려지나](lessons/62-C3-2/) | [`c3/`](c3/) |
+| 63 | [탐정의 도구를 다시 만든다](lessons/63-C3-3/) | [`c3/`](c3/) |
+| 64 | [pull 만들기: 끌어와서 뒤지기](lessons/64-C3-4/) | [`c3/`](c3/) |
+| 65 | [세 방식 성적표 · 측정과 채점](lessons/65-C3-5/) | [`c3/`](c3/) |
+| 66 | [고르는 기준과 길 하나 더](lessons/66-C3-6/) | [`c3/`](c3/) |
 ## 데이터와 라이선스
 - 코드: [MIT](LICENSE)
-- 데이터는 원래 라이선스를 따릅니다. 출처와 조건은 [`DATA_LICENSES.md`](DATA_LICENSES.md)에 정리했습니다. 쿠버네티스 문서(CC BY 4.0), 한국어 위키백과에서 정리한 도서 목록(CC BY-SA 4.0), MIRACL 한국어(Apache 2.0 + 위키백과 CC BY-SA), Chinook(MIT), 공공누리 제1유형 PDF, 미국 연방정부 저작물 PDF.
+- 데이터는 원래 라이선스를 따릅니다. 출처와 조건은 [`DATA_LICENSES.md`](DATA_LICENSES.md)에 정리했습니다. 쿠버네티스 문서(CC BY 4.0), 한국어 위키백과에서 정리한 도서 목록(CC BY-SA 4.0), C3의 한국어 위키백과 문서 묶음(CC BY-SA 4.0), MIRACL 한국어(Apache 2.0 + 위키백과 CC BY-SA), Chinook(MIT), 공공누리 제1유형 PDF, 미국 연방정부 저작물 PDF.

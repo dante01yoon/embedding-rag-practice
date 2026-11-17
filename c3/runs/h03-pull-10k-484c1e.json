@@ -1,0 +1,140 @@
+{
+ "run": "h03-pull-10k-484c1e",
+ "q": "h03",
+ "mode": "pull",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "길미(1983년 4월 10일 대구 출생)는 크레이지덕 군단 준비가 무산된 뒤 고향 대구로 내려와 대구가톨릭대학교에 진학했습니다. 이 대학은 대구 남구·중구 캠퍼스 외에 경상북도 경산시에도 캠퍼스(하양)가 있습니다. 경산시 문서에 따르면 경산시의 전체 면적은 411.70km²입니다.\n\n답: 411.70km²",
+ "turns": 6,
+ "tokens_in": 23290,
+ "tokens_out": 1119,
+ "cost": 0.0028885,
+ "sec": 8.8,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "크레이지덕 여성 래퍼 대구 출생 1983년",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 415
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w252364"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 209
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w182845"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1258
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "경산시 면적 km2",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 402
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구가톨릭대학교 경산 캠퍼스",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 415
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "경산",
+    "within": "w319610"
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 50
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w280011"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w319610",
+    "at": "경산"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  }
+ ],
+ "opened": [
+  "w182845",
+  "w252364",
+  "w280011",
+  "w319610"
+ ],
+ "shown": [],
+ "work": 147,
+ "per_turn": [
+  {
+   "in": 1247,
+   "out": 211,
+   "cost": 0.0002302
+  },
+  {
+   "in": 1682,
+   "out": 97,
+   "cost": 0.0002167
+  },
+  {
+   "in": 3315,
+   "out": 323,
+   "cost": 0.000493
+  },
+  {
+   "in": 4280,
+   "out": 118,
+   "cost": 0.000487
+  },
+  {
+   "in": 5743,
+   "out": 146,
+   "cost": 0.0006473
+  },
+  {
+   "in": 7023,
+   "out": 224,
+   "cost": 0.0008143
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "3/3",
+ "glimpsed": "3/3"
+}

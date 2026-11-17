@@ -1,0 +1,395 @@
+{
+ "run": "h06-pull-all-c2e3a3",
+ "q": "h06",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 20,
+ "tokens_in": 201606,
+ "tokens_out": 9938,
+ "cost": 0.0251296,
+ "sec": 76.6,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 7월 라이트 노벨 시리즈"
+   },
+   "status": "ok",
+   "sec": 0.3,
+   "chars": 501
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w601789"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 613
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w637905"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 577
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년\\s*7월"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "2001년 7월 전격문고에서 출간 시작 고등학교 주인공 라이트 노벨"
+   },
+   "status": "ok",
+   "sec": 0.3,
+   "chars": 473
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001年"
+   },
+   "status": "none",
+   "sec": 0.03,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001|도시|인구"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2790
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w051561"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 398
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "電撃文庫.{0,40}2001年|2001年.{0,30}電撃文庫"
+   },
+   "status": "none",
+   "sec": 0.03,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "전격 문고"
+   },
+   "status": "truncated",
+   "sec": 0.03,
+   "chars": 2958
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년\\s*7월|2001年7月|2001년 7월부터"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w059348"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고 2001년 7월 창간 시리즈 고등학교 도시 설정 라이트 노벨"
+   },
+   "status": "ok",
+   "sec": 0.29,
+   "chars": 456
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001년"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 1619
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001年7月|2001年 7月|平成13年7月|2001年7月創刊"
+   },
+   "status": "none",
+   "sec": 0.03,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "샤나 시리즈 라이트 노벨 미사키 고등학교 도시"
+   },
+   "status": "ok",
+   "sec": 0.07,
+   "chars": 482
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2001"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1884
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w066572"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "미사키 시.{0,80}(인구|명)|인구.{0,40}명|2001",
+    "within": "r4"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 1884
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w066572",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1266
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "미사키 시"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 173
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "전격 문고에서 2001년 7월 1권 발매 시작 연작 소설 학교 주인공"
+   },
+   "status": "ok",
+   "sec": 0.36,
+   "chars": 471
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "인구|만 명|만명|명 정도",
+    "within": "r6"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w066572",
+    "offset": 2400
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1266
+  }
+ ],
+ "opened": [
+  "w051561",
+  "w059348",
+  "w066572",
+  "w601789",
+  "w637905"
+ ],
+ "shown": [
+  "w001214",
+  "w003700",
+  "w009060",
+  "w030601",
+  "w033887",
+  "w035849",
+  "w047893",
+  "w051561",
+  "w057741",
+  "w059348",
+  "w066572",
+  "w085746",
+  "w101657",
+  "w104871",
+  "w113605",
+  "w119776",
+  "w133313",
+  "w136096",
+  "w156240",
+  "w168020",
+  "w172098",
+  "w172586",
+  "w186746",
+  "w187255",
+  "w187689",
+  "w201629",
+  "w213542",
+  "w233565",
+  "w234935",
+  "w236056",
+  "w271560",
+  "w338287",
+  "w405053",
+  "w420386",
+  "w425623",
+  "w524072",
+  "w579451",
+  "w591308",
+  "w637974",
+  "w640427"
+ ],
+ "work": 244,
+ "per_turn": [
+  {
+   "in": 1165,
+   "out": 379,
+   "cost": 0.000306
+  },
+  {
+   "in": 1672,
+   "out": 194,
+   "cost": 0.0002642
+  },
+  {
+   "in": 2938,
+   "out": 437,
+   "cost": 0.0005123
+  },
+  {
+   "in": 3016,
+   "out": 580,
+   "cost": 0.0005916
+  },
+  {
+   "in": 3503,
+   "out": 404,
+   "cost": 0.0005523
+  },
+  {
+   "in": 3576,
+   "out": 577,
+   "cost": 0.0006461
+  },
+  {
+   "in": 6296,
+   "out": 378,
+   "cost": 0.0008186
+  },
+  {
+   "in": 6747,
+   "out": 538,
+   "cost": 0.0009437
+  },
+  {
+   "in": 6848,
+   "out": 619,
+   "cost": 0.0009943
+  },
+  {
+   "in": 9801,
+   "out": 536,
+   "cost": 0.0012481
+  },
+  {
+   "in": 9894,
+   "out": 223,
+   "cost": 0.0011009
+  },
+  {
+   "in": 11295,
+   "out": 667,
+   "cost": 0.001463
+  },
+  {
+   "in": 11769,
+   "out": 373,
+   "cost": 0.0013634
+  },
+  {
+   "in": 13393,
+   "out": 901,
+   "cost": 0.0017898
+  },
+  {
+   "in": 14028,
+   "out": 766,
+   "cost": 0.0017858
+  },
+  {
+   "in": 15832,
+   "out": 306,
+   "cost": 0.0017362
+  },
+  {
+   "in": 17244,
+   "out": 290,
+   "cost": 0.0018694
+  },
+  {
+   "in": 20545,
+   "out": 132,
+   "cost": 0.0021205
+  },
+  {
+   "in": 20781,
+   "out": 1331,
+   "cost": 0.0027436
+  },
+  {
+   "in": 21263,
+   "out": 307,
+   "cost": 0.0022798
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "0/1"
+}

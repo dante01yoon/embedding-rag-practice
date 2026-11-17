@@ -1,0 +1,104 @@
+{
+ "run": "q06-pull-100k-b97e5d",
+ "q": "q06",
+ "mode": "pull",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답: 250만 부\n\n2022년 6월 시점에 전자판을 포함한 누계 발행 부수는 250만 부를 돌파했습니다(한국어 위키백과 '철야의 노래' 문서 근거).",
+ "turns": 5,
+ "tokens_in": 12221,
+ "tokens_out": 755,
+ "cost": 0.0015995999999999999,
+ "sec": 6.1,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "よふかしのうた 코토야마 주간 소년 선데이 누계 발행 부수",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.09,
+   "chars": 445
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "철야의 노래 만화",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 429
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "누계|부 돌파|발행 부수",
+    "within": ""
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 43
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "요후카시노 우타 흡혈귀 나즈나 밤 등교 거부",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 452
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w359531"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  }
+ ],
+ "opened": [
+  "w359531"
+ ],
+ "shown": [],
+ "work": 143,
+ "per_turn": [
+  {
+   "in": 1248,
+   "out": 274,
+   "cost": 0.0002618
+  },
+  {
+   "in": 1724,
+   "out": 152,
+   "cost": 0.0002484
+  },
+  {
+   "in": 2311,
+   "out": 201,
+   "cost": 0.0003316
+  },
+  {
+   "in": 2776,
+   "out": 50,
+   "cost": 0.0003026
+  },
+  {
+   "in": 4162,
+   "out": 78,
+   "cost": 0.0004552
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,506 @@
+{
+ "run": "n02-pull-all-94139c",
+ "q": "n02",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 20,
+ "tokens_in": 219513,
+ "tokens_out": 7586,
+ "cost": 0.025744299999999998,
+ "sec": 50.7,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못 말려 극장판 2025 혼고 미츠루",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.2,
+   "chars": 689
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025년"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w644647"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 251
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025"
+   },
+   "status": "none",
+   "sec": 0.04,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "혼고 미츠루"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1188
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 개봉 2025년 감독 혼고 미츠루",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.29,
+   "chars": 789
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 538
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w015443"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 809
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(2025|2024)년 ?[0-9]*월?[^。]{0,20}(개봉|공개)"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 479
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 개봉 작품",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 781
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w578547"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1285
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 2025년 4월 개봉 혼고 미츠루 감독 작품 제목",
+    "k": 300
+   },
+   "status": "ok",
+   "sec": 0.49,
+   "chars": 798
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025년|2024년 ?[0-9]+월"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 984
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "202[3-6]년[^。]{0,30}(개봉|공개)"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 971
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025|令和7",
+    "within": "r1"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제 ?3[2-4] ?부작"
+   },
+   "status": "none",
+   "sec": 0.03,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 제33부작 애니메이션 영화",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 779
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(2024|2025)년 ?[0-9]{1,2}월 ?[0-9]{1,2}일"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 329
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "신차원|제3[2-9]부작|대한민국에서는 20(2[4-9])"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 144
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "202[4-6]",
+    "within": "r5"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 443
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 2024 2025 신작 일본 개봉 33부작",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.11,
+   "chars": 767
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제 ?3[2-9] ?부작|3[2-9]번째"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 339
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025년[^。]{0,40}짱구|짱구[^。]{0,60}2025년"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(2024|2025)년",
+    "within": "r6"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 287
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "짱구",
+    "within": "r8"
+   },
+   "status": "none",
+   "sec": 0.01,
+   "chars": 23
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "202[3-6]",
+    "within": "r1"
+   },
+   "status": "ok",
+   "sec": 0.01,
+   "chars": 182
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w139839",
+    "at": "2023|2024|2025"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 380
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "2025年|2024年|2026年"
+   },
+   "status": "none",
+   "sec": 0.04,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "クレヨンしんちゃん 劇場版 2025 公開 混沌",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 491
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "짱구[^\\n]{0,80}(2024|2025)|(2024|2025)[^\\n]{0,80}짱구"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w055747",
+    "at": "짱구|크레용"
+   },
+   "status": "none",
+   "sec": 0.0,
+   "chars": 54
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "신차원[^。]{0,120}"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 262
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "신차원 짱구는 못말려 THE MOVIE",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.12,
+   "chars": 743
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "제 ?3[2-4] ?부|3[2-4]부"
+   },
+   "status": "none",
+   "sec": 0.04,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "짱구는 못말려 극장판 32부작 33부작 2024년 2025년 개봉",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 732
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "혼고"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 1303
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w054448"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 185
+  }
+ ],
+ "opened": [
+  "w015443",
+  "w054448",
+  "w139839",
+  "w578547",
+  "w644647"
+ ],
+ "shown": [
+  "w050417",
+  "w120251",
+  "w139839",
+  "w144329",
+  "w162104",
+  "w195300",
+  "w280777",
+  "w284332",
+  "w284994",
+  "w286288",
+  "w308332",
+  "w354166",
+  "w368876",
+  "w374295",
+  "w381399",
+  "w399564",
+  "w400989",
+  "w456462",
+  "w501017",
+  "w508347",
+  "w552885",
+  "w644647"
+ ],
+ "work": 479,
+ "per_turn": [
+  {
+   "in": 1183,
+   "out": 232,
+   "cost": 0.0002343
+  },
+  {
+   "in": 1934,
+   "out": 174,
+   "cost": 0.0002804
+  },
+  {
+   "in": 2007,
+   "out": 132,
+   "cost": 0.0002667
+  },
+  {
+   "in": 2426,
+   "out": 403,
+   "cost": 0.0004441
+  },
+  {
+   "in": 4591,
+   "out": 150,
+   "cost": 0.0005341
+  },
+  {
+   "in": 6028,
+   "out": 576,
+   "cost": 0.0008908
+  },
+  {
+   "in": 7463,
+   "out": 225,
+   "cost": 0.0008588
+  },
+  {
+   "in": 8844,
+   "out": 521,
+   "cost": 0.0011449
+  },
+  {
+   "in": 10765,
+   "out": 346,
+   "cost": 0.0012495
+  },
+  {
+   "in": 11927,
+   "out": 364,
+   "cost": 0.0013747
+  },
+  {
+   "in": 12891,
+   "out": 587,
+   "cost": 0.0015826
+  },
+  {
+   "in": 13550,
+   "out": 389,
+   "cost": 0.0015495
+  },
+  {
+   "in": 14932,
+   "out": 391,
+   "cost": 0.0016887
+  },
+  {
+   "in": 15482,
+   "out": 578,
+   "cost": 0.0018372
+  },
+  {
+   "in": 15961,
+   "out": 282,
+   "cost": 0.0017371
+  },
+  {
+   "in": 16662,
+   "out": 262,
+   "cost": 0.0017972
+  },
+  {
+   "in": 17279,
+   "out": 582,
+   "cost": 0.0020189
+  },
+  {
+   "in": 17556,
+   "out": 581,
+   "cost": 0.0020461
+  },
+  {
+   "in": 18550,
+   "out": 587,
+   "cost": 0.0021485
+  },
+  {
+   "in": 19482,
+   "out": 224,
+   "cost": 0.0020602
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

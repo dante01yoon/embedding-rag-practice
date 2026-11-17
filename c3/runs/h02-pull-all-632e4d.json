@@ -1,0 +1,389 @@
+{
+ "run": "h02-pull-all-632e4d",
+ "q": "h02",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 20,
+ "tokens_in": 191157,
+ "tokens_out": 2972,
+ "cost": 0.020601699999999997,
+ "sec": 29.3,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "기계치 I.F. 래퍼 1979년 9월 20일 출생",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.47,
+   "chars": 423
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w359675"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w056411"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 703
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w000785"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w457136"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1260
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "한국국제대학교 폐교",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 411
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w461996"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주시 초대 시장 1945년 12월 취임",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.42,
+   "chars": 434
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w404228"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 265
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1945년\\s*12월.{0,40}(시장|취임)|초대\\s*(진주)?시장"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 206
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주.{0,30}(초대|1945년 12월|시장\\s*취임)"
+   },
+   "status": "none",
+   "sec": 0.02,
+   "chars": 23
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주시 역대 시장 명단 초대 시장",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 476
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w626799"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 652
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "1945년\\s*12월"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 764
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주부 1945년 시장 취임 미군정",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 476
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "(초대|제1대|제1대)\\s*(진주)?\\s*시장"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 461
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주부.{0,80}(시장|1945)|(시장|1945).{0,40}진주부"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 149
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주부 부윤 시장",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 414
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w095779"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 206
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주(시)?\\s*(초대|제1대|제1대)|1945년\\s*12월.{0,30}취임"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 206
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주시장.{0,60}(역임|취임)|(역임|취임).{0,60}진주시장"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 160
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "진주시 행정 역사 시장 관선",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.13,
+   "chars": 409
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w278522"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 414
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "초대.{0,20}시장|시장.{0,20}초대"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1019
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "진주(부윤|읍장|시장)\\b.{0,60}"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 605
+  }
+ ],
+ "opened": [
+  "w000785",
+  "w056411",
+  "w095779",
+  "w278522",
+  "w359675",
+  "w404228",
+  "w457136",
+  "w461996",
+  "w626799"
+ ],
+ "shown": [
+  "w044042",
+  "w127199",
+  "w175471",
+  "w255780",
+  "w271997",
+  "w281042",
+  "w287586",
+  "w312025",
+  "w350266",
+  "w350455",
+  "w385456",
+  "w404228",
+  "w411731",
+  "w492256",
+  "w504398",
+  "w547436",
+  "w604698",
+  "w626799"
+ ],
+ "work": 365,
+ "per_turn": [
+  {
+   "in": 1257,
+   "out": 141,
+   "cost": 0.0001962
+  },
+  {
+   "in": 1682,
+   "out": 97,
+   "cost": 0.0002167
+  },
+  {
+   "in": 3740,
+   "out": 174,
+   "cost": 0.000461
+  },
+  {
+   "in": 6272,
+   "out": 282,
+   "cost": 0.0007682
+  },
+  {
+   "in": 6743,
+   "out": 50,
+   "cost": 0.0006993
+  },
+  {
+   "in": 8000,
+   "out": 175,
+   "cost": 0.0008875
+  },
+  {
+   "in": 8495,
+   "out": 50,
+   "cost": 0.0008745
+  },
+  {
+   "in": 8789,
+   "out": 123,
+   "cost": 0.0009404
+  },
+  {
+   "in": 9074,
+   "out": 200,
+   "cost": 0.0010074
+  },
+  {
+   "in": 9171,
+   "out": 198,
+   "cost": 0.0010161
+  },
+  {
+   "in": 9640,
+   "out": 101,
+   "cost": 0.0010145
+  },
+  {
+   "in": 11116,
+   "out": 233,
+   "cost": 0.0012281
+  },
+  {
+   "in": 12156,
+   "out": 164,
+   "cost": 0.0012976
+  },
+  {
+   "in": 12375,
+   "out": 164,
+   "cost": 0.0013195
+  },
+  {
+   "in": 12786,
+   "out": 50,
+   "cost": 0.0013036
+  },
+  {
+   "in": 13031,
+   "out": 84,
+   "cost": 0.0013451
+  },
+  {
+   "in": 13320,
+   "out": 180,
+   "cost": 0.001422
+  },
+  {
+   "in": 13554,
+   "out": 200,
+   "cost": 0.0014554
+  },
+  {
+   "in": 14455,
+   "out": 147,
+   "cost": 0.001519
+  },
+  {
+   "in": 15501,
+   "out": 159,
+   "cost": 0.0016296
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "2/3",
+ "glimpsed": "3/3"
+}

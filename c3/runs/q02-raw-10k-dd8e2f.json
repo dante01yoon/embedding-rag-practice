@@ -1,0 +1,65 @@
+{
+ "run": "q02-raw-10k-dd8e2f",
+ "q": "q02",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "**답: 지와몰마을**\n\n백아면 문서에 따르면 1984년 동복수원지 확장공사로 와천리 일부가 수몰지역에 편입되면서 지와몰마을과 모릿내마을이 폐촌되었다. 같은 문서에 청동기 시대 고인돌이 면내에 62기 분포한다고 나와 있어 질문의 면이 백아면임을 확인했다. 다만 2020년 명칭 변경 내용은 이 문서에서 확인하지 못했다.\n\n답: 지와몰마을",
+ "turns": 3,
+ "tokens_in": 4614,
+ "tokens_out": 650,
+ "cost": 0.0007864,
+ "sec": 5.4,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "모릿내"
+   },
+   "status": "ok",
+   "sec": 0.48,
+   "chars": 168
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  }
+ ],
+ "opened": [
+  "w222523"
+ ],
+ "shown": [
+  "w222523"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 947,
+   "out": 154,
+   "cost": 0.0001717
+  },
+  {
+   "in": 1167,
+   "out": 146,
+   "cost": 0.0001897
+  },
+  {
+   "in": 2500,
+   "out": 350,
+   "cost": 0.000425
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

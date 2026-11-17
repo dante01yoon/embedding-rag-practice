@@ -1,0 +1,167 @@
+{
+ "run": "h01-pull-all-942730",
+ "q": "h01",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답: 이대순(李大順)\n\n근거: \n- 2009년 한서우주항공에서 '코리아 익스프레스 에어'로 개명, 양양을 거점으로 부산·광주 노선 운항(w052393).\n- 이 회사의 모회사격인 한서대학교가 2009년 태안캠퍼스를 개교, 항공학부 중심(w298049).\n- 태안(소태현)은 1298년 충렬왕 24년 소태 출신 이대순이 원나라의 총애를 받아 태안으로 개명되고 군으로 승격되었다(w569937).",
+ "turns": 8,
+ "tokens_in": 39715,
+ "tokens_out": 1725,
+ "cost": 0.004834,
+ "sec": 13.9,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "양양 기반 항공사 2009년 사명 변경 부산 광주 노선"
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 434
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w052393"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1268
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w303046"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1260
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "태안군 지명 유래 고려 원나라 군으로 승격"
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 376
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "한서대학교 항공캠퍼스 태안 2009"
+   },
+   "status": "ok",
+   "sec": 0.08,
+   "chars": 436
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w298049"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "항공캠퍼스|항공 캠퍼스|항공대학"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 300
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "태안군 역사 고려 태안으로 개명 군으로 승격"
+   },
+   "status": "ok",
+   "sec": 0.1,
+   "chars": 420
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w352824"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 522
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w569937"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  }
+ ],
+ "opened": [
+  "w052393",
+  "w298049",
+  "w303046",
+  "w352824",
+  "w569937"
+ ],
+ "shown": [
+  "w291708",
+  "w298049"
+ ],
+ "work": 320,
+ "per_turn": [
+  {
+   "in": 1235,
+   "out": 537,
+   "cost": 0.000392
+  },
+  {
+   "in": 1668,
+   "out": 97,
+   "cost": 0.0002153
+  },
+  {
+   "in": 4203,
+   "out": 277,
+   "cost": 0.0005588
+  },
+  {
+   "in": 4582,
+   "out": 144,
+   "cost": 0.0005302
+  },
+  {
+   "in": 5004,
+   "out": 159,
+   "cost": 0.0005799
+  },
+  {
+   "in": 6717,
+   "out": 211,
+   "cost": 0.0007772
+  },
+  {
+   "in": 7187,
+   "out": 97,
+   "cost": 0.0007672
+  },
+  {
+   "in": 9119,
+   "out": 203,
+   "cost": 0.0010134
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/3",
+ "glimpsed": "2/3"
+}

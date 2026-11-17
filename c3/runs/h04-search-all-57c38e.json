@@ -1,0 +1,178 @@
+{
+ "run": "h04-search-all-57c38e",
+ "q": "h04",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 55367,
+ "tokens_out": 2477,
+ "cost": 0.0067751999999999995,
+ "sec": 16.5,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "아카데미 각색상 수상 영화 원작 소설 시대 배경 1983년으로 변경"
+   },
+   "status": "ok",
+   "sec": 0.29,
+   "chars": 3001
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "영화 배경을 1983년으로 옮겼다 원작 소설은 년대 아카데미 각색상"
+   },
+   "status": "ok",
+   "sec": 0.23,
+   "chars": 2510
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 원작 소설 배경 연도 1983년 변경"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 2463
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "위민 토킹 원작 소설 배경 연도 영화 2010년 변경"
+   },
+   "status": "ok",
+   "sec": 0.22,
+   "chars": 2720
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "래리 맥머트리 애정의 조건 소설 배경 년도"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 2761
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment McMurtry novel set in year film changed to 1983"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3754
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 소설 원작 시대 설정 영화 1983년으로 바꿈"
+   },
+   "status": "ok",
+   "sec": 0.24,
+   "chars": 2193
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Terms of Endearment novel 1975 Aurora Greenway Emma Horton setting"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2829
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "애정의 조건 래리 맥머트리 소설 줄거리 시간 배경 1960년대"
+   },
+   "status": "ok",
+   "sec": 0.06,
+   "chars": 3180
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "영화 시대 배경 원작보다 1983년 아카데미 각색상 소설 설정 연도 변경"
+   },
+   "status": "ok",
+   "sec": 0.29,
+   "chars": 2490
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w000368",
+  "w005964",
+  "w021106",
+  "w021760",
+  "w039311",
+  "w045787",
+  "w062209",
+  "w092445",
+  "w093531",
+  "w102283",
+  "w130218",
+  "w164326",
+  "w182470",
+  "w190069",
+  "w191828",
+  "w203938",
+  "w218901",
+  "w236733",
+  "w334223",
+  "w350477",
+  "w360492",
+  "w369973",
+  "w372442",
+  "w374672",
+  "w458999",
+  "w530066",
+  "w544269",
+  "w579707",
+  "w586648",
+  "w596547",
+  "w603856",
+  "w615944",
+  "w618583",
+  "w629786"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 664,
+   "out": 1018,
+   "cost": 0.0005754
+  },
+  {
+   "in": 6285,
+   "out": 517,
+   "cost": 0.000887
+  },
+  {
+   "in": 11558,
+   "out": 343,
+   "cost": 0.0013273
+  },
+  {
+   "in": 16300,
+   "out": 321,
+   "cost": 0.0017905
+  },
+  {
+   "in": 20560,
+   "out": 278,
+   "cost": 0.002195
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "0/1"
+}

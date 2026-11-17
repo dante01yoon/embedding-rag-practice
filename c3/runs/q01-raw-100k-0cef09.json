@@ -1,0 +1,62 @@
+{
+ "run": "q01-raw-100k-0cef09",
+ "q": "q01",
+ "mode": "raw",
+ "set": "100k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "대구평리초등학교 문서에 따르면, 2003년 11월 8일 교내에 수목 631그루를 식재했고 이는 서구청 기증이었습니다. 세부 내역은 때죽나무 200그루 외 7종입니다. 이 학교는 서구 평리동에 있는 공립 초등학교이며 1967년에 개교했습니다.\n\n답: 631그루",
+ "turns": 2,
+ "tokens_in": 2762,
+ "tokens_out": 396,
+ "cost": 0.00047420000000000003,
+ "sec": 6.6,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "평리동"
+   },
+   "status": "ok",
+   "sec": 2.49,
+   "chars": 534
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "서구청.*기증|기증.*서구청"
+   },
+   "status": "ok",
+   "sec": 1.46,
+   "chars": 322
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w179447",
+  "w324326",
+  "w358503",
+  "w364323",
+  "w631516"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 920,
+   "out": 134,
+   "cost": 0.000159
+  },
+  {
+   "in": 1842,
+   "out": 262,
+   "cost": 0.0003152
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

@@ -1,0 +1,178 @@
+{
+ "run": "h02-search-all-88a5dd",
+ "q": "h02",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "turn_cap",
+ "answer": "",
+ "turns": 5,
+ "tokens_in": 52412,
+ "tokens_out": 1064,
+ "cost": 0.005773199999999999,
+ "sec": 8.7,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "I.F. 기계치 래퍼 1979년 9월 20일"
+   },
+   "status": "ok",
+   "sec": 0.3,
+   "chars": 3098
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "기계치 1999년 데뷔 I.F. 2007년 해체"
+   },
+   "status": "ok",
+   "sec": 0.19,
+   "chars": 3109
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "한국국제대학교 폐교 위치"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 2149
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "한국국제대학교 폐교"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 2149
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "진주시 초대 시장 1945년 12월 취임"
+   },
+   "status": "ok",
+   "sec": 0.26,
+   "chars": 2344
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "진주시 역대 시장 초대"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1956
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "진주시장 1945년 12월 초대 시장 취임 진주부"
+   },
+   "status": "ok",
+   "sec": 0.27,
+   "chars": 1924
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "통합 이전 진주시장 1945 초대"
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 2416
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "진주시장 역대 명단 관선 1945년 12월 취임 초대 민선"
+   },
+   "status": "ok",
+   "sec": 0.32,
+   "chars": 2120
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "진주시 초대 시장 취임"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 2407
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w000785",
+  "w001994",
+  "w062520",
+  "w105092",
+  "w116715",
+  "w129407",
+  "w190487",
+  "w201849",
+  "w202781",
+  "w231327",
+  "w254176",
+  "w281042",
+  "w287586",
+  "w292122",
+  "w293413",
+  "w350455",
+  "w359675",
+  "w360995",
+  "w367955",
+  "w370774",
+  "w404228",
+  "w451545",
+  "w454481",
+  "w457136",
+  "w460466",
+  "w461996",
+  "w490262",
+  "w490417",
+  "w512238",
+  "w514023",
+  "w569645",
+  "w621971",
+  "w626799",
+  "w629639"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 693,
+   "out": 212,
+   "cost": 0.0001753
+  },
+  {
+   "in": 6502,
+   "out": 315,
+   "cost": 0.0008077
+  },
+  {
+   "in": 10881,
+   "out": 211,
+   "cost": 0.0011936
+  },
+  {
+   "in": 15056,
+   "out": 153,
+   "cost": 0.0015821
+  },
+  {
+   "in": 19280,
+   "out": 173,
+   "cost": 0.0020145
+  }
+ ],
+ "correct": false,
+ "refused": false,
+ "evidence": "0/3",
+ "glimpsed": "2/3"
+}

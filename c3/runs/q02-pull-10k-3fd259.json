@@ -1,0 +1,94 @@
+{
+ "run": "q02-pull-10k-3fd259",
+ "q": "q02",
+ "mode": "pull",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문에 해당하는 마을은 **지와몰마을**입니다.\n\n문서에 따르면 백아면(전라남도 화순군, 청동기 고인돌 62기, 2020년 1월 1일 북면→백아면 개칭)에서 1984년 동복수원지 확장공사로 와천리 일부가 수몰되면서 지와몰마을과 모릿내마을이 폐촌되었습니다.\n\n답: 지와몰마을",
+ "turns": 5,
+ "tokens_in": 15099,
+ "tokens_out": 641,
+ "cost": 0.0018304,
+ "sec": 5.6,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "동복수원지 확장공사 1984 모릿내마을 폐촌",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 396
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1259
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w222523",
+    "offset": 2400
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 462
+  }
+ ],
+ "opened": [
+  "w222523"
+ ],
+ "shown": [],
+ "work": 50,
+ "per_turn": [
+  {
+   "in": 1223,
+   "out": 291,
+   "cost": 0.0002678
+  },
+  {
+   "in": 1638,
+   "out": 50,
+   "cost": 0.0001888
+  },
+  {
+   "in": 2971,
+   "out": 73,
+   "cost": 0.0003336
+  },
+  {
+   "in": 4372,
+   "out": 73,
+   "cost": 0.0004737
+  },
+  {
+   "in": 4895,
+   "out": 154,
+   "cost": 0.0005665
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

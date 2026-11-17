@@ -1,0 +1,65 @@
+{
+ "run": "q03-raw-10k-d4dfc8",
+ "q": "q03",
+ "mode": "raw",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "답은 김난주입니다. 문서에 따르면 《인스톨》은 한국에서 먼저 김난주의 번역으로 현대문학북스와 북폴리오에서 출간되었고, 이후 황매에서 김수현 번역으로 재출간되었습니다.\n\n답: 김난주",
+ "turns": 3,
+ "tokens_in": 4624,
+ "tokens_out": 388,
+ "cost": 0.0006564,
+ "sec": 3.8,
+ "tools": [
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "와타야 리사|Wataya|와타야"
+   },
+   "status": "ok",
+   "sec": 0.47,
+   "chars": 134
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w636712"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1262
+  }
+ ],
+ "opened": [
+  "w636712"
+ ],
+ "shown": [
+  "w636712"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 951,
+   "out": 234,
+   "cost": 0.0002121
+  },
+  {
+   "in": 1149,
+   "out": 50,
+   "cost": 0.0001399
+  },
+  {
+   "in": 2524,
+   "out": 104,
+   "cost": 0.0003044
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

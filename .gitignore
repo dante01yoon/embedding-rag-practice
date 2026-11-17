@@ -18,3 +18,7 @@ d9/docs/
 d9/index.json
 d9/state.json
 .DS_Store
+
+# C3: 릴리스에서 받는 위키백과 문서 묶음과 pull 작업 폴더 (받는 법: c3/README.md)
+wiki/
+c3/ws/

@@ -1,0 +1,37 @@
+{
+ "run": "n01-oneshot-all-61161e",
+ "q": "n01",
+ "mode": "oneshot",
+ "set": "all",
+ "status": "answered",
+ "answer": "검색 결과에는 1967년에 문을 연 평리동 초등학교나 2025학년도 신입생 수에 대한 정보가 없습니다. 대구서평초등학교는 1984년 개교로 나와 있고, 확인되는 신입생 수는 2015학년도(27명)뿐입니다.\n\n답: 모름",
+ "turns": 1,
+ "tokens_in": 3132,
+ "tokens_out": 246,
+ "cost": 0.0004362,
+ "sec": 2.2,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "대구 서구 평리동에 1967년 문을 연 공립 초등학교의 2025학년도 신입생은 모두 몇 명인가?"
+   },
+   "status": "ok",
+   "sec": 0.56,
+   "chars": 3239
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w179447",
+  "w185285",
+  "w188884",
+  "w189811",
+  "w300811"
+ ],
+ "work": 0,
+ "correct": true,
+ "refused": true,
+ "evidence": "0/0",
+ "glimpsed": "0/0"
+}

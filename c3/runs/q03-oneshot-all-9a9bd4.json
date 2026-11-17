@@ -1,0 +1,37 @@
+{
+ "run": "q03-oneshot-all-9a9bd4",
+ "q": "q03",
+ "mode": "oneshot",
+ "set": "all",
+ "status": "answered",
+ "answer": "《인스톨》은 한국에서 먼저 김난주의 번역으로 현대문학북스와 북폴리오에서 출간되었고, 이후 황매에서 김수현 번역으로 재출간되었습니다.\n\n답: 김난주",
+ "turns": 1,
+ "tokens_in": 2958,
+ "tokens_out": 157,
+ "cost": 0.0003743,
+ "sec": 1.6,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "2001년에 발표된 와타야 리사의 데뷔 중편소설로, 학교를 관둔 여고생이 옆집 초등학생과 위장 채팅 아르바이트를 한다. 한국에 처음 출간될 때 번역을 맡은 사람은 누구인가?"
+   },
+   "status": "ok",
+   "sec": 0.57,
+   "chars": 2707
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w378737",
+  "w541360",
+  "w565318",
+  "w635733",
+  "w636712"
+ ],
+ "work": 0,
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

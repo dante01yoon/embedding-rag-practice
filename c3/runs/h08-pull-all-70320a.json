@@ -1,0 +1,169 @@
+{
+ "run": "h08-pull-all-70320a",
+ "q": "h08",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "도원동에 있는 공립 초등학교 중 가장 먼저 개교한 곳은 **대구대곡초등학교**(1996년 9월 1일 개교)입니다.\n\n- 대구대곡초등학교: 1996년 9월 1일 개교, 1997년 2월 20일 제1회 졸업(졸업생 116명)\n- 대구노전초등학교: 1997년 3월 3일 개교\n- 대구도원초등학교: 1997년 9월 1일 개교, 제1회 졸업 69명\n- 대구교육대학교 대구부설초등학교는 국립이고, 현재 위치로 이전한 것은 1998년이라 제외했습니다.\n\n답: 116명",
+ "turns": 6,
+ "tokens_in": 26197,
+ "tokens_out": 1588,
+ "cost": 0.0034136999999999995,
+ "sec": 9.8,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구 달서구 도원동 초등학교",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.28,
+   "chars": 440
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w324825"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 130
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w561344"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 606
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구노전초등학교 개교 제1회 졸업생",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.19,
+   "chars": 448
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구도원초등학교",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 138
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구대곡초등학교 개교",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 462
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w120038"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1134
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w461574"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w123267"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w517268"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1272
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w442754"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 237
+  }
+ ],
+ "opened": [
+  "w120038",
+  "w123267",
+  "w324825",
+  "w442754",
+  "w461574",
+  "w517268",
+  "w561344"
+ ],
+ "shown": [],
+ "work": 170,
+ "per_turn": [
+  {
+   "in": 1191,
+   "out": 112,
+   "cost": 0.0001751
+  },
+  {
+   "in": 1635,
+   "out": 97,
+   "cost": 0.000212
+  },
+  {
+   "in": 2489,
+   "out": 325,
+   "cost": 0.0004114
+  },
+  {
+   "in": 3673,
+   "out": 191,
+   "cost": 0.0004628
+  },
+  {
+   "in": 8463,
+   "out": 327,
+   "cost": 0.0010098
+  },
+  {
+   "in": 8746,
+   "out": 536,
+   "cost": 0.0011426
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "3/3",
+ "glimpsed": "3/3"
+}

@@ -1,0 +1,67 @@
+{
+ "run": "q07-search-all-73f9e7",
+ "q": "q07",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "구로사와 기요시 감독의 2001년 영화 《회로》(Kairo)는 로튼 토마토에서 **73%**의 점수를 받았다. 검색된 '회로 (영화)' 문서에 \"로튼 토마토에서 73%의 점수를 받았다\"는 내용이 있었고, 같은 문서에 2006년 할리우드 리메이크작 '펄스'가 언급되어 있어 질문의 영화와 일치한다.\n\n답: 73%",
+ "turns": 2,
+ "tokens_in": 6220,
+ "tokens_out": 362,
+ "cost": 0.000803,
+ "sec": 2.6,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "구로사와 기요시 회로 2001 로튼 토마토"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3290
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Kairo 2001 Rotten Tomatoes"
+   },
+   "status": "ok",
+   "sec": 0.02,
+   "chars": 1620
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w027205",
+  "w215057",
+  "w300594",
+  "w342662",
+  "w442040",
+  "w488761",
+  "w514898",
+  "w520112",
+  "w544581",
+  "w629325"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 662,
+   "out": 174,
+   "cost": 0.0001532
+  },
+  {
+   "in": 5558,
+   "out": 188,
+   "cost": 0.0006498
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}

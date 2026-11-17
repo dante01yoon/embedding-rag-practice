@@ -1,0 +1,99 @@
+{
+ "run": "q01-pull-10k-fee4ce",
+ "q": "q01",
+ "mode": "pull",
+ "set": "10k",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "대구평리초등학교 역사 기록에 따르면, 2003년 11월 8일 \"교내 수목 631그루 식재 (서구청 기증)\"라고 나옵니다. 세부 항목은 때죽나무 200그루 외 7종입니다.\n\n답: 631그루",
+ "turns": 4,
+ "tokens_in": 10099,
+ "tokens_out": 498,
+ "cost": 0.0012589,
+ "sec": 4.5,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "대구 서구 평리동 초등학교 1967년 개교 서구청 기증 수목",
+    "k": 50
+   },
+   "status": "ok",
+   "sec": 0.04,
+   "chars": 457
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w364323"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1264
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "서구청.*(기증|심)|기증.*그루",
+    "within": "w364323"
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 50
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w364323",
+    "offset": 1200
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1267
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "서구청",
+    "within": "w364323"
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 50
+  }
+ ],
+ "opened": [
+  "w364323"
+ ],
+ "shown": [],
+ "work": 50,
+ "per_turn": [
+  {
+   "in": 1196,
+   "out": 124,
+   "cost": 0.0001816
+  },
+  {
+   "in": 1676,
+   "out": 134,
+   "cost": 0.0002346
+  },
+  {
+   "in": 2961,
+   "out": 142,
+   "cost": 0.0003671
+  },
+  {
+   "in": 4266,
+   "out": 98,
+   "cost": 0.0004756
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "1/1",
+ "glimpsed": "1/1"
+}

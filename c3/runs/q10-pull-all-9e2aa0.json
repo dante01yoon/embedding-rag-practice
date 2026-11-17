@@ -1,0 +1,100 @@
+{
+ "run": "q10-pull-all-9e2aa0",
+ "q": "q10",
+ "mode": "pull",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "교향악축제의 주최 기관은 예술의전당이며, 예술의전당의 'IBK 챔버홀'(600석)은 기업은행 지원으로 건립되어 **2011년 10월 5일**에 개관했습니다.\n\n근거:\n- 교향악축제 문서: 1989년 약 한 달간 관현악단 공연, '제1회 교향악축제'로 명명, 1996년부터 매년 4월 개최, 예술의 전당 주최.\n- 예술의전당 문서: \"IBK 챔버홀(600석 규모)\"은 2010년 발전계획의 일환으로 건립되었으며 \"2011년 10월 5일 개관하였다.\"\n\n답: 2011년 10월 5일",
+ "turns": 4,
+ "tokens_in": 12098,
+ "tokens_out": 1036,
+ "cost": 0.0017277999999999998,
+ "sec": 7.8,
+ "tools": [
+  {
+   "tool": "pull",
+   "args": {
+    "query": "1989년 관현악단 릴레이 공연 제1회 1996년부터 매년 4월 음악제",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.76,
+   "chars": 499
+  },
+  {
+   "tool": "pull",
+   "args": {
+    "query": "은행 이름 챔버홀 개관",
+    "k": 100
+   },
+   "status": "ok",
+   "sec": 0.15,
+   "chars": 434
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w223013"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1261
+  },
+  {
+   "tool": "find",
+   "args": {
+    "pattern": "챔버홀",
+    "within": ""
+   },
+   "status": "bad_request",
+   "sec": 0.0,
+   "chars": 43
+  },
+  {
+   "tool": "read",
+   "args": {
+    "doc_id": "w603011",
+    "at": "챔버홀"
+   },
+   "status": "ok",
+   "sec": 0.0,
+   "chars": 1263
+  }
+ ],
+ "opened": [
+  "w223013",
+  "w603011"
+ ],
+ "shown": [],
+ "work": 200,
+ "per_turn": [
+  {
+   "in": 1247,
+   "out": 427,
+   "cost": 0.0003382
+  },
+  {
+   "in": 2263,
+   "out": 134,
+   "cost": 0.0002933
+  },
+  {
+   "in": 3557,
+   "out": 228,
+   "cost": 0.0004697
+  },
+  {
+   "in": 5031,
+   "out": 247,
+   "cost": 0.0006266
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "2/2",
+ "glimpsed": "2/2"
+}

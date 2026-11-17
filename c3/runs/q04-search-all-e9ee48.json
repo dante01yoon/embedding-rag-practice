@@ -1,0 +1,98 @@
+{
+ "run": "q04-search-all-e9ee48",
+ "q": "q04",
+ "mode": "search",
+ "set": "all",
+ "model": [
+  "anthropic/claude-haiku-5.5",
+  "Claude Platform on AWS"
+ ],
+ "status": "answered",
+ "answer": "질문의 회사는 **알몬티 인더스트리스(Almonty Industries)**입니다. 회사 이름의 '알(Al)'은 대니얼 다마토의 아버지 알 다마토(Al D'Amato)에서, '몬티(Monty)'는 루이스 블랙의 아버지 몬티 블랙(Monty Black)에서 왔습니다. 위키백과 '알몬티 인더스트리스' 문서에는 2015년 캐나다의 울프마이닝 주식회사와 함께 대한민국 상동 광산 프로젝트를 인수했다고 나옵니다.\n\n다른 문서인 '상동광산'에도 2006년 캐나다 Woulfe Mining Corp.이 상동광산의 광업권을 인수했고, 2015년 9월 Almonty Industries Inc.가 Woulfe Mining Corp.을 인수·합병했다고 적혀 있어 같은 회사로 확인됩니다.\n\n답: 울프마이닝 주식회사(Woulfe Mining Corp.)",
+ "turns": 3,
+ "tokens_in": 17300,
+ "tokens_out": 1146,
+ "cost": 0.002303,
+ "sec": 7.4,
+ "tools": [
+  {
+   "tool": "search",
+   "args": {
+    "query": "Almonty Industries name derived from fathers Daniel D'Amato Louis Black"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 3717
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "상동 광산 2015 인수 캐나다 회사 텅스텐"
+   },
+   "status": "ok",
+   "sec": 0.05,
+   "chars": 3535
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Almonty 社名 由来 父 名前 Lewis Black Daniel D'Amato"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2663
+  },
+  {
+   "tool": "search",
+   "args": {
+    "query": "Woulfe Mining Sangdong Almonty acquisition 2015"
+   },
+   "status": "ok",
+   "sec": 0.03,
+   "chars": 2436
+  }
+ ],
+ "opened": [],
+ "shown": [
+  "w004677",
+  "w050482",
+  "w132405",
+  "w190597",
+  "w202102",
+  "w202659",
+  "w225142",
+  "w234768",
+  "w245983",
+  "w260765",
+  "w264410",
+  "w416065",
+  "w514798",
+  "w515979",
+  "w522480",
+  "w539319",
+  "w560831",
+  "w602245"
+ ],
+ "work": 0,
+ "per_turn": [
+  {
+   "in": 666,
+   "out": 367,
+   "cost": 0.0002501
+  },
+  {
+   "in": 6130,
+   "out": 272,
+   "cost": 0.000749
+  },
+  {
+   "in": 10504,
+   "out": 507,
+   "cost": 0.0013039
+  }
+ ],
+ "correct": true,
+ "refused": false,
+ "evidence": "0/1",
+ "glimpsed": "1/1"
+}
